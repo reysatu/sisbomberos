@@ -1,0 +1,170 @@
+body{
+	margin: 0;
+
+	font-family: Helvetica, Arial, sans-serif;
+}
+.padre_barra{
+  position: relative;
+  width: 100%;
+  height: 2em;
+  left: 0%;
+  top: 0%;
+  background: #202e31;
+}
+.p_b_redes_s_otros{
+  position: relative;
+  left: 10%;
+  width: 80%;
+  display: flex;
+}
+.p_b_redes_s_otros div{
+  position: relative;
+  color: #fff;
+}
+.pb_redes_sociales{
+  left: 0%;
+  position: relative;
+  display: flex;
+}
+.pb_redes_sociales a{
+	position: relative;
+    text-decoration: none;
+    color: #fff;
+    left: -10px;
+    padding: 8px 3px;
+    opacity: .8;
+}
+.pb_redes_sociales span{
+	position: relative;
+}
+.pb_redes_sociales a:hover ,.pb_otros a:hover{
+	color: #fff;
+	opacity:1;
+}
+.pb_redes_sociales p{
+  position: relative;
+  font-weight: bold;
+  font-size: 12px;
+  margin: 0;
+  top: 10px;
+  opacity: .8;
+}
+#pb_otros{
+  position: absolute;
+  right: 0%;
+  display: flex;
+}
+.pb_otros a{
+	text-decoration: none;
+	color: #fff;
+	opacity: .8;
+}
+.pb_otros p{
+  top: 1px;
+  position: relative;
+  margin: 0;
+  right: -8px;
+  padding: 8px 8px;
+  font-size: 12px;
+}
+/*--------------------------------------------------------------------------------CABESERA---------------------------------------------*/
+.padre_cabesera{
+	position: relative;
+    left: 0%;
+    top: auto;
+    width: 80%;
+    height: 5em;
+    display: flex;
+    margin: 0% 10%;
+}
+.padre_logo{
+	position: relative;
+	left: 0%;
+	width: 20%;
+}
+.padre_logo img{
+	width: auto;
+	position: relative;
+	left: 0%;
+	height: 100%;
+}
+.padre_menu{
+	position: relative;
+	width: 80%;
+}
+.padre_menu a{
+	top: 40%;
+	left: 11%;
+	padding: 0px 7px;
+    font-weight: bold;
+    position: relative;
+    color: #202e3187;
+    text-decoration: none;
+    font-size: 17px;
+    text-transform: capitalize;
+}
+/*----------------------------------------------------------INICIO-----------------------------------------------------------*/
+
+
+/*-----------------------------------------slider--------------------------------------*/
+.padre_slider{
+  position: relative;
+  width: 100%;
+  height: 25em;
+  background: #fff;
+  margin: auto;
+  overflow: hidden;
+}
+.padre_slider ul{
+  display: flex;
+  padding: 0%;
+  margin: 0;
+  height: 100%;
+  width: 400%;
+  animation: cambio 20s infinite alternate;
+  animation-timing-function: ease-in;
+}
+.padre_slider li{
+  position: relative;
+  width: 100%;
+  list-style: none;
+  display: flex;
+}
+/*
+.padre_slider span{
+  position: absolute;
+}
+.padre_slider h1{
+    color: #fff;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 60px;
+    font-family: Arial;
+    border-width: 0px;
+    border-style: none;
+    position: absolute;
+    text-shadow: 0px 2px 5px rgba(0,0,0,0.5);
+    white-space: nowrap;
+    letter-spacing: -2px;
+}*/
+.padre_slider img{
+  width: 100%;
+  height: 100%;
+}
+@keyframes cambio{
+  0%{margin-left: 0;}
+  1% { -webkit-transform:none;}
+  20%{margin-left: 0;}
+  
+
+  25%{margin-left: -100%;}
+  45%{margin-left: -100%;}
+
+  50%{margin-left: -200%;}
+
+  70%{margin-left: -200%;}
+
+
+  75%{margin-left: -300%;}
+  100%{margin-left: -300%;}
+}

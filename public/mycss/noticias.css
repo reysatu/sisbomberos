@@ -1,0 +1,321 @@
+section	{
+margin: 0px;
+padding: 0px;
+background-color: #f8f8f8;
+display: flex;
+justify-content: center;
+/*  background-image: url('../../public/img/noticia/fondo.jpg');*/
+
+
+}
+.contenedor{
+	border-radius: 2px;
+	width: 100%;
+	background-color: #f8f8f8;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+
+}
+
+.noticia_principal{
+	width: 80%;
+	background-color: #f8f8f8;
+	display: flex;
+	height: 45%;
+	 box-shadow: 0 8px 6px -6px #999;
+}
+
+
+.list-noticias{
+	
+	display: flex;
+	height: 55%;
+	width: 80%;
+	align-items: center;
+	justify-content: center;
+
+flex-wrap: wrap;
+
+}
+
+.list-row{
+	   
+display: flex;
+width: 250px;
+margin: 25px;
+height: 350px;
+
+flex-direction: column;
+border-radius: 6px;
+}
+
+.principal-img{
+display: flex;
+width: 100%;
+height: 50%;
+
+}
+
+.principal-text{
+	height: 50%;
+ 
+}
+
+.principal-text h2 a{
+	color: #252B71;
+	font-size: 30px;
+	font-family: "Arial Black", Gadget, sans-serif;
+}
+
+.principal-text p{
+	color: #606066;
+	font-size: 20px;
+	font-family: "sf_pro_display",Helvetica,Arial,sans-serif;
+}
+
+
+.principal-img img{
+	width: 100%;
+	height: 100%;
+}
+.secundario-img img{
+	width: 100%;
+	height: 200px;
+}
+
+
+/*--------------------------------------------------*/
+
+
+
+
+.list-img img{
+	width: 99%;
+	height: 200px;
+}
+
+.noticia-row1{
+	
+	display: flex;
+	width: 55%;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: left;
+
+}
+
+.noticia-row2{
+	display: flex;
+	height: 700px;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: left;
+	margin-left: 20px;
+	width: 45%;
+	
+}
+
+.principal-text a{
+
+	text-decoration: none;
+}
+.principal-text a:hover {
+  text-decoration: underline;
+}
+
+.secundario-img{
+
+display: flex;
+width: 100%;
+height: 28%;
+
+
+}
+
+.secundario-text{
+	height: 72%;
+ 
+}
+.secundario-text h2 a{
+	color: #252B71;
+	font-size: 20px;
+	font-family: "Arial Black", Gadget, sans-serif;
+}
+
+.secundario-text a{
+	color: black;
+	text-decoration: none;
+}
+.secundario-text p{
+	color: #606066;
+	
+}
+.secundario-text a:hover {
+  text-decoration: underline;
+}
+
+
+
+.list-img{
+	display: flex;
+	margin-top: 1px;
+	align-items: center;
+	justify-content: center;
+
+	
+}
+.list-cuerpo{
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.list-cuerpo h2{
+	
+
+	color:black;
+	margin-left: 12px;
+	font-size: 16px;
+	font-family: "Roboto", Sans-serif;
+}
+
+.list-link{
+	border-bottom-left-radius:6px;
+	border-bottom-right-radius:6px;
+	width: 100%;
+	height: 50px;
+	background: #01aced;
+	display: flex;
+	justify-content: left;
+	align-items: center;
+
+}
+.list-link button{
+	margin-left: 30px;
+	text-decoration: none;
+    padding: 7px;
+ 	font-size: 13px;
+    color: 	#60659C;
+    background-color: white;
+    border-radius: 3px;
+    border: 1px solid 	#60659C;
+    cursor: pointer;
+}
+
+
+.list-link button:hover{
+
+ border: 1px solid 	#60659C;
+    color: white;
+    background-color: #60659C;
+    transition: 0.5s;
+}
+
+.boton{
+
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.boton button:active {
+	border: 1px solid red;
+}
+.boton button {
+ text-decoration: none;
+ padding: 7px 30px;
+  border: 1px solid 	#60659C;
+    color: white;
+    background-color: #60659C;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+/*  fin */
+/* responsive */
+
+@media screen and (max-width:1150px) {
+
+.noticia_principal{
+	
+	height: 30%;
+	
+}
+
+
+.list-noticias{
+	
+	
+	height: 70%;
+	
+	
+
+
+}
+	
+  .principal-img{
+height: 45%;/*cambio*/
+ transition: all 0.3s ease-out;
+
+}
+.principal-text{
+	height: 55%;/*cambio*/
+	 transition: all 0.3s ease-out;
+}
+.principal-text h2 a{	
+	font-size: 25px;/*cambio*/
+	 transition: all 0.3s ease-out; 
+}
+.principal-text p{
+		font-size: 16px;/*cambio*/
+	 transition: all 0.3s ease-out;
+	
+}
+
+}
+
+@media screen and (max-width:674px) { 
+
+.noticia_principal{
+	
+	height: 22%;
+	
+}
+
+
+.list-noticias{
+	
+	
+	height: 78%;
+	
+	
+
+
+}
+.principal-img{
+height: 30%;/*cambio*/
+ transition: all 0.3s ease-out;
+
+}
+.principal-text{
+	height: 70%;/*cambio*/
+	 transition: all 0.3s ease-out;
+}
+.principal-text h2 a{	
+	font-size: 25px;/*cambio*/
+	 transition: all 0.3s ease-out; 
+}
+.principal-text p{
+		font-size: 16px;/*cambio*/
+	 transition: all 0.3s ease-out;
+	
+}
+}
