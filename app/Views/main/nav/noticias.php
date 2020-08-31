@@ -1,3 +1,8 @@
+<style type="text/css">
+    #noticias_in{
+     color:#fdc236;
+    } 
+</style>
 <section class="padre_intro">
 	<h1>Noticias de la semana</h1>
 	<h3>Bomberos voluntarios de Perú <br> Tarapoto - Perú</h3>

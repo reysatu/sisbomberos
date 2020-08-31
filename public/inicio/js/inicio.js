@@ -10,11 +10,11 @@ window.onscroll=function () {
 		var a4 = document.getElementById("padre_llamar_r");
 		var a5 = document.getElementById("padre_logo_img");
 		a0.style.cssText= "position: fixed;top:0%;height: 4em;transition: all 0.3s ease-out;";
-		a1.style.cssText= "padding-top: 2%;";
+		a1.style.cssText= "padding-top: 1.9%;";
 		a2.style.cssText= "padding-top: 6px;";
 		a3.style.cssText= "top: 27%; padding: 13px 20px;";
 		a4.style.cssText= "padding-top: 4px;";
-		a5.style.cssText= " width: 40%; left:10%;";
+		a5.style.cssText= " width: 35%; left:10%; height:85%";
 
 	}
 	if (u_a<50) {

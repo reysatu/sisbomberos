@@ -1,3 +1,8 @@
+<style type="text/css">
+    #nosotros_in{
+     color:#fdc236;
+    } 
+</style>
 <section class="padre_intro">
 	<h1>NOSOTROS</h1>
 	<h3>Bomberos voluntarios de Perú <br> Tarapoto - Perú</h3>

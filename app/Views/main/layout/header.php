@@ -35,9 +35,9 @@
       <img  id="padre_logo_img" src="<?php echo base_url();?>/public/inicio/img/logo_2.png">
     </div>
     <div class="padre_menu" id="padre_menu">
-      <a href="<?php echo base_url();?>/Inicio">Inicio</a>
-      <a href="<?php echo base_url();?>/Nosotros">Nosotros</a>
-      <a href="<?php echo base_url();?>/Noticias">noticias</a>
+      <a href="<?php echo base_url();?>/Inicio" id="inicio_in" >Inicio</a>
+      <a href="<?php echo base_url();?>/Nosotros" id="nosotros_in" >Nosotros</a>
+      <a href="<?php echo base_url();?>/Noticias" id="noticias_in">noticias</a>
       <a href="#">convocatorias</a>
       <a href="#">patronato</a>
       <a href="#">contacto</a>
