@@ -23,7 +23,7 @@
         <p>   <span class="icon-tablet_android"></span> (+51) (042) 52 5540 | bomberos@gmail.com</p>
       </div>
       <div class="pb_otros" id="pb_otros">
-          <a href="<?php echo base_url();?>/Admin"><p>Control Interno</p></a>
+          <a href="<?php echo base_url();?>/LoginAdmin"><p>Control Interno</p></a>
           <a href="#"><p>Tienda</p></a>
           <a href="#"><p>Intranet</p></a>
       </div>
