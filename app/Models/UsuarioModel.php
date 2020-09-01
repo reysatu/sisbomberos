@@ -7,22 +7,22 @@ class UsuarioModel extends Model
     protected $table      = 'usuario';
     protected $primaryKey = 'idusuario';
 
-    //protected $returnType     = 'objet';
-    //protected $useSoftDeletes = true;
+    protected $returnType     = 'objet';
+    protected $useSoftDeletes = true;
 
-    //protected $allowedFields = ['idusuario','idperfil','nombre','dni','idperfil','email'];
+    protected $allowedFields = ['idusuario','idperfil','apellido','dni','nombre','dni','idperfil','email','user','pass'];
 
-   // protected $useTimestamps = false;
-   // protected $createdField  = 'created_at';
-    //protected $updatedField  = 'updated_at';
-    //protected $deletedField  = 'deleted_at';
+   protected $useTimestamps = true;
+   protected $createdField  = 'created_at';
+    protected $updatedField  = 'updated_at';
+    protected $deletedField  = 'deleted_at';
 
-    //protected $validationRules    = [];
-    //protected $validationMessages = [];
-    //protected $skipValidation     = false;
+    protected $validationRules    = [];
+    protected $validationMessages = [];
+    protected $skipValidation     = false;
     public function buscarusuario(){
        $db=db_connect();
-      $query= $db->query('SELECT * FROM usuario INNER JOIN perfil ON usuario.idperfil=perfil.idperfil;');
+      $query= $db->query('SELECT * FROM usuario INNER JOIN perfil ON usuario.idperfil=perfil.idperfil and usuario.deleted_at is null;');
         $results =$query->getResult();
        return $results;
     }
@@ -34,7 +34,7 @@ class UsuarioModel extends Model
     }
     public function Busuario($id){
        $db=db_connect();
-      $query= $db->query('SELECT * FROM usuario INNER JOIN perfil ON usuario.idperfil=perfil.idperfil where usuario.idusuario="'.$id.'" ');
+      $query= $db->query('SELECT usuario.* , perfil.descripcion as descripcion,perfil.idperfil as idperfil FROM usuario INNER JOIN perfil ON usuario.idperfil=perfil.idperfil where usuario.idusuario="'.$id.'" ');
         return $row = $query->getRow();
     }
 }

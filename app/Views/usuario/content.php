@@ -38,7 +38,7 @@
                     <td ><?php echo $linea->dni ?></td>
                     <td><?php echo $linea->email; ?></td>
                     <td><a href="<?php echo base_url();?>/Usuario/viwagregar?id=<?php echo $linea->idusuario?>" class="btn btn btn-primary btn-sm active" role="button" aria-pressed="true"> editar</a>
-                        <a href="#" class="btn btn btn-danger btn-sm active" role="button" aria-pressed="true">Eliminar</a>
+                        <a href="<?php echo base_url();?>/Usuario/delete?id=<?php echo $linea->idusuario?>" class="btn btn btn-danger btn-sm active" role="button" aria-pressed="true">Eliminar</a>
                     </td>
                     
               <?php endforeach; ?>               
