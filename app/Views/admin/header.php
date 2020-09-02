@@ -18,5 +18,10 @@
   <!-- Select2 -->
   <link rel="stylesheet" href="<?php echo base_url();?>/public/admin/plugins/select2/css/select2.min.css">
   <link rel="stylesheet" href="<?php echo base_url();?>/public/admin/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
+
+  <!-- ----------------------------------------------------alertas---------------------------------------------------- -->
+    <link rel="stylesheet" href="<?php echo base_url()?>assets/alertifyJS/css/themes/semantic.min.css">
+    <link rel="stylesheet" href="<?php echo base_url()?>assets/alertifyJS/css/alertify.min.css">
+    <script  src="<?php echo base_url()?>assets/alertifyJS/alertify.min.js"></script>
 </head>
 <body class="hold-transition sidebar-mini">
