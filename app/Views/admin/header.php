@@ -20,8 +20,12 @@
   <link rel="stylesheet" href="<?php echo base_url();?>/public/admin/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
 
   <!-- ----------------------------------------------------alertas---------------------------------------------------- -->
-    <link rel="stylesheet" href="<?php echo base_url()?>assets/alertifyJS/css/themes/semantic.min.css">
-    <link rel="stylesheet" href="<?php echo base_url()?>assets/alertifyJS/css/alertify.min.css">
-    <script  src="<?php echo base_url()?>assets/alertifyJS/alertify.min.js"></script>
+  <script type="text/javascript">
+    var BASE_URL = "<?php echo base_url();?>";
+</script>
+    <link rel="stylesheet" href="<?php echo base_url()?>/public/alertifyJS/css/themes/semantic.min.css">
+    <link rel="stylesheet" href="<?php echo base_url()?>/public/alertifyJS/css/alertify.min.css">
+    <script  src="<?php echo base_url()?>/public/alertifyJS/alertify.min.js"></script>
+    <script > base_url="http://localhost/sisbomberos"</script>
 </head>
 <body class="hold-transition sidebar-mini">

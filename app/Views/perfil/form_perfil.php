@@ -25,14 +25,14 @@
                   <div class="form-group row">
                     <label for="inputEmail3" class="col-sm-2 col-form-label">Perfil</label>
                     <div class="col-sm-10">
-                      <input type="text" class="form-control" value="<?php echo $perfil?>" name="perfil" id="perfil" placeholder="Nombre">
+                      <input type="text" class="form-control" value="<?php echo $perfil?>" name="perfil" id="perfil" placeholder="Perfil" required>
                     </div>
 
                   </div> 
                    <div class="form-group row">
                     <label for="inputEmail3" class="col-sm-2 col-form-label">Módulos</label>
                     <div class="col-sm-10 select2-primary">
-                      <select class="select2 " multiple="multiple" data-placeholder="Modulos" name="modulos[]" style="width: 100%;">
+                      <select class="select2 " multiple="multiple" data-placeholder="Modulos" name="modulos[]" style="width: 100%;" required>
                           <option></option>
                           <?php $c=false ?>
                           <?php foreach ($modulos as $linea):?>

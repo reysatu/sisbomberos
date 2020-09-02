@@ -52,6 +52,7 @@ class Modulo extends BaseController
 				$moduloModel->insert($data);
 				$primary_key=$moduloModel->recogerid();
 				$this->addSubModulos($post_array, $primary_key);
+				return redirect()->to(site_url("Modulo"));
 			}else{
 				$data2=array("descripcion"=>$request->getPost("modulo"),
 							"padre"=>0,
@@ -60,7 +61,7 @@ class Modulo extends BaseController
 				$moduloModel->save($data2);
 				$moduloModel->delete_submodulos($id);
 				$this->addSubModulos($post_array, intval($id));
-				
+				return redirect()->to(site_url("Modulo"));
 			}
 
 			

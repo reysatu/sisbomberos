@@ -62,6 +62,7 @@ class Perfil extends BaseController
 				$PerfilModel->insert($data);
 				$primary_key=$PerfilModel->recogerid();
 				$this->addpermisos($post_array, $primary_key);
+				return redirect()->to(site_url("Perfil"));
 			}else{
 				/**/
 				$data2=array("descripcion"=>$request->getPost("perfil"),
@@ -70,6 +71,7 @@ class Perfil extends BaseController
 
 				$PermisosModel->where('idperfil',$id)->delete();
 				$this->addpermisos($post_array, intval($id));
+				return redirect()->to(site_url("Perfil"));
 			}
 		}
 
@@ -79,6 +81,7 @@ class Perfil extends BaseController
 				$data=array("idperfil"=>$primary_key,
 							"idmodulo"=>$post_array[$i]);
 				$PermisosModel->insert($data);
+
 			}
 		}
 		public function delete(){

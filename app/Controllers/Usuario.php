@@ -56,8 +56,10 @@ class Usuario extends BaseController
 						"idusuario"=>$request->getPost("idusuario"),);
 			if($id==""){
 				$usuario->insert($data);
+				return redirect()->to(site_url("Usuario"));
 			}else{
 				$usuario->save($data);
+				return redirect()->to(site_url("Usuario"));
 			}
 			
 	}

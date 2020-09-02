@@ -14,6 +14,7 @@
   <!-- /.control-sidebar -->
 </div>
 <!-- ./wrapper -->
+
 <!-- jQuery -->
 <script src="<?php echo base_url();?>/public/admin/plugins/jquery/jquery.min.js"></script>
 <!-- Bootstrap 4 -->
@@ -47,5 +48,6 @@
     });
   });
 </script>
+<script >alertify.alert().setting('modal', false);</script>
 </body>
 </html>
