@@ -3,46 +3,50 @@
      color:#fdc236;
     } 
 </style>
-<div class="padre_slider">
-   
-    <ul>
-        <li> 
-            <div class="s_fraces">
-                <h1>VIVE UNA EXPERIENCA ÚNICA</h1>
-                <h6>APUNTATE DE UNA VEZ Y SE PARTE DE NOSOTROS</h6>
-                <br><br>
-                <a href="#">Registrarse</a>
-            </div>
+<div class="padre_slider" id="padre_slider">
+     <div id="slider" class="slider">
+        <li class="slider__section">
             <img src="<?php echo base_url();?>/public/inicio/img/slider/1.jpg">
-        </li>
-        <li>
             <div class="s_fraces">
-                <h1>VIVE UNA EXPERIENCA ÚNICA</h1> 
+                <h1>VIVE UNA EXPERIENCIA ÚNICA</h1>
                 <h6>APUNTATE DE UNA VEZ Y SE PARTE DE NOSOTROS</h6>
                 <br><br>
                 <a href="#">Registrarse</a>
             </div>
+            
+        </li>
+        <li class="slider__section">
             <img src="<?php echo base_url();?>/public/inicio/img/slider/2.jpg">
-        </li>
-        <li>
             <div class="s_fraces">
-                <h1>VIVE UNA EXPERIENCA ÚNICA</h1>
+                <h1>VIVE UNA EXPERIENCIA ÚNICA</h1>
                 <h6>APUNTATE DE UNA VEZ Y SE PARTE DE NOSOTROS</h6>
                 <br><br>
                 <a href="#">Registrarse</a>
             </div>
-            <img src="<?php echo base_url();?>/public/inicio/img/slider/3.jpg">
+           
         </li>
-        <li>
+        <li class="slider__section">
             <div class="s_fraces">
-                <h1>VIVE UNA EXPERIENCA ÚNICA</h1>
+                <h1>VIVE UNA EXPERIENCIA ÚNICA</h1>
                 <h6>APUNTATE DE UNA VEZ Y SE PARTE DE NOSOTROS</h6>
                 <br><br>
                 <a href="#">Registrarse</a>
             </div>
-            <img src="<?php echo base_url();?>/public/inicio/img/slider/4.jpg">
+             <img src="<?php echo base_url();?>/public/inicio/img/slider/3.jpg">
         </li>
-    </ul>
+        <li class="slider__section">
+            <div class="s_fraces">
+                <h1>VIVE UNA EXPERIENCIA ÚNICA</h1>
+                <h6>APUNTATE DE UNA VEZ Y SE PARTE DE NOSOTROS</h6>
+                <br><br>
+                <a href="#">Registrarse</a>
+            </div>
+             <img src="<?php echo base_url();?>/public/inicio/img/slider/4.jpg">
+        </li>
+      </div>
+      <span id="btn-prev" class="btn-prev"><</span>
+      <span id="btn-next" class="btn-next">></span>
+    
 </div>
 <br><br><br><br><br>
 <div class="padre_noticias_in">

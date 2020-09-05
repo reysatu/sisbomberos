@@ -255,7 +255,7 @@ label{
   top: 0em;
   position: relative;
   width: 100%;
-  height: 35em;
+  height: 33em;
   background: #202e31;
   margin: auto;
   overflow: hidden;
@@ -263,12 +263,34 @@ label{
 .s_fraces{
 	position: absolute;
 	left: 0%;
-	width: 100%;
-	height: 100%;
+	width: auto;
+	height: auto;
 	top: 0%;
-    color: #fff;
-    margin: 15% 6%;
-    z-index: 10;
+  color: #fff;
+  margin: 13% 6%;
+  z-index: 10;
+}
+.padre_slider span{
+    position: absolute;
+    top: 0%;
+    font-family: monospace;
+    z-index: -1;
+    margin: 14% 0%;
+    border-radius: 2px;
+    font-size: 30px;
+    padding: 50px 10px;
+    color: #202e3100;
+    background: #202e3100;
+    cursor: pointer;
+}
+#btn-next{
+  right: 0;
+}
+.padre_slider:hover span{
+  z-index:10;
+  color: #fff;
+  background: #ffffff2e;
+  transition: all 1s;
 }
 .s_fraces h1{
 	margin: 1% 0%;
@@ -285,26 +307,25 @@ label{
 	font-size: 20px;
 }
 .s_fraces a{
-	margin: 0;
-	left: 2%;
-	position: relative;
+	 margin: 0;
+	 left: 2%;
+	 position: relative;
     border-radius: 2px;
     padding: 17px 40px;
+        border-bottom-style: double;
     color: #fff;
     box-shadow: 1px 1px 1px 1px #fff;
     background: #c0392b;
     text-decoration: none;
     cursor: pointer;
  }
-.padre_slider ul{
+.slider{
   display: flex;
   position: relative;
   padding: 0%;
   margin: 0;
   height: 100%;
   width: 400%;
-  animation: cambio 25s infinite alternate;
-  animation-timing-function: ease-in;
 }
 .padre_slider li{
   position: relative;
@@ -313,28 +334,22 @@ label{
   display: flex;
 }
 .padre_slider img{
-	top: -2em;
+	top: 0em;
 	position: relative;
- 	opacity: 0.6;
+ 	opacity: 0.8;
   width: 100%;
   height: 130%;
+  animation: cambio 10s infinite alternate;
+  animation-timing-function: ease-in;
 }
 @keyframes cambio{
   
-20% { -webkit-transform:translateY(2em);}
-  25%{margin-left: 0;}
+0% { -webkit-transform:translateY(-3em);}
+ 
+50% { -webkit-transform:translateY(0em);}
 
-  30%{margin-left: -100%;}
-40% { -webkit-transform:translateY(0em);}
-  55%{margin-left: -100%;}
-60% { -webkit-transform:translateY(2em);}
-  60%{margin-left: -200%;}
-80% { -webkit-transform:translateY(0em);}
-  85%{margin-left: -200%;}
-  90%{margin-left: -300%;}
+100% { -webkit-transform:translateY(-3em);}
 
-100% { -webkit-transform:translateY(2em);}
-  100%{margin-left: -300%;}
 }
 
 /*--------------------------------------ACCESO RAPIDO--------------------------------------------------------------------*/

@@ -10,9 +10,16 @@
   <link rel="stylesheet" href="<?php echo base_url();?>/public/icomon/icomoon_2/style.css">
   <link rel="stylesheet" href="<?php echo base_url();?>/public/inicio/css/inicio.css">
   <link rel="stylesheet" href="<?php echo base_url();?>/public/nosotros/css/nosotros.css">
- <link rel="stylesheet" href="<?php echo base_url();?>/public/mycss/noticias.css">
-<link rel="stylesheet" href="<?php echo base_url();?>/public/mycss/footer.css">
-<link rel="stylesheet"  href="<?php echo base_url();?>/public/font_awesome/css/all.min.css">
+  <link rel="stylesheet" href="<?php echo base_url();?>/public/mycss/noticias.css">
+  <link rel="stylesheet" href="<?php echo base_url();?>/public/mycss/footer.css">
+  <link rel="stylesheet"  href="<?php echo base_url();?>/public/font_awesome/css/all.min.css">
+
+    <script src="<?php echo base_url();?>/public/js/AJAS/funciones.js"></script>
+    <script src="<?php echo base_url();?>/public/alertifyJS/alertify.min.js"></script>
+   <script src="<?php echo base_url();?>/public/js/jquery.js"></script>
+   <script src="<?php echo base_url();?>/public/js/scri.js"></script>
+   <script src="<?php echo base_url();?>/public/js/bootstrap.min.js"></script>
+
 </head>
 <body>
 <div class="padre_barra">
