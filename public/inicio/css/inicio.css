@@ -543,8 +543,8 @@ label{
 }
 .padre_a_p_noti_i label,.padre_a_p_noti_i p{
     position: relative;
-    left: 5%;
-    width: 90%;
+    left: 2%;
+    width: 96%;
     text-align: left;
     overflow: hidden;
     cursor: pointer;

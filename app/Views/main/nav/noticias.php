@@ -1,3 +1,7 @@
+ <?php 
+    $paginas = $total_n/$n_x_pagina;
+    $paginas=ceil($paginas);
+?>
 <style type="text/css">
     #noticias_in{
      color:#fdc236;
@@ -5,20 +9,20 @@
 </style>
 <section class="padre_intro">
 	<h1>Noticias de la semana</h1>
-	<h3>Bomberos voluntarios de Perú <br> Tarapoto - Perú</h3>
+	<h3>Bomberos voluntarios del Perú <br> Tarapoto - Perú</h3>
 	<img  src="<?php echo base_url();?>/public/img/fondo.jpg">
 </section>
 <br><br><br>
-<div class="auto_container">
+<div class="auto_container"> 
         <ul class="breadcrumb"><li><a href="#">Home</a></li><li>Noticias</li></ul>
 </div>
 <br><br>
-<section>
-	<div class="contenedor">
+<div class="padre_cont_noticias">
+	<div class="contenedor_noticias">
 		<div class="noticia_principal">
 			<div class="noticia-row1">
 				<div class="principal-img">
-					<a href=""><img src="<?php echo base_url();?>/public/img/noticia/IMG-20191111-WA0107.jpg" alt="" ></a>
+					<a href=""><img src="<?php echo base_url();?>/public/img/noticia/1.jpg" alt="" ></a>
 				</div>
 				<div class="principal-text">
 					<h2> <a href="">Bomberos refuerzan su capacidad operativa con cinco vehículos de emergencia</a></h2>
@@ -36,64 +40,43 @@
 			</div>
 
 		</div>
-		<br><br>
-		<div class="list-noticias">
-			<div class="list-row">
-				<div class="list-img">
-					<img src="<?php echo base_url();?>/public/img/noticia/2L7A4878.jpg">
-				</div>
-				<div class="list-cuerpo">
-					<h2>Bomberos refuerzan su capacidad operativa con cinco vehículos de emergencia</h2>
-				</div>
-				<div class="list-link">
-					<button class="button button1">Leer más </button>
-				</div>
-			</div>
-			<div class="list-row">
-				<div class="list-img">
-					<img src="<?php echo base_url();?>/public/img/noticia/2L7A4878.jpg"></div>
-				<div class="list-cuerpo"><h2>Bomberos refuerzan su capacidad operativa con cinco vehículos de emergencia</h2>
-				</div>
-				<div class="list-link"><button class="button button1">Leer más </button></div>
-			</div>
-			<div class="list-row">
-				<div class="list-img"><img src="<?php echo base_url();?>/public/img/noticia/2L7A4878.jpg"></a>
-				</div>
-				<div class="list-cuerpo"><h2>Bomberos refuerzan su capacidad operativa con cinco vehículos de emergencia</h2>
-				</div>
-				<div class="list-link"><button class="button button1">Leer más </button></div>
-			</div>
-			<div class="list-row">
-				<div class="list-img">
-					<img src="<?php echo base_url();?>/public/img/noticia/2L7A4878.jpg">
-				</div>
-				<div class="list-cuerpo">
-					<h2>Bomberos refuerzan su capacidad operativa con cinco vehículos de emergencia</h2>
-				</div>
-				<div class="list-link">
-					<button class="button button1">Leer más </button>
-				</div>
-			</div>
-			<div class="list-row">
-				<div class="list-img">
-					<img src="<?php echo base_url();?>/public/img/noticia/2L7A4878.jpg"></div>
-				<div class="list-cuerpo"><h2>Bomberos refuerzan su capacidad operativa con cinco vehículos de emergencia</h2>
-				</div>
-				<div class="list-link"><button class="button button1">Leer más </button></div>
-			</div>
-			<div class="list-row">
-				<div class="list-img"><img src="<?php echo base_url();?>/public/img/noticia/2L7A4878.jpg"></a>
-				</div>
-				<div class="list-cuerpo"><h2>Bomberos refuerzan su capacidad operativa con cinco vehículos de emergencia</h2>
-				</div>
-				<div class="list-link"><button class="button button1">Leer más </button></div>
-			</div>
-		</div>
-		<br>
-		<div class="boton">
-			<button class="button button1"><i class="fas fa-angle-double-left"></i>Anterior </button></div>
-		</div>
 	</div>
-</section>
+</div>
+<div class="padre_noticias">
+    <div class="padre_contenido_not">
+    	<?php foreach ($noticias as $fila):?>
+        <div>
+            <a href="#">
+                <span>+</span>
+                <img src="<?php echo base_url();?>/public/img/noticia/<?php echo $fila->Nombre_Foto;?>">
+                 <section class="padre_a_p_noti_i">
+                    <a href="#">
+                        <label><?php echo $fila->Titulo;?></label>
+                        <p><?php echo $fila->Descripcion;?></p>
+                    </a>
+                </section>
+                <h6><?php echo $fila->Fecha;?></h6>
+            </a>
+        </div>
+        <?php endforeach?>
+    </div>
+    <br><br>
+</div>
+<br><br><br>
+<div class="paginacion">
+   
+    <a class="paginacion_a <?php  echo $_GET['pagina']<=1? 'disable':''?>" href="<?php echo base_url();?>/Noticias?pagina=<?php echo $_GET['pagina']-1?>">
+          Anterior
+    </a>
 
+    <?php for ($i=0; $i < $paginas; $i++) :?>
+    <a class="paginacion_a <?php  echo $_GET['pagina']==$i+1? 'color_pagina':''?>" href="<?php echo base_url();?>/Noticias?pagina=<?php echo $i+1 ?>">
+          <?php echo $i+1; ?>
+    </a>
+    <?php endfor?>
 
+    <a class="paginacion_a <?php  echo $_GET['pagina']>=$paginas? 'disable':''?>" href="<?php echo base_url();?>/Noticias?pagina=<?php echo $_GET['pagina']+1?>">Siguiente
+    </a>
+
+</div>
+<br><br><br><br>

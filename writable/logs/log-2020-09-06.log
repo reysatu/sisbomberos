@@ -1,0 +1,8 @@
+CRITICAL - 2020-09-06 11:35:05 --> Undefined variable: animes_x_pagina
+#0 C:\xampp\htdocs\sisbomberos\app\Models\NoticiasModel.php(14): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 14, Array)
+#1 C:\xampp\htdocs\sisbomberos\app\Controllers\Noticias.php(19): App\Models\NoticiasModel->noticias(0, 6)
+#2 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Noticias->index()
+#3 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#4 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}

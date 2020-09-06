@@ -1,7 +1,7 @@
 <style type="text/css">
     #inicio_in{
      color:#fdc236;
-    } 
+    }  
 </style>
 <div class="padre_slider" id="padre_slider">
      <div id="slider" class="slider">
