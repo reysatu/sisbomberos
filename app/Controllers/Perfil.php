@@ -6,7 +6,9 @@ class Perfil extends BaseController
 {
 	public function index()
 	{	
-
+		if(!isset($_SESSION['login'])){
+				return redirect()->to(("LoginAdmin"));
+			};
 		$PerfilModel=new PerfilModel;
 		$data=array('perfil' => $PerfilModel->BuscarPerfil(),);
            echo view('admin/header.php');

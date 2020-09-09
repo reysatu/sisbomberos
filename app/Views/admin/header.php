@@ -18,7 +18,7 @@
   <!-- Select2 -->
   <link rel="stylesheet" href="<?php echo base_url();?>/public/admin/plugins/select2/css/select2.min.css">
   <link rel="stylesheet" href="<?php echo base_url();?>/public/admin/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
-
+<link rel="stylesheet" href="<?php echo base_url();?>/public/dropzone/dist/dropzone.css">
   <!-- ----------------------------------------------------alertas---------------------------------------------------- -->
   <script type="text/javascript">
     var BASE_URL = "<?php echo base_url();?>";
@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="<?php echo base_url()?>/public/alertifyJS/css/themes/semantic.min.css">
     <link rel="stylesheet" href="<?php echo base_url()?>/public/alertifyJS/css/alertify.min.css">
     <script  src="<?php echo base_url()?>/public/alertifyJS/alertify.min.js"></script>
-    <script > base_url="http://localhost/sisbomberos"</script>
+    
+     
 </head>
 <body class="hold-transition sidebar-mini">

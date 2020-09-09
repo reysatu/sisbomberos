@@ -56,10 +56,17 @@ class Usuario extends BaseController
 						"idusuario"=>$request->getPost("idusuario"),);
 			if($id==""){
 				$usuario->insert($data);
+				//$vista=view().view().view().view().view().view()
 				return redirect()->to(site_url("Usuario"));
 			}else{
-				$usuario->save($data);
-				return redirect()->to(site_url("Usuario"));
+				
+				if($usuario->update($id,$data)==false){
+					var_dump($usuario->errors());
+				}else{
+					$usuario->update($id,$data);
+				}
+
+				
 			}
 			
 	}
@@ -73,6 +80,9 @@ class Usuario extends BaseController
 	{		//$db = \Config\Database::connect();
 			//$query = $db->query('SELECT * FROM usuario'); 
 			//$data=array('results' => $query->getResult(), );
+		if(!isset($_SESSION['login'])){
+				return redirect()->to(("LoginAdmin"));
+			};
 		$usuario=new UsuarioModel;
 		$data=array('usuario' => $usuario->buscarusuario(),);
            echo view('admin/header.php');

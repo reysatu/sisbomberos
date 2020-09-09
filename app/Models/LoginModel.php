@@ -23,4 +23,14 @@ class LoginModel extends Model
         $results =$query->getResult();
         return $results;
     }
+    public function validarusuarioIntranet($username,$userpass){
+       $db=db_connect();
+      $query= $db->query("select * from usuario INNER join perfil on perfil.idperfil =usuario.idperfil where usuario.user='".$username."' and usuario.pass='".$userpass."' and perfil.descripcion='trabajador' ");
+         $row = $query->getRow();
+      if (isset($row)){
+         return $row = $query->getRow();}
+    else{
+        return false;
+      }
+    }
 }

@@ -3,7 +3,9 @@ use App\Models\ModuloModel;
 class Modulo extends BaseController
 {
 	public function index()
-	{ 
+	{ if(!isset($_SESSION['login'])){
+				return redirect()->to(("LoginAdmin"));
+			};
 			$moduloModel=new ModuloModel;
 			$data=array('modulo' => $moduloModel->BuscarModulo(),);
            echo view('admin/header.php');

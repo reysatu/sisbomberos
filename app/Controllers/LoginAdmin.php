@@ -37,6 +37,6 @@ class LoginAdmin extends BaseController
 	}
 	public function destroy (){
 		$this->session->destroy();
-		return redirect()->to(site_url("LoginAdmin"));
+		return redirect()->to(site_url());
 	}
 }

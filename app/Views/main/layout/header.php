@@ -19,7 +19,8 @@
    <script src="<?php echo base_url();?>/public/js/jquery.js"></script>
    <script src="<?php echo base_url();?>/public/js/scri.js"></script>
    <script src="<?php echo base_url();?>/public/js/bootstrap.min.js"></script>
-
+   <script src="<?php echo base_url();?>/public/js/bootstrap.min.js"></script>
+    <script src="<?php echo base_url();?>/public/dropzone/dis/dropzone.js"></script>
 </head>
 <body>
 <div class="padre_barra">
@@ -32,7 +33,7 @@
       <div class="pb_otros" id="pb_otros">
           <a href="<?php echo base_url();?>/LoginAdmin"><p>Control Interno</p></a>
           <a href="#"><p>Tienda</p></a>
-          <a href="#"><p>Intranet</p></a>
+          <a href="<?php echo base_url();?>/Intranet"><p>Intranet</p></a>
       </div>
     </div>
 </div>  
