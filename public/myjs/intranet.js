@@ -18,6 +18,7 @@ alertify.confirm('Eliminar','Seguro que quiere eliminar este registro',
 Dropzone.autoDiscover = false;
 $("#dropzonewidget").dropzone({
 	addRemoveLinks: true,
+   dictRemoveFile:"Eliminar",
     dictDefaultMessage: "Arrastrar o subir Archivo",
     renameFile:function (file) {
     let newName = new Date().getTime() + '_' + file.name;

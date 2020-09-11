@@ -38,7 +38,7 @@ public function getArchivo($id){
 
   public function getArchivoEnviado($idusuario){
         $db=db_connect();
-        $query= $db->query('select archivo.descripcion as descripcion, archivo.idarchivo as idarchivo from detallearchivo INNER JOIN archivo on detallearchivo.idarchivo=archivo.idarchivo where detallearchivo.idusuario="'.$idusuario.'" and detallearchivo.accion=1 and archivo.deleted_at is null');
+        $query= $db->query('select archivo.descripcion as descripcion, archivo.idarchivo as idarchivo from detallearchivo INNER JOIN archivo on detallearchivo.idarchivo=archivo.idarchivo where detallearchivo.idusuario="'.$idusuario.'" and archivo.identificador is null and archivo.deleted_at is null');
          $results =$query->getResult();
         return $results; 
     }

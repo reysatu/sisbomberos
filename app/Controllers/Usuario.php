@@ -57,6 +57,10 @@ class Usuario extends BaseController
 			if($id==""){
 				$usuario->insert($data);
 				//$vista=view().view().view().view().view().view()
+				$alert="<div class='card-body'><div class='alert alert-success' role='alert'>
+        					El Registro se ingresó con ÉXITO
+        				</div></div>";
+        				$this->session->setFlashdata('alert', $alert);
 				return redirect()->to(site_url("Usuario"));
 			}else{
 				
@@ -64,6 +68,12 @@ class Usuario extends BaseController
 					var_dump($usuario->errors());
 				}else{
 					$usuario->update($id,$data);
+					$alert="<div class='card-body'><div class='alert alert-success' role='alert'>
+        					El Registro se ingresó con ÉXITO
+        				</div></div>";
+        				$this->session->setFlashdata('alert', $alert);
+
+					return redirect()->to(site_url("Usuario"));
 				}
 
 				

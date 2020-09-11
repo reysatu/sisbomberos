@@ -64,6 +64,10 @@ class Perfil extends BaseController
 				$PerfilModel->insert($data);
 				$primary_key=$PerfilModel->recogerid();
 				$this->addpermisos($post_array, $primary_key);
+				$alert="<div class='card-body'><div class='alert alert-success' role='alert'>
+        					El Registro se ingresó con ÉXITO
+        				</div></div>";
+        				$this->session->setFlashdata('alert', $alert);
 				return redirect()->to(site_url("Perfil"));
 			}else{
 				/**/
@@ -73,6 +77,10 @@ class Perfil extends BaseController
 
 				$PermisosModel->where('idperfil',$id)->delete();
 				$this->addpermisos($post_array, intval($id));
+				$alert="<div class='card-body'><div class='alert alert-success' role='alert'>
+        					El Registro se ingresó con ÉXITO
+        				</div></div>";
+        				$this->session->setFlashdata('alert', $alert);
 				return redirect()->to(site_url("Perfil"));
 			}
 		}

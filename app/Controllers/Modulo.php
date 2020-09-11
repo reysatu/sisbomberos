@@ -54,6 +54,10 @@ class Modulo extends BaseController
 				$moduloModel->insert($data);
 				$primary_key=$moduloModel->recogerid();
 				$this->addSubModulos($post_array, $primary_key);
+				$alert="<div class='card-body'><div class='alert alert-success' role='alert'>
+        					El Registro se ingresó con ÉXITO
+        				</div></div>";
+        				$this->session->setFlashdata('alert', $alert);
 				return redirect()->to(site_url("Modulo"));
 			}else{
 				$data2=array("descripcion"=>$request->getPost("modulo"),
@@ -63,6 +67,10 @@ class Modulo extends BaseController
 				$moduloModel->save($data2);
 				$moduloModel->delete_submodulos($id);
 				$this->addSubModulos($post_array, intval($id));
+				$alert="<div class='card-body'><div class='alert alert-success' role='alert'>
+        					El Registro se ingresó con ÉXITO
+        				</div></div>";
+        				$this->session->setFlashdata('alert', $alert);
 				return redirect()->to(site_url("Modulo"));
 			}
 
