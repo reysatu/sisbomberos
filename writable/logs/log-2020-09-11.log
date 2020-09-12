@@ -1,0 +1,30 @@
+CRITICAL - 2020-09-11 12:59:16 --> Undefined variable: fila
+#0 C:\xampp\htdocs\sisbomberos\app\Views\main\nav\d_noticias.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 2, Array)
+#1 C:\xampp\htdocs\sisbomberos\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('main/nav/d_noti...', Array, true)
+#3 C:\xampp\htdocs\sisbomberos\app\Controllers\Noticias.php(31): view('main/nav/d_noti...', Array)
+#4 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Noticias->detalle_noticia()
+#5 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#6 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-11 13:00:08 --> Undefined variable: noticias
+#0 C:\xampp\htdocs\sisbomberos\app\Views\main\nav\d_noticias.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 2, Array)
+#1 C:\xampp\htdocs\sisbomberos\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('main/nav/d_noti...', Array, true)
+#3 C:\xampp\htdocs\sisbomberos\app\Controllers\Noticias.php(31): view('main/nav/d_noti...', Array)
+#4 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Noticias->detalle_noticia()
+#5 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#6 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-11 13:00:10 --> Undefined variable: noticias
+#0 C:\xampp\htdocs\sisbomberos\app\Views\main\nav\d_noticias.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 2, Array)
+#1 C:\xampp\htdocs\sisbomberos\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('main/nav/d_noti...', Array, true)
+#3 C:\xampp\htdocs\sisbomberos\app\Controllers\Noticias.php(31): view('main/nav/d_noti...', Array)
+#4 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Noticias->detalle_noticia()
+#5 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#6 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}

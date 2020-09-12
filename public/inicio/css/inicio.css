@@ -544,25 +544,26 @@ label{
 .padre_a_p_noti_i label,.padre_a_p_noti_i p{
     position: relative;
     left: 2%;
-    width: 96%;
+    width: 98%;
     text-align: left;
     overflow: hidden;
     cursor: pointer;
     display: -webkit-box;
 }
 .padre_a_p_noti_i label{
-    font-size: 17px;
+   font-size: 17px;
     color: #202e31e6;
     text-transform: inherit;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     letter-spacing: -1px;
-    word-spacing: 1px;
+    /* word-spacing: 1px; */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 .padre_a_p_noti_i p{
-    margin: 2px 0px;
-    letter-spacing: -1px;
-    word-spacing: 2px;
+   margin: 2px 0px;
+    letter-spacing: 0px;
+    /* word-spacing: 2px; */
     font-family: 'Poppins', sans-serif;
     height: 3em;
     -webkit-line-clamp: 3;
@@ -637,5 +638,38 @@ label{
       width: 100%;
       position: relative;
       text-align: center;
+    }
+/*-----------------------------------NOTICIAS---------------------------------------------------*/
+    #arriba_noticias{
+      display: block;
+    }
+    #noticia_1,#noticia_2{
+      left: 5%;
+     width: 90%;
+    }
+    #padre_noticias{
+      left: 5%;
+      width: 90%;
+    }
+    #padre_contenido_not_div{
+      width: 100%;
+    }
+/*-----------------------------------DETALLE NOTICIAS---------------------------------------------------*/
+    #padre_detalle_noticias_h1{
+      left: 5%;
+      width: 90%;
+    }
+    #detalle_not_otras_not{
+      display: block;
+      left: 5%;
+      width: 95%;
+    }
+    #detalle_not,#otras_not{
+      left: 0%;
+      width: 100%;
+    }
+    #otras_not{
+      padding-top: 10%;
+      width: 95%;
     }
 }

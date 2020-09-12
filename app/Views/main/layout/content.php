@@ -1,6 +1,6 @@
 <style type="text/css">
     #inicio_in{
-     color:#fdc236;
+     color:#fdc236; 
     }  
 </style>
 <div class="padre_slider" id="padre_slider">
@@ -54,71 +54,21 @@
     <p>Mantente Siempre Informado - Bomberos voluntarios del Perú</p>
     <br><br><br>
     <div class="padre_contenido_n_i">
+        <?php foreach ($ultimas_not as $fila):?>
         <div>
-            <a href="#">
+            <a href="<?php echo base_url();?>/Noticias/detalle_noticia?idn=<?php echo $fila->Id;?>">
                 <span>+</span>
-                <img src="<?php echo base_url();?>/public/img/noticia/IMG-20191111-WA0107.jpg">
+                <img src="<?php echo base_url();?>/public/img/noticia/<?php echo $fila->Nombre_Foto;?>">
                  <section class="padre_a_p_noti_i">
-                    <a href="#">
-                        <label>Bomberos refuerzan su capacidad operativa con cinco vehículos de emergencia</label>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Molestiae placeat amet velit aliquam adipisci labore, autem, neque quaerat aspernatur nihil ullam, dolor voluptatum. Quibusdam aliquam, est animi autem quisquam pariatur.</p>
+                    <a href="<?php echo base_url();?>/Noticias/detalle_noticia?idn=<?php echo $fila->Id;?>">
+                        <label><?php echo $fila->Titulo;?></label>
+                        <p><?php echo $fila->Descripcion;?></p>
                     </a>
                 </section>
-                <h6>26 agosto 2020</h6>
+                <h6><?php echo $fila->Fecha;?></h6>
             </a>
         </div>
-        <div>
-           <a href="#">
-                <span>+</span>
-                <img src="<?php echo base_url();?>/public/img/noticia/IMG-20191111-WA0109.jpg">
-                 <section class="padre_a_p_noti_i">
-                    <a href="#">
-                        <label>Bomberos refuerzan su capacidad operativa con cinco vehículos de emergencia</label>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Molestiae placeat amet velit aliquam adipisci labore, autem, neque quaerat aspernatur nihil ullam, dolor voluptatum. Quibusdam aliquam, est animi autem quisquam pariatur.</p>
-                    </a>
-                </section>
-                <h6>26 agosto 2020</h6>
-            </a>
-        </div>
-        <div>
-            <a href="#">
-                <span>+</span>
-                <img src="<?php echo base_url();?>/public/img/noticia/IMG-20191111-WA0107.jpg">
-                 <section class="padre_a_p_noti_i">
-                    <a href="#">
-                        <label>Bomberos refuerzan su capacidad operativa con cinco vehículos de emergencia</label>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Molestiae placeat amet velit aliquam adipisci labore, autem, neque quaerat aspernatur nihil ullam, dolor voluptatum. Quibusdam aliquam, est animi autem quisquam pariatur.</p>
-                    </a>
-                </section>
-                <h6>26 agosto 2020</h6>
-            </a>
-        </div>
-        <div>
-            <a href="#">
-                <span>+</span>
-                <img src="<?php echo base_url();?>/public/img/noticia/IMG-20191111-WA0107.jpg">
-                 <section class="padre_a_p_noti_i">
-                    <a href="#">
-                        <label>Bomberos refuerzan su capacidad operativa con cinco vehículos de emergencia</label>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Molestiae placeat amet velit aliquam adipisci labore, autem, neque quaerat aspernatur nihil ullam, dolor voluptatum. Quibusdam aliquam, est animi autem quisquam pariatur.</p>
-                    </a>
-                </section>
-                <h6>26 agosto 2020</h6>
-            </a>
-        </div>
-        <div>
-            <a href="#">
-                <span>+</span>
-                <img src="<?php echo base_url();?>/public/img/noticia/IMG-20191111-WA0107.jpg">
-                 <section class="padre_a_p_noti_i">
-                    <a href="#">
-                        <label>Bomberos refuerzan su capacidad operativa con cinco vehículos de emergencia</label>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Molestiae placeat amet velit aliquam adipisci labore, autem, neque quaerat aspernatur nihil ullam, dolor voluptatum. Quibusdam aliquam, est animi autem quisquam pariatur.</p>
-                    </a>
-                </section>
-                <h6>26 agosto 2020</h6>
-            </a>
-        </div>
+        <?php endforeach?>
     </div>
 </div>
 <div class="padre_acesos_r">
