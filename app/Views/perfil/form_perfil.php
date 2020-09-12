@@ -56,7 +56,7 @@
                 <!-- /.card-body -->
                 <div class="card-footer">
                   <button type="submit" class="btn btn-info">Registrar</button>
-                  <button type="submit" class="btn btn-default float-right">Cancelar</button>
+                  <button onclick="Cancelar();" class="btn btn-default float-right">Cancelar</button>
                 </div>
                 <!-- /.card-footer -->
               </form>

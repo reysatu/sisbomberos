@@ -11,7 +11,7 @@ class IntranetModel extends Model
     protected $returnType     = 'objet';
     protected $useSoftDeletes = true;
 
-    protected $allowedFields = ['idarchivo','descripcion','identificador'];
+    protected $allowedFields = ['idarchivo','descripcion','identificador',"accion"];
 
     protected $useTimestamps = true;
     protected $createdField  = 'created_at';
@@ -25,7 +25,7 @@ class IntranetModel extends Model
 
     public function getUsuario(){
       $db=db_connect();
-      $query= $db->query("select * from usuario INNER join perfil on perfil.idperfil =usuario.idperfil where perfil.descripcion='trabajador'");
+      $query= $db->query("select * from usuario INNER join perfil on perfil.idperfil =usuario.idperfil where perfil.descripcion='trabajador' and usuario.deleted_at is null");
         $results =$query->getResult();
         return $results;
     }

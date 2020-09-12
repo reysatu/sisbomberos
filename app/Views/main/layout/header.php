@@ -20,7 +20,7 @@
    <script src="<?php echo base_url();?>/public/js/scri.js"></script>
    <script src="<?php echo base_url();?>/public/js/bootstrap.min.js"></script>
    <script src="<?php echo base_url();?>/public/js/bootstrap.min.js"></script>
-    <script src="<?php echo base_url();?>/public/dropzone/dis/dropzone.js"></script>
+
 </head>
 <body>
 <div class="padre_barra">

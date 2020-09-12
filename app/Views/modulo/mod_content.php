@@ -11,8 +11,13 @@
         <div class="col-12">
           <div class="card">
             <div class="card-header">
-              <a class="btn btn-success" href="<?php echo base_url();?>/Modulo/viwagregar" role="button">Agregar +</a>
+              <a class="btn btn-info" href="<?php echo base_url();?>/Modulo/viwagregar" role="button">Agregar +</a>
             </div>
+
+          <?php if(!empty($_SESSION['alert'])){
+            echo($_SESSION['alert']);
+
+          }?>
             <!-- /.card-header -->
             <div class="card-body">
               <table id="example1" class="table table-bordered table-striped">

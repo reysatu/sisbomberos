@@ -1,3 +1,7 @@
+function Cancelar(){
+   alertify.error('Cancelado');
+   window.location.href=BASE_URL+"/Usuario";
+}
 
 function eliminar(id){
 

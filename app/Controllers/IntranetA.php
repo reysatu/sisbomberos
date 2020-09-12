@@ -1,6 +1,7 @@
 <?php namespace App\Controllers;
 use App\Models\IntranetModel;
 use App\Models\detalleArchivoModel;
+use App\Models\ArchivoModel;
 class IntranetA extends BaseController
 {	
 	public function __construct(){
@@ -10,10 +11,11 @@ class IntranetA extends BaseController
 	{ if(!isset($_SESSION['login'])){
 				return redirect()->to(("LoginAdmin"));
 			};
-			
+			$ArchivoModel=new ArchivoModel;
+			$data=array('archivo' => $ArchivoModel->getArchivoAdmin(),);
            echo view('admin/header.php');
            echo view('admin/menu.php');
-           echo view('intranetAD/content.php');
+           echo view('intranetAD/content.php',$data);
            echo view('admin/footer.php');
 	}
 	public function viwagregar(){
@@ -41,6 +43,8 @@ class IntranetA extends BaseController
 		$nombre=$request->getPostGet("name");
 		$tken=$request->getPostGet("tken");
 		$trabajador=$request->getPostGet("trabajador");
+		$tot=$request->getPostGet("checkArchivo");
+		echo($tot);
 		
 		if(isset($a)){ 
 			  $valor = 2;
@@ -52,7 +56,7 @@ class IntranetA extends BaseController
 				$nom= $img->getName();
 				$tken=$request->getPostGet("tken");
 				$data=array("descripcion"=>$nom,
-						"identificador"=>$tken);
+						"identificador"=>$tken,);
 				$IntranetModel->insert($data);
 				$img->move('./public/archivos');
 				exit;
@@ -68,6 +72,7 @@ class IntranetA extends BaseController
 		}
 		if($trabajador){
 			$archivos=$IntranetModel->getarchivos($tken);
+			$IntranetModel->where("identificador", $tken)->set(['accion' => 2])->update();
 			for ($i=0; $i <count($trabajador); $i++){
 				foreach ($archivos as $field){
 				 $data=array("idarchivo"=>$field->idarchivo,
@@ -75,10 +80,58 @@ class IntranetA extends BaseController
 					  $detalleArchivoModel->insert($data);
 				}
 			}
+			$alert="<div class='card-body'><div class='alert alert-success' role='alert'>
+        					Los archivos se enviaron con ÉXITO
+        				</div></div>";
+        				$this->session->setFlashdata('alert', $alert);
+			return redirect()->to(site_url("IntranetA"));
+		}
+		if ($tot) {
+			$archivos=$IntranetModel->getarchivos($tken);
+			$usuarios=$IntranetModel->getUsuario();
+			
+			$IntranetModel->where("identificador", $tken)->set(['accion' => 2])->update();
+			foreach ($usuarios as $value) {
+				foreach ($archivos as $field){
+					$data=array("idarchivo"=>$field->idarchivo,
+								"idusuario"=>$value->idusuario,);
+					  $detalleArchivoModel->insert($data);
+
+				}	
+			}
+			$alert="<div class='card-body'><div class='alert alert-success' role='alert'>
+        					Los archivos se enviaron con ÉXITO
+        				</div></div>";
+        				$this->session->setFlashdata('alert', $alert);
+			return redirect()->to(site_url("IntranetA"));
+			
 		}
 	}
 
 	//--------------------------------------------------------------------
-	
+	public function verGroup(){
+		$ArchivoModel=new ArchivoModel;
+		$request=\Config\Services::request();
+		$identificador=$request->getPostGet("inde");
+		$archivos=$ArchivoModel->getGroup($identificador);
+		echo json_encode($archivos);
+	}
+	public function deleteGroup(){
+		$ArchivoModel=new ArchivoModel;
+		$detalleArchivoModel=new detalleArchivoModel;
+		$request= \Config\Services::request();
+		$identificador=$request->getPostGet("identificador");
+		$archivos=$ArchivoModel->getGroup($identificador);
+		foreach ($archivos as $field)
+			{	
+         		$idarchivo=$field->idarchivo;
+         		$descripcion=$field->descripcion;
+      			$detalleArchivoModel->where('idarchivo', $idarchivo)->delete();
+      			$ArchivoModel->delete($idarchivo);
+      			$filename = './public/archivos/'.$descripcion;  
+  				unlink($filename); 
+			}
+		
+	}
 	
 }

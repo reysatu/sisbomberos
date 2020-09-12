@@ -15,20 +15,20 @@
             <!-- jquery validation -->
             <div class="card card-primary">
               <div class="card-header">
-                <h3 class="card-title">Registro Perfil <small></small></h3>
+                <h3 class="card-title">Envio de Archivos <small></small></h3>
               </div>
               <div class="card-body">
                   <form action="<?php echo base_url();?>/IntranetA/add" class="dropzone" id="dropzonewidget">
                </div>
               <!-- form start -->
-               <form class="form-horizontal" action="<?php echo base_url();?>/IntranetA/addArchivo" method="post">
+               <form class="form-horizontal" >
                 <input type="hidden" name="idmodulo" value="">
                 <input type="hidden" id="tken" name="tken"  value="<?php echo ($indicador)?>">
                 <div class="card-body">
                   <div class="form-group row">
                     <label for="inputEmail3" class="col-sm-2 col-form-label">Trabajadores</label>
                     <div class="col-sm-10 select2-primary">
-                      <select class="select2 " multiple="multiple" data-placeholder="trabajadores" id="trabajador[]" name="trabajador[]" style="width: 100%;" required>
+                      <select class="select2 trabajador" multiple="multiple" data-placeholder="trabajadores" id="trabajador[]" name="trabajador[]" style="width: 100%;"  >
                         <option value=""></option> 
                         <?php foreach ($trabajadores as $row):?>
                           
@@ -58,8 +58,8 @@
                 </div>
                 <!-- /.card-body -->
                 <div class="card-footer">
-                  <button type="submit" class="btn btn-info">Registrar</button>
-                  <button type="submit" class="btn btn-default float-right">Cancelar</button>
+                  <button onclick="EnviarArchivosAd();" class="btn btn-info">Registrar</button>
+                  <button onclick="Cancelar();" class="btn btn-default float-right">Cancelar</button>
                 </div>
                 <!-- /.card-footer -->
               </form>

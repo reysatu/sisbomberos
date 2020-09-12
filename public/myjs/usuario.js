@@ -15,3 +15,7 @@ alertify.confirm('Eliminar','Seguro que quiere eliminar este registro',
 					 }
                 , function(){ alertify.error('Cancelado')});
 }
+function Cancelar(){
+   alertify.error('Cancelado');
+   window.location.href=BASE_URL+"/Usuario";
+}

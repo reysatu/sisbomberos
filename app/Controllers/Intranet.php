@@ -81,12 +81,12 @@ class Intranet extends BaseController
 				
 				
 				$img->move('./public/archivos');
-				$data=array("descripcion"=>$nom);
+				$data=array("descripcion"=>$nom,"accion"=>1,);
 				$ArchivoModel->insert($data);
 				$primary_key=$ArchivoModel->recogerid();
 				$data2=array('idarchivo' => $primary_key,
 							 'idusuario'=>$idusuario,
-							 'accion'=>1,);//1 usuario envia
+							 );//1 usuario envia
 				$detalleArchivoModel->insert($data2);
 				exit;
 			}
