@@ -1,59 +1,33 @@
 <style type="text/css">
     #inicio_in{
      color:#fdc236; 
-    }  
+    }   
 </style>
 <div class="padre_slider" id="padre_slider">
-     <div id="slider" class="slider">
+     <div id="slider" class="slider"> 
+        <?php foreach ($slider as $fila):?>
         <li class="slider__section">
-            <img src="<?php echo base_url();?>/public/inicio/img/slider/1.jpg">
+            <img src="<?php echo base_url();?>/public/inicio/img/slider/<?php echo $fila->Nombre_Foto;?>">
             <div class="s_fraces">
-                <h1>VIVE UNA EXPERIENCIA ÚNICA</h1>
-                <h6>APUNTATE DE UNA VEZ Y SE PARTE DE NOSOTROS</h6>
+                <h1 id="s_fraces_h1"><?php echo $fila->Titulo;?></h1>
+                <h6><?php echo $fila->Descripcion;?></h6>
                 <br><br>
-                <a href="#">Registrarse</a>
+                <a href="<?php echo $fila->Ling;?>"><?php echo $fila->Boton;?></a>
             </div>
             
         </li>
-        <li class="slider__section">
-            <img src="<?php echo base_url();?>/public/inicio/img/slider/2.jpg">
-            <div class="s_fraces">
-                <h1>VIVE UNA EXPERIENCIA ÚNICA</h1>
-                <h6>APUNTATE DE UNA VEZ Y SE PARTE DE NOSOTROS</h6>
-                <br><br>
-                <a href="#">Registrarse</a>
-            </div>
-           
-        </li>
-        <li class="slider__section">
-            <div class="s_fraces">
-                <h1>VIVE UNA EXPERIENCIA ÚNICA</h1>
-                <h6>APUNTATE DE UNA VEZ Y SE PARTE DE NOSOTROS</h6>
-                <br><br>
-                <a href="#">Registrarse</a>
-            </div>
-             <img src="<?php echo base_url();?>/public/inicio/img/slider/3.jpg">
-        </li>
-        <li class="slider__section">
-            <div class="s_fraces">
-                <h1>VIVE UNA EXPERIENCIA ÚNICA</h1>
-                <h6>APUNTATE DE UNA VEZ Y SE PARTE DE NOSOTROS</h6>
-                <br><br>
-                <a href="#">Registrarse</a>
-            </div>
-             <img src="<?php echo base_url();?>/public/inicio/img/slider/4.jpg">
-        </li>
+        <?php endforeach?>
       </div>
       <span id="btn-prev" class="btn-prev"><</span>
       <span id="btn-next" class="btn-next">></span>
     
 </div>
 <br><br><br><br><br>
-<div class="padre_noticias_in">
+<div class="padre_noticias_in" id="padre_noticias_in">
     <h2>NOTICIAS <span class="theme_color">ACTUALES</span></h2>
     <p>Mantente Siempre Informado - Bomberos voluntarios del Perú</p>
     <br><br><br>
-    <div class="padre_contenido_n_i">
+    <div class="padre_contenido_n_i" id="padre_contenido_n_i">
         <?php foreach ($ultimas_not as $fila):?>
         <div>
             <a href="<?php echo base_url();?>/Noticias/detalle_noticia?idn=<?php echo $fila->Id;?>">
@@ -75,21 +49,21 @@
     <br>
     <h2>Accesos <span class="theme_color">Rápidos</span></h2>
     <br><br><br>
-    <div class="div_acesos_r">
-        <a href="#">
-            <span class="icon-device_hub"></span>
+    <div class="div_acesos_r" id="div_acesos_r">
+        <a href="#" id="div_acesos_r_a">
+            <span id="div_acesos_r_span" class="icon-device_hub"></span>
             <label>Intranet</label>
         </a>
-        <a href="#">
-            <span class="icon-group_add"></span>
+        <a href="#" id="div_acesos_r_a">
+            <span id="div_acesos_r_span" class="icon-group_add"></span>
             <label>Convocatoria</label>
         </a>
-        <a href="#">   
-            <span class="icon-laptop"></span>
+        <a href="#" id="div_acesos_r_a">   
+            <span id="div_acesos_r_span" class="icon-laptop"></span>
             <label>Control Interno</label>
         </a>
-        <a href="#">
-            <span class="icon-shopping_cart"></span>
+        <a href="#" id="div_acesos_r_a">
+            <span id="div_acesos_r_span" class="icon-shopping_cart"></span>
             <label>Tienda</label>
         </a>
     </div>

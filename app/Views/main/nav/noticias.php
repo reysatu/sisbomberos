@@ -2,7 +2,7 @@
     $paginas = $total_n/$n_x_pagina;
     $paginas=ceil($paginas);
 ?>
-<style type="text/css">
+<style type="text/css"> 
     #noticias_in{
      color:#fdc236; 
     } 

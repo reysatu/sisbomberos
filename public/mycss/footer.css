@@ -37,7 +37,7 @@
 	position: relative;
 	display: block;
 }
-.iconos_ft a{
+.iconos_ft_a_yo,.iconos_ft_a_tw,.iconos_ft_a_fc{
 	top: 22%;
 	position: relative;
     text-decoration: none;
@@ -45,8 +45,15 @@
     height: 100%;
     margin: 0% 75%;
 }
-#rs_ft_yot{
-    margin: 0% 45%;
+.iconos_ft_a_yo{
+	color: #fff;
+	left: -2.5em;
+	}
+.iconos_ft_a_tw{
+	color: #fff;
+	}
+.iconos_ft_a_fc{
+	color: #202e31;
 }
 .iconos_ft span{
     font-size: 50px;
