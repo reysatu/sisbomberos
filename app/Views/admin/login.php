@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>AdminLTE 3 | Log in</title>
+  <title>ADMINISTRACIÓN</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -58,7 +58,12 @@
       <!-- /.social-auth-links -->
 
       <p class="mb-1">
-        <a href="forgot-password.html"></a>
+        <font color="red">
+            <?php if(!empty($_SESSION['alert'])){
+            echo($_SESSION['alert']);
+
+          }?>
+          </font>
       </p>
       <p class="mb-0">
         <a href="register.html" class="text-center"></a>

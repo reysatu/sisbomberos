@@ -45,10 +45,12 @@
             </div>
           </div>
         </div>
+
+       
         <div class="row">  
           <!-- /.col -->
           <div class="col-12">
-            <button type="submit" class="btn btn-primary btn-block">Ingresar</button>
+            <button type="submit" class="btn btn-warning btn-block">Ingresar</button>
           </div>
           <!-- /.col -->
         </div>
@@ -58,7 +60,14 @@
       <!-- /.social-auth-links -->
 
       <p class="mb-1">
-        <a href="forgot-password.html"></a>
+          
+            <font color="red">
+            <?php if(!empty($_SESSION['alert'])){
+            echo($_SESSION['alert']);
+
+          }?>
+          </font>
+         
       </p>
       <p class="mb-0">
         <a href="register.html" class="text-center"></a>

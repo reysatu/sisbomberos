@@ -1,5 +1,7 @@
 <?php namespace App\Controllers;
 use App\Models\LoginModel;
+use App\Models\UsuarioModel;
+
 class LoginIntranet extends BaseController
 {	
 	public function __construct(){
@@ -17,8 +19,15 @@ class LoginIntranet extends BaseController
 		$login=new LoginModel;
 		$username=$request->getPostGet("username");
 		$password=$request->getPostGet("password");
+		if ($username=="" || $password==""){
+			$alert="Usuario o Contraseña errónea";
+			$this->session->setFlashdata('alert', $alert);
+			return redirect()->to(site_url("LoginIntranet"));	
+		}
 		$res=$login->validarusuarioIntranet($username,$password);
 		if(!$res){
+			$alert="Usuario o Contraseña errónea";
+			$this->session->setFlashdata('alert', $alert);
 			return redirect()->to(site_url("LoginIntranet"));
 		}else{
 			
@@ -29,6 +38,7 @@ class LoginIntranet extends BaseController
 				'apellidoint'=>$res->apellido,
 				'dniint'=>$res->dni,
 				'emailint'=>$res->email,
+				'telefonoint'=>$res->telefono,
 				
 				
 				'loginint'=>true,
@@ -43,4 +53,9 @@ class LoginIntranet extends BaseController
 		$this->session->destroy();
 		return redirect()->to(site_url());
 	}
+	
+	
+	
+	
+
 }

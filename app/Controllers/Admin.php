@@ -3,7 +3,9 @@
 class Admin extends BaseController
 {
 	public function index()
-	{
+	{		if(!isset($_SESSION['login'])){
+				return redirect()->to(("LoginAdmin"));
+			};
 			
            echo view('admin/header.php');
            echo view('admin/menu.php');

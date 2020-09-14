@@ -11,7 +11,7 @@
         <div class="col-12">
           <div class="card">
             <div class="card-header">
-              <a class="btn btn-success" href="<?php echo base_url();?>/IntranetA/viwagregar" role="button">Agregar +</a>
+              <a class="btn btn-success" href="<?php echo base_url();?>/IntranetA/viwagregar" role="button">Enviar +</a>
             </div>
             <!-- /.card-header -->
              <?php if(!empty($_SESSION['alert'])){

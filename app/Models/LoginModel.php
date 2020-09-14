@@ -25,7 +25,17 @@ class LoginModel extends Model
     }
     public function validarusuarioIntranet($username,$userpass){
        $db=db_connect();
-      $query= $db->query("select * from usuario INNER join perfil on perfil.idperfil =usuario.idperfil where usuario.user='".$username."' and usuario.pass='".$userpass."' and perfil.descripcion='trabajador' ");
+      $query= $db->query("select * from usuario INNER join perfil on perfil.idperfil =usuario.idperfil where usuario.user='".$username."' and usuario.pass='".$userpass."' and perfil.descripcion='trabajador' and usuario.deleted_at is null ");
+         $row = $query->getRow();
+      if (isset($row)){
+         return $row = $query->getRow();}
+    else{
+        return false;
+      }
+    }
+    public function validarusuarioConvocatoria($username,$userpass){
+       $db=db_connect();
+      $query= $db->query("select * from usuario INNER join perfil on perfil.idperfil =usuario.idperfil where usuario.user='".$username."' and usuario.pass='".$userpass."' and perfil.descripcion='Usuario' and usuario.active=1 and usuario.deleted_at is null  ");
          $row = $query->getRow();
       if (isset($row)){
          return $row = $query->getRow();}

@@ -17,8 +17,15 @@ class LoginAdmin extends BaseController
 		$login=new LoginModel;
 		$username=$request->getPostGet("username");
 		$password=$request->getPostGet("password");
+		if ($username=="" || $password==""){
+			$alert="Usuario o Contraseña errónea";
+			$this->session->setFlashdata('alert', $alert);
+			return redirect()->to(site_url("LoginAdmin"));	
+		}
 		$res=$login->validarusuario($username,$password);
 		if(!$res){
+			$alert="Usuario o Contraseña errónea";
+			$this->session->setFlashdata('alert', $alert);
 			return redirect()->to(site_url("LoginAdmin"));
 		}else{
 			$idperfil=$res->idperfil;

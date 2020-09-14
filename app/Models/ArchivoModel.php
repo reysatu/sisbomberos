@@ -39,9 +39,9 @@ class ArchivoModel extends Model
         $results =$query->getResult();
         return $results;
   }
-  public function getarchivoTot(){
+  public function getarchivoRecibido(){
      $db=db_connect();
-       $query= $db->query('SELECT * from archivo where deleted_at is null');
+       $query= $db->query('select u.*,p.descripcion,a.descripcion as archivo,a.idarchivo as idarchivo, u.email as email from archivo as a INNER join detallearchivo as d on d.idarchivo =a.idarchivo INNER join usuario as u on u.idusuario=d.idusuario INNER join perfil as p on u.idperfil=p.idperfil where a.identificador is null and a.deleted_at is null');
         $results =$query->getResult();
         return $results;
   }

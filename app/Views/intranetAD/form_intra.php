@@ -46,9 +46,12 @@
                       <div class="form-group">
                         <div class="form-check">
                           <input class="form-check-input" type="checkbox" id="checkArchivo" name="checkArchivo" value="1">
-                          <label class="form-check-label">Todos</label>
+                          <label class="form-check-label">Intranet</label>
                         </div>
-                        
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="checkConvo" name="checkConvo" value="1">
+                          <label class="form-check-label">Convocatoria</label>
+                        </div>
                       </div>
                     </div> 
                    

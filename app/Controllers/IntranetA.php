@@ -44,6 +44,7 @@ class IntranetA extends BaseController
 		$tken=$request->getPostGet("tken");
 		$trabajador=$request->getPostGet("trabajador");
 		$tot=$request->getPostGet("checkArchivo");
+		$Convo=$request->getPostGet("checkConvo");
 		echo($tot);
 		
 		if(isset($a)){ 
@@ -71,7 +72,8 @@ class IntranetA extends BaseController
   			exit;
 		}
 		if($trabajador){
-			$archivos=$IntranetModel->getarchivos($tken);
+			if(!$tot){
+				$archivos=$IntranetModel->getarchivos($tken);
 			$IntranetModel->where("identificador", $tken)->set(['accion' => 2])->update();
 			for ($i=0; $i <count($trabajador); $i++){
 				foreach ($archivos as $field){
@@ -84,9 +86,12 @@ class IntranetA extends BaseController
         					Los archivos se enviaron con ÉXITO
         				</div></div>";
         				$this->session->setFlashdata('alert', $alert);
-			return redirect()->to(site_url("IntranetA"));
+			}
+			
+			
 		}
 		if ($tot) {
+			echo("ss");
 			$archivos=$IntranetModel->getarchivos($tken);
 			$usuarios=$IntranetModel->getUsuario();
 			
@@ -103,9 +108,29 @@ class IntranetA extends BaseController
         					Los archivos se enviaron con ÉXITO
         				</div></div>";
         				$this->session->setFlashdata('alert', $alert);
-			return redirect()->to(site_url("IntranetA"));
+			
 			
 		}
+		if ($Convo){
+			$archivos=$IntranetModel->getarchivos($tken);
+			$usuarios=$IntranetModel->getConvocados();
+			
+			$IntranetModel->where("identificador", $tken)->set(['accion' => 2])->update();
+			foreach ($usuarios as $value) {
+				foreach ($archivos as $field){
+					$data=array("idarchivo"=>$field->idarchivo,
+								"idusuario"=>$value->idusuario,);
+					  $detalleArchivoModel->insert($data);
+
+				}	
+			}
+			$alert="<div class='card-body'><div class='alert alert-success' role='alert'>
+        					Los archivos se enviaron con ÉXITO
+        				</div></div>";
+        				$this->session->setFlashdata('alert', $alert);
+			
+		}
+
 	}
 
 	//--------------------------------------------------------------------

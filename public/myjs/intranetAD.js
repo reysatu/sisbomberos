@@ -77,7 +77,7 @@ function verGrupSubi(inde){
 function EnviarArchivosAd(){
   trabajador=$(".trabajador").val();
   $("#dropzonewidget").on('submit', function(evt){
-    if (trabajador=="" && $('#checkArchivo').prop('checked')==false ){
+    if (trabajador=="" && $('#checkArchivo').prop('checked')==false && $('#checkConvo').prop('checked')==false ){
          alertify.error('Escoger Usuario')
         evt.preventDefault();}
     else{

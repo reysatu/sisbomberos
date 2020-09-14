@@ -46,7 +46,7 @@
       <a href="<?php echo base_url();?>/Inicio" id="inicio_in" >Inicio</a>
       <a href="<?php echo base_url();?>/Nosotros" id="nosotros_in" >Nosotros</a>
       <a href="<?php echo base_url();?>/Noticias" id="noticias_in">noticias</a>
-      <a href="#">convocatorias</a>
+      <a href="<?php echo base_url();?>/Convocatoria">convocatorias</a>
       <a href="#">patronato</a>
       <a href="#">contacto</a>
     </div>

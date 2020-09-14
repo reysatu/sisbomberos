@@ -9,7 +9,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-  <title>AdminLTE 3 | Top Navigation</title>
+  <title>INTRANET</title>
 
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="<?php echo base_url();?>/public/admin/plugins/fontawesome-free/css/all.min.css">
@@ -25,7 +25,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <div class="wrapper">
 
   <!-- Navbar -->
-  <nav class="main-header navbar navbar-expand-md navbar-light navbar-white">
+  <nav class="main-header navbar navbar-expand-md navbar-dark navbar-gray">
     <div class="container">
       <a href="" class="navbar-brand">
         <img src="" alt="" class="brand-image img-circle elevation-3"
@@ -64,15 +64,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <span class="badge badge-warning navbar-badge"></span>
           </a>
           <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-            <span class="dropdown-header">15 Notifications</span>
-            <div class="dropdown-divider"></div>
-            <a href="#" class="dropdown-item">
-              <i class="fas fa-envelope mr-2"></i> 4 new messages
-              <span class="float-right text-muted text-sm">3 mins</span>
-            </a>
-            <div class="dropdown-divider"></div>
             
-            <div class="dropdown-divider"></div>
+           
            
             <div class="dropdown-divider"></div>
             <a href="<?php echo base_url();?>/LoginIntranet/destroy" class="dropdown-item dropdown-footer">SALIR</a>

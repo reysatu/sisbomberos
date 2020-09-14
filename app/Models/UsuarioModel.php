@@ -10,7 +10,7 @@ class UsuarioModel extends Model
     protected $returnType     = 'objet';
     protected $useSoftDeletes = true;
 
-    protected $allowedFields = ['idusuario','idperfil','apellido','dni','nombre','dni','idperfil','email','user','pass'];
+    protected $allowedFields = ['idusuario','idperfil','apellido','dni','nombre','dni','idperfil','email','user','pass','hash','active','telefono'];
 
    protected $useTimestamps = true;
    protected $createdField  = 'created_at';
@@ -36,5 +36,15 @@ class UsuarioModel extends Model
        $db=db_connect();
       $query= $db->query('SELECT usuario.* , perfil.descripcion as descripcion,perfil.idperfil as idperfil FROM usuario INNER JOIN perfil ON usuario.idperfil=perfil.idperfil where usuario.idusuario="'.$id.'" ');
         return $row = $query->getRow();
+    }
+    public function validarUsuarioCorreo($correo,$hash){
+       $db=db_connect();
+      $query= $db->query('SELECT * FROM usuario WHERE hash="'.$hash.'" and email="'.$correo.'" and active is null');
+        return $row = $query->getRow();
+    }
+    public function validarGmail($correo){
+      $db=db_connect();
+      $query= $db->query('SELECT * FROM usuario WHERE email="'.$correo.'"');
+      return $row = $query->getRow();
     }
 }

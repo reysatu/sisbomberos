@@ -74,3 +74,37 @@ CRITICAL - 2020-09-11 02:19:11 --> Undefined variable: db
 #4 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #5 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
 #6 {main}
+CRITICAL - 2020-09-11 04:24:51 --> Undefined property: stdClass::$idperfil
+#0 D:\xampp\htdocs\sisbomberos\app\Views\Archivo\content.php(36): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\xampp\\htdocs...', 36, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('Archivo/content...', Array, true)
+#3 D:\xampp\htdocs\sisbomberos\app\Controllers\Archivo.php(15): view('Archivo/content...', Array)
+#4 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Archivo->index()
+#5 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Archivo))
+#6 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-11 16:13:38 --> unlink(./public/archivos/): Is a directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(./public...', 'D:\\xampp\\htdocs...', 27, Array)
+#1 D:\xampp\htdocs\sisbomberos\app\Controllers\Archivo.php(27): unlink('./public/archiv...')
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Archivo->delete()
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Archivo))
+#4 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-11 16:16:28 --> unlink(./public/archivos/1599803458755_1024_PROM37.pdf): No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(./public...', 'D:\\xampp\\htdocs...', 27, Array)
+#1 D:\xampp\htdocs\sisbomberos\app\Controllers\Archivo.php(27): unlink('./public/archiv...')
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Archivo->delete()
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Archivo))
+#4 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-11 16:16:35 --> unlink(./public/archivos/): Is a directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(./public...', 'D:\\xampp\\htdocs...', 27, Array)
+#1 D:\xampp\htdocs\sisbomberos\app\Controllers\Archivo.php(27): unlink('./public/archiv...')
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Archivo->delete()
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Archivo))
+#4 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}

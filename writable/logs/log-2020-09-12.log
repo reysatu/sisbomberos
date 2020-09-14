@@ -1,0 +1,185 @@
+CRITICAL - 2020-09-12 00:16:46 --> syntax error, unexpected 'echo' (T_ECHO), expecting ';' or ','
+#0 D:\xampp\htdocs\sisbomberos\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('LoginIntranet/r...')
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('LoginIntranet/r...')
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-12 00:47:57 --> Call to a member function setFrom() on string
+#0 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\LoginIntranet->registrarNew()
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginIntranet))
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-12 00:50:23 --> Call to a member function setFrom() on string
+#0 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\LoginIntranet->registrarNew()
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginIntranet))
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-12 00:50:31 --> Call to a member function setFrom() on string
+#0 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\LoginIntranet->registrarNew()
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginIntranet))
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-12 00:50:52 --> Call to a member function setFrom() on string
+#0 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\LoginIntranet->registrarNew()
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginIntranet))
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-12 00:51:21 --> Call to a member function setFrom() on string
+#0 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\LoginIntranet->registrarNew()
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginIntranet))
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-12 00:51:37 --> Call to a member function setFrom() on string
+#0 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\LoginIntranet->registrarNew()
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginIntranet))
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-12 02:24:48 --> syntax error, unexpected '$email' (T_VARIABLE)
+#0 D:\xampp\htdocs\sisbomberos\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('LoginIntranet/r...')
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('LoginIntranet/r...')
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-12 02:49:37 --> syntax error, unexpected 'echo' (T_ECHO)
+#0 D:\xampp\htdocs\sisbomberos\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('LoginIntranet/r...')
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('LoginIntranet/r...')
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-12 02:49:57 --> syntax error, unexpected 'echo' (T_ECHO)
+#0 D:\xampp\htdocs\sisbomberos\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('LoginIntranet/r...')
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('LoginIntranet/r...')
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-12 02:52:35 --> A non-numeric value encountered
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\LoginIntranet.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'D:\\xampp\\htdocs...', 73, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\LoginIntranet->registrarNew()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginIntranet))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-12 02:59:19 --> syntax error, unexpected '}', expecting ';' or ','
+#0 D:\xampp\htdocs\sisbomberos\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('LoginIntranet/a...')
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('LoginIntranet/a...')
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-12 14:34:45 --> Undefined variable: idusuario
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\Convocatoria.php(103): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 103, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Convocatoria->activarPass()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-12 14:36:51 --> Trying to get property 'idusuario' of non-object
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\Convocatoria.php(103): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\xampp\\htdocs...', 103, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Convocatoria->activarPass()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-12 14:40:46 --> Trying to get property 'idusuario' of non-object
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\Convocatoria.php(103): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\xampp\\htdocs...', 103, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Convocatoria->activarPass()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-12 14:40:52 --> Trying to get property 'idusuario' of non-object
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\Convocatoria.php(103): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\xampp\\htdocs...', 103, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Convocatoria->activarPass()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-12 14:50:01 --> Trying to get property 'idusuario' of non-object
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\Convocatoria.php(103): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\xampp\\htdocs...', 103, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Convocatoria->activarPass()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-12 14:50:07 --> Trying to get property 'idusuario' of non-object
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\Convocatoria.php(103): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\xampp\\htdocs...', 103, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Convocatoria->activarPass()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-12 14:52:09 --> Column 'pass' cannot be null
+#0 D:\xampp\htdocs\sisbomberos\system\Database\MySQLi\Connection.php(331): mysqli->query('INSERT INTO `us...')
+#1 D:\xampp\htdocs\sisbomberos\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 D:\xampp\htdocs\sisbomberos\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 D:\xampp\htdocs\sisbomberos\system\Database\BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 D:\xampp\htdocs\sisbomberos\system\Model.php(755): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\xampp\htdocs\sisbomberos\app\Controllers\Convocatoria.php(71): CodeIgniter\Model->insert(Array)
+#6 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Convocatoria->registrarNew()
+#7 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+#8 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2020-09-12 14:54:28 --> Trying to get property 'idusuario' of non-object
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\Convocatoria.php(104): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\xampp\\htdocs...', 104, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Convocatoria->activarPass()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-12 14:54:33 --> Trying to get property 'idusuario' of non-object
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\Convocatoria.php(104): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\xampp\\htdocs...', 104, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Convocatoria->activarPass()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-12 14:54:42 --> Trying to get property 'idusuario' of non-object
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\Convocatoria.php(104): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\xampp\\htdocs...', 104, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Convocatoria->activarPass()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-12 15:01:13 --> Trying to get property 'idusuario' of non-object
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\Convocatoria.php(105): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\xampp\\htdocs...', 105, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Convocatoria->activarPass()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-12 15:57:25 --> Trying to get property 'idusuario' of non-object
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\Convocatoria.php(104): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\xampp\\htdocs...', 104, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Convocatoria->activarPass()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-12 16:02:46 --> syntax error, unexpected ')'
+#0 D:\xampp\htdocs\sisbomberos\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('Convocatoria/ac...')
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('Convocatoria/ac...')
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-12 16:59:28 --> Column 'deleted_at' in where clause is ambiguous
+#0 D:\xampp\htdocs\sisbomberos\system\Database\MySQLi\Connection.php(331): mysqli->query('select * from u...')
+#1 D:\xampp\htdocs\sisbomberos\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('select * from u...')
+#2 D:\xampp\htdocs\sisbomberos\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('select * from u...')
+#3 D:\xampp\htdocs\sisbomberos\app\Models\LoginModel.php(38): CodeIgniter\Database\BaseConnection->query('select * from u...')
+#4 D:\xampp\htdocs\sisbomberos\app\Controllers\Convocatoria.php(22): App\Models\LoginModel->validarusuarioConvocatoria('reysangama8@gam...', '123')
+#5 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Convocatoria->login()
+#6 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+#7 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}

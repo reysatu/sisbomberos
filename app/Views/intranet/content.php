@@ -41,10 +41,15 @@
                     <td>DNI</td>
                     <td><?php echo $_SESSION['dniint']?></td>
                   </tr>
+                  <tr>
+                    <td >Teléfono</td>
+                    <td><?php echo $_SESSION['telefonoint']?></td>
+                  </tr>
                    <tr>
                     <td >email</td>
                     <td><?php echo $_SESSION['emailint']?></td>
                   </tr>
+
                           
                 </tbody>
                 <tfoot>

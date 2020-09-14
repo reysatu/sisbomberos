@@ -36,5 +36,11 @@ class IntranetModel extends Model
         return $results;
     }
 
+    public function getConvocados(){
+      $db=db_connect();
+      $query= $db->query("select * from usuario INNER join perfil on perfil.idperfil =usuario.idperfil where perfil.descripcion='Usuario' and usuario.deleted_at is null");
+        $results =$query->getResult();
+        return $results;
+    }
   
 }
