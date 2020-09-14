@@ -78,7 +78,17 @@ autoplay();
 
 
 
-
+function mostrar_menu_responsive(){
+     document.getElementById("padre_menu_cabe_responsive").style.cssText= "display: flex;";
+      var a0 = document.getElementById("body");
+    a0.style.cssText= " overflow-x:hidden;overflow-y:hidden;";
+    
+}
+function salir_responsive(){
+    $("#padre_menu_cabe_responsive").slideUp(0);
+      var a0 = document.getElementById("body");
+    a0.style.cssText= " overflow-x:auto;overflow-y:auto;";
+}
 
 
 

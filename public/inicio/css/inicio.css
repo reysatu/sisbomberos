@@ -4,7 +4,7 @@ body{
   font-family: Poppins,Arial,Helvetica,sans-serif;
   background: #ffffff;
 }
-label{
+label{ 
     line-height:1.2em;
     position: relative;
     left: 10%;
@@ -178,6 +178,54 @@ label{
     transition: border 1s;
 }
 /*------------------------------------------menu_responsive------------*/
+.padre_menu_cabe_responsive{
+  position: fixed;
+  top: 0%;
+  width: 100%;
+    height: 100%;
+    display: none;
+    z-index: 1000;
+}
+#menu_cabe_responsive{
+    background: #fff;
+    position: relative;
+    top: 0%;
+    left: 0%;
+    width: 75%;
+    height: 100%;
+    font-family: sans-serif;
+     z-index: 1001;
+}
+.menu_salir_responsive{
+  background: #1d1d2394;
+  position: relative;
+  width: 25%;
+    height: 100%;
+    z-index: 1001;
+}
+.menu_a_responsive{
+  position: relative;
+    top: 10%;
+    left: 8%;
+    width: 80%;
+}
+.menu_a_responsive a{
+  position: relative;
+  text-decoration: none;
+    color:#202e31e6;
+    font-size: 17PX;
+    font-weight: bold;
+    top: 4%;
+    text-shadow: 0px 0.3px 0px black;
+    cursor: pointer;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+}
+.menu_a_responsive div{
+  border-bottom: 1px solid #1d292c3d;
+    padding: 4%;
+    position: relative;
+}
 .padre_responsive{
   position: relative;
   left: 10%;
@@ -544,25 +592,26 @@ label{
 .padre_a_p_noti_i label,.padre_a_p_noti_i p{
     position: relative;
     left: 2%;
-    width: 96%;
+    width: 98%;
     text-align: left;
     overflow: hidden;
     cursor: pointer;
     display: -webkit-box;
 }
 .padre_a_p_noti_i label{
-    font-size: 17px;
+   font-size: 17px;
     color: #202e31e6;
     text-transform: inherit;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     letter-spacing: -1px;
-    word-spacing: 1px;
+    /* word-spacing: 1px; */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 .padre_a_p_noti_i p{
-    margin: 2px 0px;
-    letter-spacing: -1px;
-    word-spacing: 2px;
+   margin: 2px 0px;
+    letter-spacing: 0px;
+    /* word-spacing: 2px; */
     font-family: 'Poppins', sans-serif;
     height: 3em;
     -webkit-line-clamp: 3;
@@ -615,7 +664,6 @@ label{
     text-align: center;
 }
 /**--------------------------------------------------RESPONSIVE ---------------------------------------------------------*/
-
 @media screen and (max-width:1150px) {
     .div_p_c{
       display: none;
@@ -626,6 +674,9 @@ label{
 }
 
 @media screen and (max-width:674px) {
+
+/*---------------------------------------HEADER------------------------------------------------*/
+
     .padre_llamar_r{
       padding-top: 6%;
       transition: all 0.3s ease-out;
@@ -637,5 +688,124 @@ label{
       width: 100%;
       position: relative;
       text-align: center;
+    }
+/*---------------------------------------FOOTER-------------------------------------------------*/
+    #padre_footer_tx_fc{
+      display: block;
+    }
+    #footer_texto{
+      display: block;
+      left: 5%;
+      width: 90%;
+    }
+    #texto_ft{
+      left: 0%;
+      width: 100%;
+    }
+    #texto_ft_p{
+      padding-top: 5%;
+      width: 100%;
+      left: 0%;
+    }
+    #iconos_ft{
+      display: flex;
+      padding-top: 10%;
+    }
+    #iconos_ft_a{
+      margin: 0;
+      left: 5%;
+      color: #fff;
+      padding: 0px 25px;
+    }
+    #footer_fc{
+      left: 20%;
+      margin: 0;
+      padding: 5% 8%;
+    }
+/*---------------------------------------INICIO-------------------------------------------------*/
+    #padre_slider{
+      width: 100%;
+      height: 20em;
+    }
+    #s_fraces_h1{
+      font-size:30px;
+    }
+    #padre_noticias_in{
+      left: 5%;
+      width: 90%;
+    }
+    #padre_contenido_n_i{
+      --tam: -100%;
+      width: calc(100%*5);
+    }
+    #div_acesos_r{
+      flex-wrap: wrap;
+    display: inline-flex;
+    }
+    #div_acesos_r_a{
+      width: 40%;
+      left: 15%;
+    }
+    #div_acesos_r_span{
+      left: 23%;
+    }
+/**-----------------------------------NOSOTROS---------------------------------------------------*/
+    #padre_historia_img{
+      display: block;
+      left: 5%;
+      width: 90%;
+    }
+    #padre_img_h{
+      width: 100%;
+      overflow: hidden;
+    }
+    #padre_img_h:before{
+       right: -70px;
+       width: 30%;
+    }
+    #padre_historia{
+      width: 98%;
+    }
+    #padre_v_m_a{
+      left: 5%;
+      width: 90%;
+    }
+    #padre_v_m_a div{
+      left: 0%;
+      width: 95%;
+      margin: 10px 0px;
+    }
+/*-----------------------------------NOTICIAS---------------------------------------------------*/
+    #arriba_noticias{
+      display: block;
+    }
+    #noticia_1,#noticia_2{
+      left: 5%;
+     width: 90%;
+    }
+    #padre_noticias{
+      left: 5%;
+      width: 90%;
+    }
+    #padre_contenido_not_div{
+      width: 100%;
+    }
+/*-----------------------------------DETALLE NOTICIAS---------------------------------------------------*/
+    #padre_detalle_noticias_h1{
+      left: 5%;
+      width: 90%;
+    }
+    #detalle_not_otras_not{
+      display: block;
+      left: 5%;
+      width: 95%;
+    }
+    #detalle_not,#otras_not{
+      left: 0%;
+      width: 100%;
+    }
+    #otras_not{
+      padding-top: 10%;
+      width: 95%;
     }
 }

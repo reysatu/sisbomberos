@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Bomberos del Perú</title>
+  <title>Bomberos del Perú</title> 
 
   <link rel="stylesheet" href="<?php echo base_url();?>/public/icomon/icomoon/style.css">
   <link rel="stylesheet" href="<?php echo base_url();?>/public/icomon/icomoon_2/style.css">
@@ -58,7 +58,7 @@
     </div>
     <div class="padre_responsive">
     <div class="padre_menu_r" id="padre_menu_r">
-      <a href="#" id="a_padre_menu_r"><span class="icon-dehaze"></span></a>
+      <a href="#" id="a_padre_menu_r" onclick="mostrar_menu_responsive();"><span class="icon-dehaze"></span></a>
     </div>
     <div class="padre_llamar_r" id="padre_llamar_r">
           <div>
@@ -67,4 +67,17 @@
       </div>
       
     </div>
+</div>
+<div class="padre_menu_cabe_responsive" id="padre_menu_cabe_responsive">
+    <div class="menu_cabe_responsive" id="menu_cabe_responsive">
+      <div class="menu_a_responsive">
+        <a href="<?php echo base_url();?>/Inicio" id="inicio_in" ><div>Inicio</div></a>
+        <a href="<?php echo base_url();?>/Nosotros" id="nosotros_in" ><div>Nosotros</div></a>
+        <a href="<?php echo base_url();?>/Noticias" id="noticias_in"><div>noticias</div></a>
+        <a href="#"><div>convocatorias</div></a>
+        <a href="#"><div>patronato</div></a>
+        <a href="#"><div>contacto</div></a>
+      </div> 
+    </div>
+    <div class="menu_salir_responsive" id="menu_salir_responsive" onclick="salir_responsive();"></div>
 </div>

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 CRITICAL - 2020-09-12 00:16:46 --> syntax error, unexpected 'echo' (T_ECHO), expecting ';' or ','
 #0 D:\xampp\htdocs\sisbomberos\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('LoginIntranet/r...')
 #1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('LoginIntranet/r...')
@@ -183,3 +184,57 @@ CRITICAL - 2020-09-12 16:59:28 --> Column 'deleted_at' in where clause is ambigu
 #7 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #8 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
 #9 {main}
+=======
+CRITICAL - 2020-09-12 11:08:25 --> syntax error, unexpected ''ultimas_not'' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+#0 C:\xampp\htdocs\sisbomberos\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('Noticias/detall...')
+#1 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('Noticias/detall...')
+#2 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-12 11:08:38 --> syntax error, unexpected ''ultimas_not'' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+#0 C:\xampp\htdocs\sisbomberos\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('Noticias/detall...')
+#1 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('Noticias/detall...')
+#2 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-12 11:08:55 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'Fecha
+                              LIMIT 3' at line 4
+#0 C:\xampp\htdocs\sisbomberos\system\Database\MySQLi\Connection.php(331): mysqli->query('\r\n             ...')
+#1 C:\xampp\htdocs\sisbomberos\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('\r\n             ...')
+#2 C:\xampp\htdocs\sisbomberos\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n             ...')
+#3 C:\xampp\htdocs\sisbomberos\app\Models\NoticiasModel.php(46): CodeIgniter\Database\BaseConnection->query('\r\n             ...')
+#4 C:\xampp\htdocs\sisbomberos\app\Controllers\Noticias.php(28): App\Models\NoticiasModel->ultimas_not()
+#5 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Noticias->detalle_noticia()
+#6 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#7 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-09-12 12:04:34 --> Class 'App\Controllers\NoticiasModel' not found
+#0 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Inicio->index()
+#1 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inicio))
+#2 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-12 12:09:33 --> Undefined variable: fila
+#0 C:\xampp\htdocs\sisbomberos\app\Views\main\nav\d_noticias.php(9): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 9, Array)
+#1 C:\xampp\htdocs\sisbomberos\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('main/nav/d_noti...', Array, true)
+#3 C:\xampp\htdocs\sisbomberos\app\Controllers\Noticias.php(31): view('main/nav/d_noti...', Array)
+#4 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Noticias->detalle_noticia()
+#5 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#6 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-12 16:54:31 --> Undefined property: stdClass::$Ling
+#0 C:\xampp\htdocs\sisbomberos\app\Views\main\layout\content.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 15, Array)
+#1 C:\xampp\htdocs\sisbomberos\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('main/layout/con...', Array, true)
+#3 C:\xampp\htdocs\sisbomberos\app\Controllers\Inicio.php(9): view('main/layout/con...', Array)
+#4 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Inicio->index()
+#5 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inicio))
+#6 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+>>>>>>> 9a1eb14d655eb7e8c8f087787903d0c3d5bf87f4

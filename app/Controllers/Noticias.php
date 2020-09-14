@@ -4,13 +4,11 @@ class Noticias extends BaseController
 {
 	public function index(){
 		if (!$_GET) {
-     		
      		return redirect()->to('Noticias?pagina=1');
   		}
   		else{
   			$noticias=new NoticiasModel;
   			$request=\Config\Services::request();
-
 			$total_n=$noticias->total_n();
 			$n_x_pagina=6;
 			$pagina=$_REQUEST['pagina'];
@@ -24,5 +22,13 @@ class Noticias extends BaseController
         }
 		
 	} 
+	public function detalle_noticia(){
+			$noticias=new NoticiasModel;
+		 	$idnoticia=$_REQUEST['idn'];
+		 	$data = array('detalle_noticia'=>$noticias->detalle_noticia($idnoticia),'ultimas_not'=>$noticias->ultimas_not());
 
+		 	echo view('main/layout/header.php');
+            echo view('main/nav/d_noticias.php',$data);
+            echo view('main/layout/footer.php');
+	}
 }

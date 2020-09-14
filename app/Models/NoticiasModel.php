@@ -10,7 +10,7 @@ class NoticiasModel extends Model
                               SELECT    
                                   *
                               FROM  Noticias
-                              where  Estado=1 ORDER BY Id asc
+                              where  Estado=1 ORDER BY Fecha desc
                               LIMIT '.$iniciar.','.$n_x_pagina.'
                               ') ;
 
@@ -27,5 +27,32 @@ class NoticiasModel extends Model
                               where Estado=1
                               ');
        return count($mostrar->getResult());
+    }
+     public function detalle_noticia($idnoticia){
+      $db=db_connect();
+      $mostrar=$db->query('
+                              SELECT    
+                                  *
+                              FROM  Noticias
+                              where  Id='.$idnoticia.'
+                              ') ;
+
+        if(count($mostrar->getResult()) >0){ return $mostrar->getResult();}
+        else{ return false;} 
+      
+    }
+    public function ultimas_not(){
+       $db=db_connect();
+      $mostrar=$db->query('
+                              SELECT    
+                                  *
+                              FROM  Noticias
+                              where  Estado=1 ORDER BY Fecha desc
+                              LIMIT 3
+                              ') ;
+
+        if(count($mostrar->getResult()) >0){ return $mostrar->getResult();}
+        else{ return false;} 
+      
     }
 }
