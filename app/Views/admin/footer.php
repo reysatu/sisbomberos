@@ -2,10 +2,9 @@
   <!-- /.content-wrapper -->
   <footer class="main-footer">
     <div class="float-right d-none d-sm-block">
-      <b>Version</b> 3.0.2-pre
+      <b>Panel</b> de Control
     </div>
-    <strong>Copyright &copy; 2014-2019 <a href="http://adminlte.io">AdminLTE.io</a>.</strong> All rights
-    reserved.
+    <strong>Bomberos del Perú -<a href="http://adminlte.io">Tarapoto</a></strong>
   </footer>
   <!-- Control Sidebar -->
   <aside class="control-sidebar control-sidebar-dark">
@@ -38,14 +37,14 @@
        
         "language":{
     "sProcessing":     "Procesando...",
-    "sLengthMenu":     "Mostrar _MENU_ registros",
+    "sLengthMenu":     "Mostrando &nbsp _MENU_ &nbsp registros por página",
     "sZeroRecords":    "No se encontraron resultados",
     "sEmptyTable":     "Ningún dato disponible en esta tabla",
     "sInfo":           "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
     "sInfoEmpty":      "Mostrando registros del 0 al 0 de un total de 0 registros",
     "sInfoFiltered":   "(filtrado de un total de _MAX_ registros)",
     "sInfoPostFix":    "",
-    "sSearch":         "Buscar:",
+    "sSearch":         "Buscar&nbsp",
     "sUrl":            "",
     "sInfoThousands":  ",",
     "sLoadingRecords": "Cargando...",

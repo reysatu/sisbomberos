@@ -3,7 +3,7 @@
     $paginas=ceil($paginas);
 ?>
 <style type="text/css"> 
-    #noticias_in{
+    #noticias_in{ 
      color:#fdc236; 
     } 
 </style> 
@@ -22,7 +22,7 @@
     $primerR= 1;
     $segundoR= 1;
     $salir=0;
-    foreach ($noticias as $fila):
+    foreach ($noticias_p as $fila):
     if($primerR==1){?>
     	<div class="noticia_1" id="noticia_1">
     		<a href="<?php echo base_url();?>/Noticias/detalle_noticia?idn=<?php echo $fila->Id;?>">
@@ -54,9 +54,7 @@
     <h2>Màs <span class="theme_color">Noticias</span></h2>
     <br><br>
     <div class="padre_contenido_not">
-    	<?php $cont= 0;
-        foreach ($noticias as $fila):
-        if($cont >= $segundoR){?>
+    	<?php foreach ($noticias as $fila):?>
             <div id="padre_contenido_not_div">
                 <a href="<?php echo base_url();?>/Noticias/detalle_noticia?idn=<?php echo $fila->Id;?>">
                     <span>+</span>
@@ -70,7 +68,6 @@
                     <h6><?php echo $fila->Fecha;?></h6>
                 </a>
             </div>
-        <?php } $cont=$cont+1; ?>
         <?php endforeach?>
     </div>
     <br><br>

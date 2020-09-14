@@ -6,12 +6,25 @@ class NoticiasModel extends Model
 {   
     public function noticias($iniciar,$n_x_pagina){
        $db=db_connect();
-      $mostrar=$db->query('
+      $mostrar=$db->query(' 
                               SELECT    
                                   *
                               FROM  Noticias
-                              where  Estado=1 ORDER BY Fecha desc
+                              where  Estado=1 and N_Principal=0 ORDER BY Fecha desc
                               LIMIT '.$iniciar.','.$n_x_pagina.'
+                              ') ;
+
+        if(count($mostrar->getResult()) >0){ return $mostrar->getResult();}
+        else{ return false;} 
+      
+    }
+    public function noticias_p(){
+       $db=db_connect();
+      $mostrar=$db->query(' 
+                              SELECT    
+                                  *
+                              FROM  Noticias
+                              where  Estado=1 and N_Principal=1 ORDER BY Fecha desc
                               ') ;
 
         if(count($mostrar->getResult()) >0){ return $mostrar->getResult();}
@@ -24,7 +37,7 @@ class NoticiasModel extends Model
                               SELECT    
                                    *
                               FROM  noticias 
-                              where Estado=1
+                              where Estado=1 and N_Principal=0
                               ');
        return count($mostrar->getResult());
     }
@@ -47,7 +60,7 @@ class NoticiasModel extends Model
                               SELECT    
                                   *
                               FROM  Noticias
-                              where  Estado=1 ORDER BY Fecha desc
+                              where  Estado=1 and N_Principal=0 ORDER BY Fecha desc
                               LIMIT 3
                               ') ;
 
