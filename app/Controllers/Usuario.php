@@ -9,8 +9,11 @@ class Usuario extends BaseController
 			$usuario=new UsuarioModel;
 			$request=\Config\Services::request();
 			//$data=array(""=>)
-
 			$id=$request->getPostGet("id");
+			if($this->session->get('idusuaT')){
+				$id=$this->session->get('idusuaT');
+			}
+			
 			$results=$usuario->Busuario($id);
 			if (empty($results)){
 					$idusuario="";
@@ -22,6 +25,7 @@ class Usuario extends BaseController
 					$pass="";
 					$idperfil="";
 					$perfil="";
+					$telefono="";
 			}else{
 				$idusuario=$results->idusuario;
 				$nombre=$results->nombre;
@@ -32,9 +36,11 @@ class Usuario extends BaseController
 				$pass=$results->pass;
 				$idperfil=$results->idperfil;
 				$perfil=$results->descripcion;
+				$telefono=$results->telefono;
 			};
 				$datosuser=array("nombre"=>$nombre,"apellido"=>$apellido,"dni"=>$dni,
 								"email"=>$email,"user"=>$user,"pass"=>$pass,"idperfil"=>$idperfil,"idusuario"=>$idusuario,
+								"telefono"=>$telefono,
 								'perfil' => $usuario->getperfil(),);
 		 		echo view('admin/header.php');
            		echo view('admin/menu.php');
@@ -46,6 +52,11 @@ class Usuario extends BaseController
 			$usuario=new UsuarioModel;
 			$request= \Config\Services::request();
 			$id=$request->getPost("idusuario");
+			$usua=$request->getPost("user");
+			
+			
+				
+			
 			$data=array("nombre"=>$request->getPost("nombre"),
 						"apellido"=>$request->getPost("apellido"),
 						"dni"=>$request->getPost("dni"),
@@ -53,20 +64,37 @@ class Usuario extends BaseController
 						"user"=>$request->getPost("user"),
 						"pass"=>$request->getPost("pass"),
 						"idperfil"=>intval($request->getPost("perfil")),
-						"idusuario"=>$request->getPost("idusuario"),);
+						"idusuario"=>$request->getPost("idusuario"),
+						"telefono"=>$request->getPost("tel"),);
+
 			if($id==""){
+				$validarU=$usuario->validarUser($usua);
+				if(!empty($validarU->cantidad)){
+				$alert="<div class='card-body'><div class='alert alert-danger' role='alert'>
+        					El Usuario ya existe
+        				</div></div>";
+        				//$this->session->set('idusuaT',$id);
+        				$this->session->setFlashdata('alert', $alert);
+						return redirect()->to(site_url("Usuario/viwagregar"));
+				};
 				$usuario->insert($data);
 				//$vista=view().view().view().view().view().view()
 				$alert="<div class='card-body'><div class='alert alert-success' role='alert'>
-        					El Registro se ingresó con ÉXITO
+        				El Registro se ingresó con ÉXITO
         				</div></div>";
         				$this->session->setFlashdata('alert', $alert);
 				return redirect()->to(site_url("Usuario"));
 			}else{
 				
-				if($usuario->update($id,$data)==false){
-					var_dump($usuario->errors());
-				}else{
+					$validarUpdate=$usuario->validarUserUpdate($id,$usua);
+					if(!empty($validarUpdate->cantidad)){
+					$alert="<div class='card-body'><div class='alert alert-danger' role='alert'>
+        					El Usuario ya existe
+        				</div></div>";
+        				//$this->session->set('idusuaT',$id);
+        				$this->session->setFlashdata('alert', $alert);
+						return redirect()->to(site_url("Usuario/viwagregar?id=$id"));
+					};
 					$usuario->update($id,$data);
 					$alert="<div class='card-body'><div class='alert alert-success' role='alert'>
         					El Registro se ingresó con ÉXITO
@@ -74,7 +102,7 @@ class Usuario extends BaseController
         				$this->session->setFlashdata('alert', $alert);
 
 					return redirect()->to(site_url("Usuario"));
-				}
+				
 
 				
 			}

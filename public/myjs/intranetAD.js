@@ -94,6 +94,3 @@ function Cancelar(){
    alertify.error('Cancelado');
    window.location.href=BASE_URL+"/IntranetA";
 }
-function eliminar(){
-  alert("hola");
-}

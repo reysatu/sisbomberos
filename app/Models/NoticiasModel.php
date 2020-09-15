@@ -4,13 +4,31 @@ use CodeIgniter\Model;
 
 class NoticiasModel extends Model
 {   
-    public function noticias($iniciar,$n_x_pagina){
+
+    protected $table      = 'noticias';
+    protected $primaryKey = 'id';
+
+    protected $returnType     = 'objet';
+    protected $useSoftDeletes = true;
+
+    protected $allowedFields = ['Titulo','Descripcion','Nombre_Foto','Fecha','Fecha_Registro'];
+
+   protected $useTimestamps = true;
+   protected $createdField  = 'created_at';
+    protected $updatedField  = 'updated_at';
+    protected $deletedField  = 'deleted_at';
+
+    protected $validationRules    = [];
+    protected $validationMessages = [];
+    protected $skipValidation     = false;
+
+     public function noticias($iniciar,$n_x_pagina){
        $db=db_connect();
       $mostrar=$db->query('
                               SELECT    
                                   *
                               FROM  Noticias
-                              where  Estado=1 ORDER BY Fecha desc
+                              where deleted_at is null ORDER BY Fecha desc
                               LIMIT '.$iniciar.','.$n_x_pagina.'
                               ') ;
 
@@ -24,7 +42,7 @@ class NoticiasModel extends Model
                               SELECT    
                                    *
                               FROM  noticias 
-                              where Estado=1
+                              where deleted_at is null
                               ');
        return count($mostrar->getResult());
     }
@@ -47,7 +65,7 @@ class NoticiasModel extends Model
                               SELECT    
                                   *
                               FROM  Noticias
-                              where  Estado=1 ORDER BY Fecha desc
+                              where  deleted_at is null ORDER BY Fecha desc
                               LIMIT 3
                               ') ;
 

@@ -25,7 +25,7 @@
                 <tr>
                   <th>ID</th>
                   <th>Modulos</th>
-                  <th>Submulos</th>
+                  <th>Submódulos</th>
                    <th>Acción</th>
                 </tr>
                 </thead>

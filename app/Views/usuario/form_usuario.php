@@ -24,6 +24,10 @@
                <form class="form-horizontal" action="<?php echo base_url();?>/Usuario/add" method="post">
                	<input type="hidden" name="idusuario" value="<?php echo $idusuario?>">
                 <div class="card-body">
+                  <?php if(!empty($_SESSION['alert'])){
+                   echo($_SESSION['alert']);
+
+                  }?>
                   <div class="form-group row">
                     <label for="inputEmail3" class="col-sm-2 col-form-label">Perfil</label>
                     <div class="col-sm-10">
@@ -55,7 +59,13 @@
                   <div class="form-group row">
                     <label for="inputEmail3" class="col-sm-2 col-form-label">DNI</label>
                     <div class="col-sm-10">
-                      <input type="text" class="form-control" value="<?php echo $dni  ?>" name="dni" id="inputEmail3" placeholder="dni" required>
+                      <input type="text" onkeypress="return Numeros(event);" class="form-control" value="<?php echo $dni  ?>" name="dni" id="dni" placeholder="dni" required>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Teléfono</label>
+                    <div class="col-sm-10">
+                      <input type="text" onkeypress="return Numeros(event);" class="form-control" value="<?php echo $telefono  ?>" name="tel" id="tel" placeholder="Teléfono" required>
                     </div>
                   </div>
                   <div class="form-group row">
@@ -81,7 +91,7 @@
                 <!-- /.card-body -->
                 <div class="card-footer">
                   <button type="submit" class="btn btn-info">Registrar</button>
-                  <button onclick="Cancelar();" class="btn btn-default float-right">Cancelar</button>
+                  <button onclick="CancelarUsuario();" class="btn btn-default float-right">Cancelar</button>
                 </div>
                 <!-- /.card-footer -->
               </form>

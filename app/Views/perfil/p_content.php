@@ -25,6 +25,7 @@
                 <tr>
                   <th>ID</th>
                   <th>Perfil</th>
+                  <th>Módulos</th>
                   <th>Acción  </th>
                 </tr>
                 </thead>
@@ -33,6 +34,7 @@
                   <tr>
                     <td ><?php echo $linea->idperfil ?></td>
                     <td><?php echo $linea->descripcion; ?></td>
+                     <td ><?php echo $linea->modulos ?></td>
                     <td><a href="<?php echo base_url();?>/Perfil/viwagregar?id=<?php echo $linea->idperfil?>" class="btn btn btn-primary btn-sm active" role="button" aria-pressed="true"> editar</a>
                         <button type="button" class="btn btn btn-danger btn-sm active" role="button" aria-pressed="true" onclick="eliminar('<?php echo $linea->idperfil ?>')" >Eliminar</button>
                     </td>

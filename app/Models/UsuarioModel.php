@@ -44,7 +44,25 @@ class UsuarioModel extends Model
     }
     public function validarGmail($correo){
       $db=db_connect();
-      $query= $db->query('SELECT * FROM usuario WHERE email="'.$correo.'"');
+      $query= $db->query('SELECT * FROM usuario WHERE active =1 and deleted_at is null and email="'.$correo.'"');
       return $row = $query->getRow();
+    }
+    public function validarUser($usua){
+      $db=db_connect();
+      $query= $db->query('select count(user) as cantidad ,user from usuario where deleted_at is null and user="'.$usua.'" group by user having count(user) > 0');
+      return $row = $query->getRow();
+    }
+    public function validarUserUpdate($id,$usua){
+       $db=db_connect();
+       $query2= $db->query('SELECT USER from usuario where idusuario="'.$id.'"');
+       $row2 = $query2->getRow();
+       if($row2->USER==$usua){
+          $query= $db->query('select count(user) as cantidad ,user from usuario where deleted_at is null and user="'.$usua.'" group by user having count(user) > 1');
+           return $row = $query->getRow();
+       }else{
+           $query= $db->query('select count(user) as cantidad ,user from usuario where deleted_at is null and user="'.$usua.'" group by user having count(user) > 0');
+           return $row = $query->getRow();
+       }
+      
     }
 }
