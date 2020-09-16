@@ -89,7 +89,7 @@ class Convocatoria extends BaseController
 		$ms="
 		Por favor ingresar al siguiente enlace:
 		$base/Convocatoria/activarCuenta?correo=$correo&hash=$hash";
-		$email->setFrom('reysangama7@gmail.com', 'rey');
+		$email->setFrom('reysangama7@gmail.com', 'Bomberos Tarapoto');
 		$email->setTo($correo);
 		
 		$email->setSubject('Verficación de correo electrónico');
@@ -192,7 +192,7 @@ class Convocatoria extends BaseController
 			$ms="
 			Por favor ingresar al siguiente enlace:
 			$base/Convocatoria/activarCuenta?correo=$correo&hash=$hash&idRecup=1";
-			$email->setFrom('reysangama7@gmail.com', 'rey');
+			$email->setFrom('reysangama7@gmail.com', 'Bomberos Tarapoto');
 			$email->setTo($correo);
 		
 			$email->setSubject('Recuperar Contraseña');
