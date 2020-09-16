@@ -65,5 +65,11 @@ class UsuarioModel extends Model
        }
       
     }
+    public function getIdArchivos(){
+        $db=db_connect();
+        $query= $db->query('SELECt DISTINCT archivo.idarchivo as idarchivo from usuario INNER JOIN perfil on perfil.idperfil=usuario.idperfil INNER join detallearchivo on usuario.idusuario=detallearchivo.idusuario INNER join archivo on archivo.idarchivo=detallearchivo.idarchivo where perfil.descripcion ="usuario"');
+        $results =$query->getResult();
+        return $results;
+    }
     
 }

@@ -1,6 +1,7 @@
 <?php namespace App\Controllers;
 use App\Models\LoginModel;
 use App\Models\UsuarioModel;
+use App\Models\detalleArchivoModel;
 
 class Convocatoria extends BaseController
 {	
@@ -117,6 +118,7 @@ class Convocatoria extends BaseController
 	}
 	public function activarPass(){
 		$UsuarioModel=new UsuarioModel;
+		$detalleArchivoModel=new detalleArchivoModel;
 		$request=\Config\Services::request();
 		$correo=$request->getPostGet("correo");
 		$hash=$request->getPostGet("hash");
@@ -125,6 +127,13 @@ class Convocatoria extends BaseController
 		if(empty($idRecup)){
 			$val=$UsuarioModel->validarUsuarioCorreo($correo,$hash);
 			$id=$val->idusuario;
+			$archivos=$UsuarioModel->getIdArchivos();
+			foreach ($archivos as $field){
+				 	$data=array("idarchivo"=>$field->idarchivo,
+								"idusuario"=>$id,);
+					$detalleArchivoModel->insert($data);
+			};
+			
 		}else{
 			$val=$UsuarioModel->validarGmail($correo,$hash);
 			$id=$val->idusuario;
