@@ -4,7 +4,7 @@ use App\Models\UsuarioModel;
 
 class Usuario extends BaseController
 {
-
+ 
 	public function viwagregar(){
 			$usuario=new UsuarioModel;
 			$request=\Config\Services::request();
@@ -13,7 +13,7 @@ class Usuario extends BaseController
 			$id=$request->getPostGet("id");
 			$results=$usuario->Busuario($id);
 			if (empty($results)){
-					$idusuario="";
+					$idusuario=""; 
 					$nombre="";
 					$apellido="";
 					$dni="";

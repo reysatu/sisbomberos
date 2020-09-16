@@ -8,7 +8,7 @@ class IntranetA extends BaseController
 		
 	}
 	public function index()
-	{ if(!isset($_SESSION['login'])){
+	{ if(!isset($_SESSION['login'])){ 
 				return redirect()->to(("LoginAdmin"));
 			};
 			$ArchivoModel=new ArchivoModel;
