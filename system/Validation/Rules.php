@@ -217,7 +217,7 @@ class Rules
 	public function is_unique(string $str = null, string $field, array $data): bool
 	{
 		// Grab any data for exclusion of a single row.
-		list($field, $ignoreField, $ignoreValue) = array_pad(explode(',', $field), 3, null);
+		list($field, $ignoreField, $ignoreValue,$deletedField) = array_pad(explode(',', $field), 4, null);
 
 		// Break the table and field apart
 		sscanf($field, '%[^.].%[^.]', $table, $field);
@@ -227,6 +227,7 @@ class Rules
 		$row = $db->table($table)
 				  ->select('1')
 				  ->where($field, $str)
+				  ->where("deleted_at",null)
 				  ->limit(1);
 
 		if (! empty($ignoreField) && ! empty($ignoreValue))
@@ -236,7 +237,9 @@ class Rules
 				$row = $row->where("{$ignoreField} !=", $ignoreValue);
 			}
 		}
-
+		if(! empty($deletedField)) {
+            $row = $row->where($deletedField, "2020");
+        }
 		return (bool) ($row->get()
 						->getRow() === null);
 	}

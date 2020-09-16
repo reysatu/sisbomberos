@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 CRITICAL - 2020-09-15 11:23:27 --> syntax error, unexpected '?'
 #0 C:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('admin/slider/sl...', Array, true)
 #1 C:\xampp\htdocs\sisbomberos\app\Controllers\SliderA.php(14): view('admin/slider/sl...', Array)
@@ -1374,3 +1375,1029 @@ CRITICAL - 2020-09-15 23:25:31 --> Undefined variable: data
 #3 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #4 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
 #5 {main}
+=======
+CRITICAL - 2020-09-15 00:12:26 --> Undefined property: stdClass::$id
+#0 D:\xampp\htdocs\sisbomberos\app\Views\noticia\actu_content.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\xampp\\htdocs...', 31, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('noticia/actu_co...', Array, true)
+#3 D:\xampp\htdocs\sisbomberos\app\Controllers\AdminNoticia.php(10): view('noticia/actu_co...', Array)
+#4 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\AdminNoticia->index()
+#5 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminNoticia))
+#6 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-15 00:33:38 --> syntax error, unexpected '{', expecting '('
+#0 D:\xampp\htdocs\sisbomberos\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('AdminNoticia')
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('AdminNoticia')
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-15 01:47:07 --> syntax error, unexpected '$NoticiasModel' (T_VARIABLE)
+#0 D:\xampp\htdocs\sisbomberos\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('AdminNoticia/vi...')
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('AdminNoticia/vi...')
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-15 02:09:49 --> Undefined index: imagen
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\AdminNoticia.php(72): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 72, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\AdminNoticia->add()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminNoticia))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-15 02:10:14 --> Undefined index: file
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\AdminNoticia.php(72): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 72, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\AdminNoticia->add()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminNoticia))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-15 02:13:04 --> Call to a member function getName() on array
+#0 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\AdminNoticia->add()
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminNoticia))
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-15 02:15:16 --> Call to a member function getName() on array
+#0 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\AdminNoticia->add()
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminNoticia))
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-15 02:17:05 --> Call to a member function getName() on null
+#0 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\AdminNoticia->add()
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminNoticia))
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-15 02:17:22 --> Call to a member function getName() on null
+#0 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\AdminNoticia->add()
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminNoticia))
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-15 02:21:12 --> Undefined variable: file
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\AdminNoticia.php(72): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 72, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\AdminNoticia->add()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminNoticia))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-15 02:21:23 --> Call to a member function getName() on array
+#0 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\AdminNoticia->add()
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminNoticia))
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-15 02:21:55 --> Call to a member function getName() on array
+#0 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\AdminNoticia->add()
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminNoticia))
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-15 02:22:10 --> Call to a member function getName() on null
+#0 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\AdminNoticia->add()
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminNoticia))
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-15 02:22:43 --> Call to a member function getClientName() on null
+#0 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\AdminNoticia->add()
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminNoticia))
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-15 02:29:35 --> Call to a member function getRandomName() on null
+#0 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\AdminNoticia->add()
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminNoticia))
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-15 02:32:13 --> Undefined variable: path
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\AdminNoticia.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 60, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\AdminNoticia->add()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminNoticia))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-15 02:32:43 --> Too few arguments to function CodeIgniter\Files\File::__construct(), 0 passed in D:\xampp\htdocs\sisbomberos\app\Controllers\AdminNoticia.php on line 60 and at least 1 expected
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\AdminNoticia.php(60): CodeIgniter\Files\File->__construct()
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\AdminNoticia->add()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminNoticia))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-15 02:34:04 --> Undefined index: imagen
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\AdminNoticia.php(73): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 73, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\AdminNoticia->add()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminNoticia))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-15 02:34:16 --> Cannot use [] for reading
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-09-15 02:34:26 --> Undefined index: file
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\AdminNoticia.php(73): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 73, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\AdminNoticia->add()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminNoticia))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-15 02:34:55 --> Undefined index: file
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\AdminNoticia.php(74): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 74, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\AdminNoticia->add()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminNoticia))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-15 02:35:04 --> Undefined index: file
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\AdminNoticia.php(74): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 74, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\AdminNoticia->add()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminNoticia))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-15 02:35:22 --> Undefined index: file
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\AdminNoticia.php(74): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 74, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\AdminNoticia->add()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminNoticia))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-15 02:36:28 --> Undefined index: file
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\AdminNoticia.php(74): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 74, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\AdminNoticia->add()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminNoticia))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-15 02:36:46 --> Undefined index: imagen
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\AdminNoticia.php(74): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 74, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\AdminNoticia->add()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminNoticia))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-15 02:37:12 --> Array to string conversion
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\AdminNoticia.php(74): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'D:\\xampp\\htdocs...', 74, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\AdminNoticia->add()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminNoticia))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-15 02:37:23 --> Array to string conversion
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\AdminNoticia.php(74): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'D:\\xampp\\htdocs...', 74, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\AdminNoticia->add()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminNoticia))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-15 02:37:37 --> Undefined index: imagen
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\AdminNoticia.php(75): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 75, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\AdminNoticia->add()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminNoticia))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-15 02:38:42 --> Undefined offset: 0
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\AdminNoticia.php(75): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'D:\\xampp\\htdocs...', 75, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\AdminNoticia->add()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminNoticia))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-15 02:38:53 --> Undefined offset: 1
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\AdminNoticia.php(75): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'D:\\xampp\\htdocs...', 75, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\AdminNoticia->add()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminNoticia))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-15 02:39:49 --> Undefined offset: 1
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\AdminNoticia.php(75): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'D:\\xampp\\htdocs...', 75, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\AdminNoticia->add()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminNoticia))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-15 02:42:14 --> Trying to access array offset on value of type null
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\AdminNoticia.php(75): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'D:\\xampp\\htdocs...', 75, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\AdminNoticia->add()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminNoticia))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-15 02:50:22 --> syntax error, unexpected '}', expecting ';' or ','
+#0 D:\xampp\htdocs\sisbomberos\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('AdminNoticia/ad...')
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('AdminNoticia/ad...')
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-15 02:50:33 --> Call to a member function getSize() on null
+#0 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\AdminNoticia->add()
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminNoticia))
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-15 02:52:17 --> Trying to access array offset on value of type null
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\AdminNoticia.php(79): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'D:\\xampp\\htdocs...', 79, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\AdminNoticia->add()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminNoticia))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-15 02:52:32 --> Undefined offset: 1
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\AdminNoticia.php(79): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'D:\\xampp\\htdocs...', 79, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\AdminNoticia->add()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminNoticia))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-15 02:55:08 --> Undefined offset: 1
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\AdminNoticia.php(79): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'D:\\xampp\\htdocs...', 79, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\AdminNoticia->add()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminNoticia))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-15 03:00:04 --> Undefined offset: 1
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\AdminNoticia.php(79): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'D:\\xampp\\htdocs...', 79, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\AdminNoticia->add()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminNoticia))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-15 03:00:09 --> Undefined offset: 1
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\AdminNoticia.php(79): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'D:\\xampp\\htdocs...', 79, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\AdminNoticia->add()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminNoticia))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-15 03:01:00 --> Trying to access array offset on value of type null
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\AdminNoticia.php(79): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'D:\\xampp\\htdocs...', 79, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\AdminNoticia->add()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminNoticia))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-15 03:01:23 --> Trying to access array offset on value of type null
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\AdminNoticia.php(79): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'D:\\xampp\\htdocs...', 79, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\AdminNoticia->add()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminNoticia))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-15 03:01:39 --> Trying to access array offset on value of type null
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\AdminNoticia.php(80): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'D:\\xampp\\htdocs...', 80, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\AdminNoticia->add()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminNoticia))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-15 03:03:02 --> Cannot use object of type CodeIgniter\HTTP\Files\UploadedFile as array
+#0 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\AdminNoticia->add()
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminNoticia))
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-15 03:04:56 --> Cannot use object of type CodeIgniter\HTTP\Files\UploadedFile as array
+#0 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\AdminNoticia->add()
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminNoticia))
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-15 03:06:22 --> Cannot use object of type CodeIgniter\HTTP\Files\UploadedFile as array
+#0 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\AdminNoticia->add()
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminNoticia))
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-15 03:06:51 --> Cannot use object of type CodeIgniter\HTTP\Files\UploadedFile as array
+#0 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\AdminNoticia->add()
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminNoticia))
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-15 03:31:03 --> file_get_contents(D:\xampp\htdocs\sisbomberos\writable\debugbar/debugbar_1600154358.json): failed to open stream: Permission denied
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_conten...', 'D:\\xampp\\htdocs...', 111, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\Debug\Toolbar\Collectors\History.php(111): file_get_contents('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\sisbomberos\system\Debug\Toolbar.php(483): CodeIgniter\Debug\Toolbar\Collectors\History->setFiles(1600158657, 20)
+#3 D:\xampp\htdocs\sisbomberos\system\Debug\Toolbar.php(455): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#4 D:\xampp\htdocs\sisbomberos\app\Config\Events.php(50): CodeIgniter\Debug\Toolbar->respond()
+#5 [internal function]: CodeIgniter\Events\Events::Config\{closure}()
+#6 D:\xampp\htdocs\sisbomberos\system\Events\Events.php(188): call_user_func(Object(Closure))
+#7 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(293): CodeIgniter\Events\Events::trigger('pre_system')
+#8 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-09-15 03:56:20 --> Undefined variable: Id
+#0 D:\xampp\htdocs\sisbomberos\app\Views\noticia\for_noticias.php(23): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 23, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('noticia/for_not...', Array, true)
+#3 D:\xampp\htdocs\sisbomberos\app\Controllers\AdminNoticia.php(40): view('noticia/for_not...')
+#4 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\AdminNoticia->viwagregar()
+#5 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminNoticia))
+#6 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-15 11:43:22 --> Undefined variable: tipe
+#0 D:\xampp\htdocs\sisbomberos\app\Views\noticia\for_noticias.php(42): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 42, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('noticia/for_not...', Array, true)
+#3 D:\xampp\htdocs\sisbomberos\app\Controllers\AdminNoticia.php(42): view('noticia/for_not...', Array)
+#4 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\AdminNoticia->viwagregar()
+#5 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminNoticia))
+#6 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-15 11:48:17 --> Undefined variable: tipe
+#0 D:\xampp\htdocs\sisbomberos\app\Views\noticia\for_noticias.php(42): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 42, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('noticia/for_not...', Array, true)
+#3 D:\xampp\htdocs\sisbomberos\app\Controllers\AdminNoticia.php(42): view('noticia/for_not...', Array)
+#4 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\AdminNoticia->viwagregar()
+#5 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminNoticia))
+#6 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-15 11:52:27 --> Undefined variable: tipe
+#0 D:\xampp\htdocs\sisbomberos\app\Views\noticia\for_noticias.php(42): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 42, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('noticia/for_not...', Array, true)
+#3 D:\xampp\htdocs\sisbomberos\app\Controllers\AdminNoticia.php(42): view('noticia/for_not...', Array)
+#4 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\AdminNoticia->viwagregar()
+#5 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminNoticia))
+#6 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-15 12:12:57 --> The original file is not a valid file.
+#0 D:\xampp\htdocs\sisbomberos\system\HTTP\Files\UploadedFile.php(172): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+#1 D:\xampp\htdocs\sisbomberos\app\Controllers\AdminNoticia.php(79): CodeIgniter\HTTP\Files\UploadedFile->move('./public/img/no...', '1600189977_eb59...')
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\AdminNoticia->add()
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminNoticia))
+#4 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-15 12:15:17 --> The original file is not a valid file.
+#0 D:\xampp\htdocs\sisbomberos\system\HTTP\Files\UploadedFile.php(172): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+#1 D:\xampp\htdocs\sisbomberos\app\Controllers\AdminNoticia.php(80): CodeIgniter\HTTP\Files\UploadedFile->move('./public/img/no...', '1600190117_bb46...')
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\AdminNoticia->add()
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminNoticia))
+#4 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-15 12:17:17 --> The original file is not a valid file.
+#0 D:\xampp\htdocs\sisbomberos\system\HTTP\Files\UploadedFile.php(172): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+#1 D:\xampp\htdocs\sisbomberos\app\Controllers\AdminNoticia.php(85): CodeIgniter\HTTP\Files\UploadedFile->move('./public/img/no...', '1600190237_8b9a...')
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\AdminNoticia->add()
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminNoticia))
+#4 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-15 12:17:49 --> The original file is not a valid file.
+#0 D:\xampp\htdocs\sisbomberos\system\HTTP\Files\UploadedFile.php(172): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+#1 D:\xampp\htdocs\sisbomberos\app\Controllers\AdminNoticia.php(86): CodeIgniter\HTTP\Files\UploadedFile->move('./public/img/no...', '1600190269_7613...')
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\AdminNoticia->add()
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminNoticia))
+#4 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-15 12:21:10 --> Call to undefined method CodeIgniter\HTTP\Files\UploadedFile::Name()
+#0 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\AdminNoticia->add()
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminNoticia))
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-15 12:22:45 --> The original file is not a valid file.
+#0 D:\xampp\htdocs\sisbomberos\system\HTTP\Files\UploadedFile.php(172): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+#1 D:\xampp\htdocs\sisbomberos\app\Controllers\AdminNoticia.php(89): CodeIgniter\HTTP\Files\UploadedFile->move('./public/img/no...', '1600190565_6ae5...')
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\AdminNoticia->add()
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminNoticia))
+#4 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-15 12:23:18 --> syntax error, unexpected ','
+#0 D:\xampp\htdocs\sisbomberos\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('AdminNoticia/vi...')
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('AdminNoticia/vi...')
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-15 12:23:47 --> Undefined variable: usuario
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\AdminNoticia.php(91): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 91, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\AdminNoticia->add()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminNoticia))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-15 12:24:56 --> The original file is not a valid file.
+#0 D:\xampp\htdocs\sisbomberos\system\HTTP\Files\UploadedFile.php(172): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+#1 D:\xampp\htdocs\sisbomberos\app\Controllers\AdminNoticia.php(93): CodeIgniter\HTTP\Files\UploadedFile->move('./public/img/no...', '1600190696_9aa4...')
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\AdminNoticia->add()
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminNoticia))
+#4 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-15 12:25:07 --> Undefined variable: usuario
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\AdminNoticia.php(95): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 95, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\AdminNoticia->add()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminNoticia))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-15 12:26:03 --> syntax error, unexpected '}', expecting ';' or ','
+#0 D:\xampp\htdocs\sisbomberos\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('AdminNoticia/vi...')
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('AdminNoticia/vi...')
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-15 12:26:14 --> The original file is not a valid file.
+#0 D:\xampp\htdocs\sisbomberos\system\HTTP\Files\UploadedFile.php(172): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+#1 D:\xampp\htdocs\sisbomberos\app\Controllers\AdminNoticia.php(93): CodeIgniter\HTTP\Files\UploadedFile->move('./public/img/no...', '1600190774_3c50...')
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\AdminNoticia->add()
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminNoticia))
+#4 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-15 12:28:44 --> Undefined variable: usuario
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\AdminNoticia.php(82): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 82, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\AdminNoticia->add()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminNoticia))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-15 13:02:32 --> Invalid argument supplied for foreach()
+#0 D:\xampp\htdocs\sisbomberos\app\Views\main\nav\noticias.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'D:\\xampp\\htdocs...', 25, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('main/nav/notici...', Array, true)
+#3 D:\xampp\htdocs\sisbomberos\app\Controllers\Noticias.php(20): view('main/nav/notici...', Array)
+#4 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Noticias->index()
+#5 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#6 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-15 13:18:44 --> unlink(./public/img/noticia/82207041_455937065080800_5888033793515716608_n.jpg): No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(./public...', 'D:\\xampp\\htdocs...', 103, Array)
+#1 D:\xampp\htdocs\sisbomberos\app\Controllers\AdminNoticia.php(103): unlink('./public/img/no...')
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\AdminNoticia->delete()
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminNoticia))
+#4 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-15 13:18:52 --> unlink(./public/img/noticia/82207041_455937065080800_5888033793515716608_n.jpg): No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(./public...', 'D:\\xampp\\htdocs...', 103, Array)
+#1 D:\xampp\htdocs\sisbomberos\app\Controllers\AdminNoticia.php(103): unlink('./public/img/no...')
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\AdminNoticia->delete()
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminNoticia))
+#4 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-15 14:52:21 --> Undefined variable: base
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\Convocatoria.php(143): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 143, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Convocatoria->RecuperaContrasena()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-15 14:54:14 --> Undefined variable: base
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\Convocatoria.php(144): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 144, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Convocatoria->RecuperaContrasena()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-15 15:05:42 --> Trying to get property 'idusuario' of non-object
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\Convocatoria.php(119): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\xampp\\htdocs...', 119, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Convocatoria->activarPass()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-15 15:05:44 --> Trying to get property 'idusuario' of non-object
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\Convocatoria.php(119): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\xampp\\htdocs...', 119, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Convocatoria->activarPass()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-15 15:05:44 --> Trying to get property 'idusuario' of non-object
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\Convocatoria.php(119): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\xampp\\htdocs...', 119, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Convocatoria->activarPass()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-15 15:05:53 --> Trying to get property 'idusuario' of non-object
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\Convocatoria.php(119): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\xampp\\htdocs...', 119, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Convocatoria->activarPass()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-15 15:08:17 --> Trying to get property 'idusuario' of non-object
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\Convocatoria.php(119): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\xampp\\htdocs...', 119, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Convocatoria->activarPass()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-15 15:08:19 --> Trying to get property 'idusuario' of non-object
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\Convocatoria.php(119): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\xampp\\htdocs...', 119, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Convocatoria->activarPass()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-15 15:08:26 --> Trying to get property 'idusuario' of non-object
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\Convocatoria.php(119): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\xampp\\htdocs...', 119, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Convocatoria->activarPass()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-15 15:22:39 --> Trying to get property 'idusuario' of non-object
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\Convocatoria.php(119): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\xampp\\htdocs...', 119, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Convocatoria->activarPass()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-15 15:22:40 --> Trying to get property 'idusuario' of non-object
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\Convocatoria.php(119): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\xampp\\htdocs...', 119, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Convocatoria->activarPass()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-15 15:22:41 --> Trying to get property 'idusuario' of non-object
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\Convocatoria.php(119): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\xampp\\htdocs...', 119, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Convocatoria->activarPass()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-15 15:22:41 --> Trying to get property 'idusuario' of non-object
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\Convocatoria.php(119): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\xampp\\htdocs...', 119, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Convocatoria->activarPass()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-15 15:22:41 --> Trying to get property 'idusuario' of non-object
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\Convocatoria.php(119): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\xampp\\htdocs...', 119, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Convocatoria->activarPass()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-15 15:22:42 --> Trying to get property 'idusuario' of non-object
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\Convocatoria.php(119): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\xampp\\htdocs...', 119, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Convocatoria->activarPass()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-15 15:22:43 --> Trying to get property 'idusuario' of non-object
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\Convocatoria.php(119): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\xampp\\htdocs...', 119, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Convocatoria->activarPass()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-15 15:22:48 --> Trying to get property 'idusuario' of non-object
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\Convocatoria.php(119): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\xampp\\htdocs...', 119, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Convocatoria->activarPass()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-15 15:28:54 --> Trying to get property 'idusuario' of non-object
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\Convocatoria.php(121): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\xampp\\htdocs...', 121, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Convocatoria->activarPass()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-15 15:28:59 --> Trying to get property 'idusuario' of non-object
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\Convocatoria.php(121): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\xampp\\htdocs...', 121, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Convocatoria->activarPass()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-15 15:40:11 --> Trying to get property 'idusuario' of non-object
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\Convocatoria.php(130): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\xampp\\htdocs...', 130, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Convocatoria->activarPass()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-15 15:40:12 --> Trying to get property 'idusuario' of non-object
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\Convocatoria.php(130): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\xampp\\htdocs...', 130, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Convocatoria->activarPass()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-15 15:40:13 --> Trying to get property 'idusuario' of non-object
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\Convocatoria.php(130): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\xampp\\htdocs...', 130, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Convocatoria->activarPass()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-15 15:40:14 --> Trying to get property 'idusuario' of non-object
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\Convocatoria.php(130): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\xampp\\htdocs...', 130, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Convocatoria->activarPass()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-15 15:40:14 --> Trying to get property 'idusuario' of non-object
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\Convocatoria.php(130): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\xampp\\htdocs...', 130, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Convocatoria->activarPass()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-15 15:40:14 --> Trying to get property 'idusuario' of non-object
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\Convocatoria.php(130): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\xampp\\htdocs...', 130, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Convocatoria->activarPass()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-15 15:40:14 --> Trying to get property 'idusuario' of non-object
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\Convocatoria.php(130): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\xampp\\htdocs...', 130, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Convocatoria->activarPass()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-15 15:40:14 --> Trying to get property 'idusuario' of non-object
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\Convocatoria.php(130): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\xampp\\htdocs...', 130, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Convocatoria->activarPass()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-15 15:40:15 --> Trying to get property 'idusuario' of non-object
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\Convocatoria.php(130): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\xampp\\htdocs...', 130, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Convocatoria->activarPass()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-15 15:40:19 --> Trying to get property 'idusuario' of non-object
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\Convocatoria.php(127): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\xampp\\htdocs...', 127, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Convocatoria->activarPass()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-15 15:46:21 --> Undefined index: alert2
+#0 D:\xampp\htdocs\sisbomberos\app\Views\convocatoria\login.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 31, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('Convocatoria/lo...', Array, true)
+#3 D:\xampp\htdocs\sisbomberos\app\Controllers\Convocatoria.php(12): view('Convocatoria/lo...')
+#4 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Convocatoria->index()
+#5 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+#6 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-15 15:46:22 --> Undefined index: alert2
+#0 D:\xampp\htdocs\sisbomberos\app\Views\convocatoria\login.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 31, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('Convocatoria/lo...', Array, true)
+#3 D:\xampp\htdocs\sisbomberos\app\Controllers\Convocatoria.php(12): view('Convocatoria/lo...')
+#4 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Convocatoria->index()
+#5 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+#6 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-15 15:46:22 --> Undefined index: alert2
+#0 D:\xampp\htdocs\sisbomberos\app\Views\convocatoria\login.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 31, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('Convocatoria/lo...', Array, true)
+#3 D:\xampp\htdocs\sisbomberos\app\Controllers\Convocatoria.php(12): view('Convocatoria/lo...')
+#4 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Convocatoria->index()
+#5 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+#6 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-15 15:46:23 --> Undefined index: alert2
+#0 D:\xampp\htdocs\sisbomberos\app\Views\convocatoria\login.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 31, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('Convocatoria/lo...', Array, true)
+#3 D:\xampp\htdocs\sisbomberos\app\Controllers\Convocatoria.php(12): view('Convocatoria/lo...')
+#4 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Convocatoria->index()
+#5 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+#6 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-15 15:46:23 --> Undefined index: alert2
+#0 D:\xampp\htdocs\sisbomberos\app\Views\convocatoria\login.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 31, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('Convocatoria/lo...', Array, true)
+#3 D:\xampp\htdocs\sisbomberos\app\Controllers\Convocatoria.php(12): view('Convocatoria/lo...')
+#4 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Convocatoria->index()
+#5 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+#6 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-15 15:46:23 --> Undefined index: alert2
+#0 D:\xampp\htdocs\sisbomberos\app\Views\convocatoria\login.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 31, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('Convocatoria/lo...', Array, true)
+#3 D:\xampp\htdocs\sisbomberos\app\Controllers\Convocatoria.php(12): view('Convocatoria/lo...')
+#4 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Convocatoria->index()
+#5 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+#6 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-15 15:46:24 --> Undefined index: alert2
+#0 D:\xampp\htdocs\sisbomberos\app\Views\convocatoria\login.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 31, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('Convocatoria/lo...', Array, true)
+#3 D:\xampp\htdocs\sisbomberos\app\Controllers\Convocatoria.php(12): view('Convocatoria/lo...')
+#4 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Convocatoria->index()
+#5 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+#6 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-15 15:46:24 --> Undefined index: alert2
+#0 D:\xampp\htdocs\sisbomberos\app\Views\convocatoria\login.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 31, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('Convocatoria/lo...', Array, true)
+#3 D:\xampp\htdocs\sisbomberos\app\Controllers\Convocatoria.php(12): view('Convocatoria/lo...')
+#4 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Convocatoria->index()
+#5 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+#6 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-15 15:46:24 --> Undefined index: alert2
+#0 D:\xampp\htdocs\sisbomberos\app\Views\convocatoria\login.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 31, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('Convocatoria/lo...', Array, true)
+#3 D:\xampp\htdocs\sisbomberos\app\Controllers\Convocatoria.php(12): view('Convocatoria/lo...')
+#4 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Convocatoria->index()
+#5 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+#6 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-15 15:46:24 --> Undefined index: alert2
+#0 D:\xampp\htdocs\sisbomberos\app\Views\convocatoria\login.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 31, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('Convocatoria/lo...', Array, true)
+#3 D:\xampp\htdocs\sisbomberos\app\Controllers\Convocatoria.php(12): view('Convocatoria/lo...')
+#4 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Convocatoria->index()
+#5 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+#6 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-15 15:46:24 --> Undefined index: alert2
+#0 D:\xampp\htdocs\sisbomberos\app\Views\convocatoria\login.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 31, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('Convocatoria/lo...', Array, true)
+#3 D:\xampp\htdocs\sisbomberos\app\Controllers\Convocatoria.php(12): view('Convocatoria/lo...')
+#4 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Convocatoria->index()
+#5 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+#6 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-15 15:46:25 --> Undefined index: alert2
+#0 D:\xampp\htdocs\sisbomberos\app\Views\convocatoria\login.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 31, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('Convocatoria/lo...', Array, true)
+#3 D:\xampp\htdocs\sisbomberos\app\Controllers\Convocatoria.php(12): view('Convocatoria/lo...')
+#4 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Convocatoria->index()
+#5 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+#6 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-15 15:46:25 --> Undefined index: alert2
+#0 D:\xampp\htdocs\sisbomberos\app\Views\convocatoria\login.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 31, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('Convocatoria/lo...', Array, true)
+#3 D:\xampp\htdocs\sisbomberos\app\Controllers\Convocatoria.php(12): view('Convocatoria/lo...')
+#4 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Convocatoria->index()
+#5 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+#6 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-15 15:46:25 --> Undefined index: alert2
+#0 D:\xampp\htdocs\sisbomberos\app\Views\convocatoria\login.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 31, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('Convocatoria/lo...', Array, true)
+#3 D:\xampp\htdocs\sisbomberos\app\Controllers\Convocatoria.php(12): view('Convocatoria/lo...')
+#4 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Convocatoria->index()
+#5 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+#6 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-15 15:46:25 --> Undefined index: alert2
+#0 D:\xampp\htdocs\sisbomberos\app\Views\convocatoria\login.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 31, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('Convocatoria/lo...', Array, true)
+#3 D:\xampp\htdocs\sisbomberos\app\Controllers\Convocatoria.php(12): view('Convocatoria/lo...')
+#4 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Convocatoria->index()
+#5 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+#6 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-15 15:46:25 --> Undefined index: alert2
+#0 D:\xampp\htdocs\sisbomberos\app\Views\convocatoria\login.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 31, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('Convocatoria/lo...', Array, true)
+#3 D:\xampp\htdocs\sisbomberos\app\Controllers\Convocatoria.php(12): view('Convocatoria/lo...')
+#4 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Convocatoria->index()
+#5 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+#6 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-15 15:46:26 --> Undefined index: alert2
+#0 D:\xampp\htdocs\sisbomberos\app\Views\convocatoria\login.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 31, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('Convocatoria/lo...', Array, true)
+#3 D:\xampp\htdocs\sisbomberos\app\Controllers\Convocatoria.php(12): view('Convocatoria/lo...')
+#4 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Convocatoria->index()
+#5 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+#6 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-15 15:46:26 --> Undefined index: alert2
+#0 D:\xampp\htdocs\sisbomberos\app\Views\convocatoria\login.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 31, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('Convocatoria/lo...', Array, true)
+#3 D:\xampp\htdocs\sisbomberos\app\Controllers\Convocatoria.php(12): view('Convocatoria/lo...')
+#4 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Convocatoria->index()
+#5 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+#6 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-15 15:46:26 --> Undefined index: alert2
+#0 D:\xampp\htdocs\sisbomberos\app\Views\convocatoria\login.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 31, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('Convocatoria/lo...', Array, true)
+#3 D:\xampp\htdocs\sisbomberos\app\Controllers\Convocatoria.php(12): view('Convocatoria/lo...')
+#4 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Convocatoria->index()
+#5 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+#6 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-15 15:46:26 --> Undefined index: alert2
+#0 D:\xampp\htdocs\sisbomberos\app\Views\convocatoria\login.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 31, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('Convocatoria/lo...', Array, true)
+#3 D:\xampp\htdocs\sisbomberos\app\Controllers\Convocatoria.php(12): view('Convocatoria/lo...')
+#4 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Convocatoria->index()
+#5 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+#6 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-15 15:46:26 --> Undefined index: alert2
+#0 D:\xampp\htdocs\sisbomberos\app\Views\convocatoria\login.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 31, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('Convocatoria/lo...', Array, true)
+#3 D:\xampp\htdocs\sisbomberos\app\Controllers\Convocatoria.php(12): view('Convocatoria/lo...')
+#4 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Convocatoria->index()
+#5 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+#6 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-15 15:46:26 --> Undefined index: alert2
+#0 D:\xampp\htdocs\sisbomberos\app\Views\convocatoria\login.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 31, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('Convocatoria/lo...', Array, true)
+#3 D:\xampp\htdocs\sisbomberos\app\Controllers\Convocatoria.php(12): view('Convocatoria/lo...')
+#4 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Convocatoria->index()
+#5 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+#6 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-15 15:46:27 --> Undefined index: alert2
+#0 D:\xampp\htdocs\sisbomberos\app\Views\convocatoria\login.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 31, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('Convocatoria/lo...', Array, true)
+#3 D:\xampp\htdocs\sisbomberos\app\Controllers\Convocatoria.php(12): view('Convocatoria/lo...')
+#4 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Convocatoria->index()
+#5 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+#6 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-15 15:46:27 --> Undefined index: alert2
+#0 D:\xampp\htdocs\sisbomberos\app\Views\convocatoria\login.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 31, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('Convocatoria/lo...', Array, true)
+#3 D:\xampp\htdocs\sisbomberos\app\Controllers\Convocatoria.php(12): view('Convocatoria/lo...')
+#4 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Convocatoria->index()
+#5 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+#6 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-15 15:46:27 --> Undefined index: alert2
+#0 D:\xampp\htdocs\sisbomberos\app\Views\convocatoria\login.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 31, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('Convocatoria/lo...', Array, true)
+#3 D:\xampp\htdocs\sisbomberos\app\Controllers\Convocatoria.php(12): view('Convocatoria/lo...')
+#4 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Convocatoria->index()
+#5 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+#6 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-15 15:46:27 --> Undefined index: alert2
+#0 D:\xampp\htdocs\sisbomberos\app\Views\convocatoria\login.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 31, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('Convocatoria/lo...', Array, true)
+#3 D:\xampp\htdocs\sisbomberos\app\Controllers\Convocatoria.php(12): view('Convocatoria/lo...')
+#4 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Convocatoria->index()
+#5 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+#6 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-15 15:46:27 --> Undefined index: alert2
+#0 D:\xampp\htdocs\sisbomberos\app\Views\convocatoria\login.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 31, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('Convocatoria/lo...', Array, true)
+#3 D:\xampp\htdocs\sisbomberos\app\Controllers\Convocatoria.php(12): view('Convocatoria/lo...')
+#4 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Convocatoria->index()
+#5 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+#6 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-15 15:46:27 --> Undefined index: alert2
+#0 D:\xampp\htdocs\sisbomberos\app\Views\convocatoria\login.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 31, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('Convocatoria/lo...', Array, true)
+#3 D:\xampp\htdocs\sisbomberos\app\Controllers\Convocatoria.php(12): view('Convocatoria/lo...')
+#4 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Convocatoria->index()
+#5 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+#6 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-15 15:46:28 --> Undefined index: alert2
+#0 D:\xampp\htdocs\sisbomberos\app\Views\convocatoria\login.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 31, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('Convocatoria/lo...', Array, true)
+#3 D:\xampp\htdocs\sisbomberos\app\Controllers\Convocatoria.php(12): view('Convocatoria/lo...')
+#4 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Convocatoria->index()
+#5 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+#6 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-15 15:46:28 --> Undefined index: alert2
+#0 D:\xampp\htdocs\sisbomberos\app\Views\convocatoria\login.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 31, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('Convocatoria/lo...', Array, true)
+#3 D:\xampp\htdocs\sisbomberos\app\Controllers\Convocatoria.php(12): view('Convocatoria/lo...')
+#4 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Convocatoria->index()
+#5 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+#6 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-15 15:46:28 --> Undefined index: alert2
+#0 D:\xampp\htdocs\sisbomberos\app\Views\convocatoria\login.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 31, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('Convocatoria/lo...', Array, true)
+#3 D:\xampp\htdocs\sisbomberos\app\Controllers\Convocatoria.php(12): view('Convocatoria/lo...')
+#4 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Convocatoria->index()
+#5 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+#6 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-15 15:46:53 --> Undefined index: alert2
+#0 D:\xampp\htdocs\sisbomberos\app\Views\convocatoria\login.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 31, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('Convocatoria/lo...', Array, true)
+#3 D:\xampp\htdocs\sisbomberos\app\Controllers\Convocatoria.php(12): view('Convocatoria/lo...')
+#4 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Convocatoria->index()
+#5 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+#6 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-15 15:46:53 --> Undefined index: alert2
+#0 D:\xampp\htdocs\sisbomberos\app\Views\convocatoria\login.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 31, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('Convocatoria/lo...', Array, true)
+#3 D:\xampp\htdocs\sisbomberos\app\Controllers\Convocatoria.php(12): view('Convocatoria/lo...')
+#4 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Convocatoria->index()
+#5 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+#6 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-15 15:46:53 --> Undefined index: alert2
+#0 D:\xampp\htdocs\sisbomberos\app\Views\convocatoria\login.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 31, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('Convocatoria/lo...', Array, true)
+#3 D:\xampp\htdocs\sisbomberos\app\Controllers\Convocatoria.php(12): view('Convocatoria/lo...')
+#4 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Convocatoria->index()
+#5 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+#6 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+>>>>>>> 43d0e10880578748202c19e41124ca5d0588073c

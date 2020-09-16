@@ -1,4 +1,4 @@
-
+  
 function eliminar(id){
 
 alertify.confirm('Eliminar','Seguro que quiere eliminar este registro', 
@@ -15,7 +15,7 @@ alertify.confirm('Eliminar','Seguro que quiere eliminar este registro',
 					 }
                 , function(){ alertify.error('Cancelado')});
 }
-function Cancelar(){
+function CancelarUsuario(){
    alertify.error('Cancelado');
    window.location.href=BASE_URL+"/Usuario";
 }

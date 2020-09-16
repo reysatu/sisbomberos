@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 CRITICAL - 2020-09-16 02:01:14 --> Undefined index: Descripcion
 #0 C:\xampp\htdocs\sisbomberos\app\Controllers\SliderA.php(46): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 46, Array)
 #1 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\SliderA->registrar()
@@ -1895,3 +1896,89 @@ CRITICAL - 2020-09-16 12:47:41 --> Invalid argument supplied for foreach()
 #6 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #7 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
 #8 {main}
+=======
+CRITICAL - 2020-09-16 03:17:01 --> Undefined variable: detalleArchivoModel
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\Convocatoria.php(133): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 133, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Convocatoria->activarPass()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-16 03:17:04 --> Undefined variable: detalleArchivoModel
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\Convocatoria.php(133): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 133, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Convocatoria->activarPass()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-16 03:17:10 --> Trying to get property 'idusuario' of non-object
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\Convocatoria.php(128): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\xampp\\htdocs...', 128, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Convocatoria->activarPass()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-16 03:20:03 --> Undefined variable: detalleArchivoModel
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\Convocatoria.php(133): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 133, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Convocatoria->activarPass()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-16 03:27:00 --> Undefined variable: detalleArchivoModel
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\Convocatoria.php(133): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 133, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Convocatoria->activarPass()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-16 03:27:02 --> Undefined variable: detalleArchivoModel
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\Convocatoria.php(133): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 133, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Convocatoria->activarPass()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-16 03:27:06 --> Trying to get property 'idusuario' of non-object
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\Convocatoria.php(128): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\xampp\\htdocs...', 128, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Convocatoria->activarPass()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-16 03:32:38 --> Undefined variable: detalleArchivoModel
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\Convocatoria.php(133): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 133, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Convocatoria->activarPass()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-16 03:32:44 --> Trying to get property 'idusuario' of non-object
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\Convocatoria.php(128): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\xampp\\htdocs...', 128, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Convocatoria->activarPass()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-16 03:37:01 --> syntax error, unexpected '}', expecting ';' or ','
+#0 D:\xampp\htdocs\sisbomberos\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('Convocatoria/Cr...')
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('Convocatoria/Cr...')
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-16 03:37:03 --> syntax error, unexpected '}', expecting ';' or ','
+#0 D:\xampp\htdocs\sisbomberos\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('Convocatoria')
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('Convocatoria')
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-16 03:37:54 --> Undefined variable: fiel
+#0 D:\xampp\htdocs\sisbomberos\app\Controllers\Convocatoria.php(131): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 131, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Convocatoria->activarPass()
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+>>>>>>> 43d0e10880578748202c19e41124ca5d0588073c

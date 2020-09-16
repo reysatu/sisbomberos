@@ -37,6 +37,7 @@
         <div class="input-group mb-3">
           <input type="hidden" name="correo" id="correo" value="<?php echo $correo ?>">
           <input type="hidden" name="hash" id="hash" value="<?php echo $hash ?>">
+          <input type="hidden" name="idRecup" id="idRecup" value="<?php echo $idRecup ?>">
           <input type="password" name="password1" id="password1"  class="form-control" placeholder="Contraseña" required>
           <div class="input-group-append">
             <div class="input-group-text">

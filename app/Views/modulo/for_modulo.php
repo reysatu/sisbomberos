@@ -25,7 +25,7 @@
                   <div class="form-group row">
                     <label for="inputEmail3" class="col-sm-2 col-form-label">Modulo</label>
                     <div class="col-sm-10">
-                      <input type="text" class="form-control" value="<?php echo $modulo?>" name="modulo" id="modulo" placeholder="modulo" required>
+                      <input type="text" class="form-control" value="<?php echo $modulo?>" name="modulo" id="modulo" placeholder="modulo" onkeypress="return Letras(event);" required>
                     </div>
 
                   </div> 

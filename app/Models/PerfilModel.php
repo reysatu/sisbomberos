@@ -22,7 +22,7 @@ class PerfilModel extends Model
     protected $skipValidation     = false;
     public function BuscarPerfil(){
        $db=db_connect();
-        $query= $db->query('SELECT * FROM perfil where deleted_at is null');
+        $query= $db->query('SELECT `perfil`.*, (SELECT GROUP_CONCAT(DISTINCT modulo.descripcion) FROM modulo LEFT JOIN permiso ON permiso.idmodulo = modulo.idmodulo WHERE permiso.idperfil = `perfil`.idperfil and modulo.deleted_at is null and modulo.orden=1 GROUP BY permiso.idperfil) AS modulos FROM perfil where deleted_at is null');
         $results =$query->getResult();
        return $results;
     }

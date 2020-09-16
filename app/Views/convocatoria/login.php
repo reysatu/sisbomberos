@@ -27,8 +27,8 @@
   <div class="card">
     <div class="card-body login-card-body">
       <p class="login-box-msg">Iniciar sesión</p>
-     <?php if(!empty($_SESSION['alert2'])){
-            echo($_SESSION['alert2']);
+     <?php if(!empty($_SESSION['alert5'])){
+            echo($_SESSION['alert5']);
 
           }?>
       <form action="<?php echo base_url();?>/Convocatoria/login" method="post">
@@ -63,6 +63,9 @@
       <br>
       <p class="mb-1">
         <a href="<?php echo base_url()?>/Convocatoria/CrearCuenta">Registrarse para Acceder a las Convocatoria</a>
+      </p>
+      <p class="mb-1">
+        <a href="<?php echo base_url()?>/Convocatoria/recuperaContra">Recuperar Contraseña</a>
       </p>
       <p class="mb-0">
         <font color="red">
