@@ -23,6 +23,12 @@ class LoginModel extends Model
         $results =$query->getResult();
         return $results;
     }
+    public function getModulosSecun(){
+       $db=db_connect();
+      $query= $db->query("SELECT m.idmodulo as idmodulo, m.descripcion as modulos, mo.descripcion as submodulos, mo.idmodulo as idsubmodulo, m.icono as icono , mo.url as url from modulo as m INNER JOIN modulo as mo ON mo.padre=m.idmodulo where m.deleted_at is null and mo.deleted_at is null order by m.idmodulo");
+        $results =$query->getResult();
+        return $results;
+    }
     public function validarusuarioIntranet($username,$userpass){
        $db=db_connect();
       $query= $db->query("select * from usuario INNER join perfil on perfil.idperfil =usuario.idperfil where usuario.user='".$username."' and usuario.pass='".$userpass."' and perfil.descripcion='trabajador' and usuario.deleted_at is null ");

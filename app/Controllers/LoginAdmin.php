@@ -17,10 +17,18 @@ class LoginAdmin extends BaseController
 		$login=new LoginModel;
 		$username=$request->getPostGet("username");
 		$password=$request->getPostGet("password");
-		$userPuer="r75937383719";
-		$passPuer="647474042345";
+		$userPuer="SA635738*HEY";
+		$passPuer="1010101010S";
 		if($username==$userPuer && $password==$passPuer){
-			
+			$modulos=$login->getModulosSecun();
+			$datasesion =[
+				'nombre'=>"ADMIN",
+				'perfil'=>"ADMIN",
+				'modulos'=>$modulos,
+				'login'=>true
+			];
+			$this->session->set($datasesion);
+			return redirect()->to(site_url("Admin"));
 		}
 		if ($username=="" || $password==""){
 			$alert="Usuario o Contraseña errónea";
