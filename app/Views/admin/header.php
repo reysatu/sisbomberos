@@ -26,7 +26,10 @@
     <link rel="stylesheet" href="<?php echo base_url()?>/public/alertifyJS/css/themes/semantic.min.css">
     <link rel="stylesheet" href="<?php echo base_url()?>/public/alertifyJS/css/alertify.min.css">
     <script  src="<?php echo base_url()?>/public/alertifyJS/alertify.min.js"></script>
+
     <script  src="<?php echo base_url()?>/public/myjs/validar.js"></script>
+    
+     <link rel="stylesheet" href="<?php echo base_url()?>/public/mycss/admin.css">
      
 </head>
 <body class="hold-transition sidebar-mini">

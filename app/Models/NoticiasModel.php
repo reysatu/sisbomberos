@@ -6,12 +6,12 @@ class NoticiasModel extends Model
 {   
 
     protected $table      = 'noticias';
-    protected $primaryKey = 'id';
+    protected $primaryKey = 'Id';
 
     protected $returnType     = 'objet';
     protected $useSoftDeletes = true;
 
-    protected $allowedFields = ['Titulo','Descripcion','Nombre_Foto','Fecha','Fecha_Registro'];
+    protected $allowedFields = ['Titulo','Descripcion','Nombre_Foto','Fecha','N_Principal','Fecha_Registro'];
 
    protected $useTimestamps = true;
    protected $createdField  = 'created_at';
@@ -24,12 +24,28 @@ class NoticiasModel extends Model
 
      public function noticias($iniciar,$n_x_pagina){
        $db=db_connect();
-      $mostrar=$db->query('
+      $mostrar=$db->query(' 
                               SELECT    
                                   *
                               FROM  Noticias
-                              where deleted_at is null ORDER BY Fecha desc
+
+                             
+                              where  deleted_at is null and N_Principal=0 ORDER BY Fecha desc
+
                               LIMIT '.$iniciar.','.$n_x_pagina.'
+                              ') ;
+
+        if(count($mostrar->getResult()) >0){ return $mostrar->getResult();}
+        else{ return false;} 
+      
+    }
+    public function noticias_p(){
+       $db=db_connect();
+      $mostrar=$db->query(' 
+                              SELECT    
+                                  *
+                              FROM  Noticias
+                              where  deleted_at is null and N_Principal=1 ORDER BY Fecha desc
                               ') ;
 
         if(count($mostrar->getResult()) >0){ return $mostrar->getResult();}
@@ -42,7 +58,9 @@ class NoticiasModel extends Model
                               SELECT    
                                    *
                               FROM  noticias 
-                              where deleted_at is null
+
+                              where deleted_at is null and N_Principal=0
+
                               ');
        return count($mostrar->getResult());
     }
@@ -65,12 +83,31 @@ class NoticiasModel extends Model
                               SELECT    
                                   *
                               FROM  Noticias
-                              where  deleted_at is null ORDER BY Fecha desc
+
+                              where  deleted_at is null and N_Principal=0 ORDER BY Fecha desc
+
                               LIMIT 3
                               ') ;
 
         if(count($mostrar->getResult()) >0){ return $mostrar->getResult();}
         else{ return false;} 
       
+    }
+    public function GetNoticias(){
+      $db=db_connect();
+      $query= $db->query('select * from noticias where deleted_at is null');
+        $results =$query->getResult();
+       return $results;
+    }
+    public function getNoticiaId($id){
+       $db=db_connect();
+      $query= $db->query('select * from noticias where deleted_at is null and Id="'.$id.'"');
+        return $row = $query->getRow();
+    }
+    public function updateInsert(){
+      $db=db_connect();
+      $query= $db->query('UPDATE noticias SET N_Principal = 0 WHERE N_Principal = 1 Order by Id limit 1');
+       $results =$query->getResult();
+       return $results;
     }
 }

@@ -65,4 +65,5 @@ class UsuarioModel extends Model
        }
       
     }
+    
 }

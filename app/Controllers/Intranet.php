@@ -78,8 +78,6 @@ class Intranet extends BaseController
 			if(!empty($imagefile)){
 				$img = $imagefile['file'];
 				$nom= $img->getName();
-				
-				
 				$img->move('./public/archivos');
 				$data=array("descripcion"=>$nom,"accion"=>1,);
 				$ArchivoModel->insert($data);
