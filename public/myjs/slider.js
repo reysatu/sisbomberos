@@ -1,5 +1,5 @@
 function reFresh() {
-  location.reload()
+   window.history.back();
 }
 $(window).load(function(){
 
@@ -38,7 +38,7 @@ function guardar_slider(){
 		if (titulo=="") {document.getElementById('titulo').focus();}
 	 	return false;
 	}
-	/*if (files_doc.length==0 & id="") {
+	/*if (files_doc.length==0 ) {
 		$.notify("Ninguna imagen seleccionada", "error");
 		return false;
 	}*/
@@ -58,21 +58,21 @@ function guardar_slider(){
 	      success: function(e){
 	      	data=eval(e);
 	      	if (data==1) {
-		      	swal("Servicio Insertado con éxito ", {
+		      	swal("Slider Insertado con éxito ", {
 	                icon: "success",
 	                buttons: false,
 	                timer: 1000,
 	            });
 	      	}
 	      	if (data==2) {
-	      		swal("Servicio Editado con éxito ", {
+	      		swal("Slider Editado con éxito ", {
 	                icon: "success",
 	                buttons: false,
 	                timer: 1000,
 	            });
 	      	}
 	      	if (data==3) {
-	      		alertify.error("Servicio ya registrado !");
+	      		alertify.error("Slider ya registrado !");
 	      		return false;
 	      	}
             window.setInterval('reFresh()',1000);

@@ -69,4 +69,3 @@
     </section>
     <!-- /.content -->
   </div>
-  <script src="<?php echo base_url(); ?>/public/myjs/modulo.js"></script>
