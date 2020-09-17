@@ -11,7 +11,7 @@
         <div class="col-12">
           <div class="card">
             <div class="card-header">
-              <a class="btn btn-success" href="<?php echo base_url();?>/AdminNoticia/viwagregar" role="button">Agregar +</a>
+              <a class="btn btn-info" href="<?php echo base_url();?>/AdminNoticia/viwagregar" role="button">Agregar +</a>
             </div>
             <!-- /.card-header -->
              <?php if(!empty($_SESSION['alert'])){
@@ -24,6 +24,7 @@
                 <tr>
                   <th>ID</th>
                   <th>Titulo</th>
+                  <th>Imagen</th>
                   <th>Fecha</th>
                   <th>Acción</th>
 
@@ -34,8 +35,9 @@
                   <tr>
                     <td><?php echo $linea->Id ?></td>
                     <td><?php echo $linea->Titulo ?></td>
+                    <td id="img_tabla"><img src="<?php echo base_url();?>/public/img/noticia/<?php echo $linea->Nombre_Foto;?>"></td>
                     <td><?php echo $linea->Fecha ?></td>
-                    <td><a href="<?php echo base_url();?>/AdminNoticia/viwagregar?Id=<?php echo $linea->Id?>" class="btn btn btn-primary btn-sm active" role="button" aria-pressed="true"> editar</a>
+                    <td id="botones_tabla"><a href="<?php echo base_url();?>/AdminNoticia/viwagregar?Id=<?php echo $linea->Id?>" class="btn btn btn-primary btn-sm active" role="button" aria-pressed="true"> editar</a>
                         <button type="button" class="btn btn btn-danger btn-sm active" role="button" aria-pressed="true" onclick="eliminarNoticia('<?php echo $linea->Id ?>','<?php echo $linea->Nombre_Foto ?>')" >Eliminar</button>
                     </td>
                     

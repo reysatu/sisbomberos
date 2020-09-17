@@ -15,6 +15,9 @@ class Modulo extends BaseController
 	}
 
 	public function viwagregar(){
+		if(!isset($_SESSION['login'])){
+				return redirect()->to(("LoginAdmin"));
+			};
 			$moduloModel=new ModuloModel;
 			$request=\Config\Services::request();
 			$id=$request->getPostGet("id");

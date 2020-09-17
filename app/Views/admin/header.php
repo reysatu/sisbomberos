@@ -23,23 +23,19 @@
 
 
   <!-- ----------------------------------------------------alertas---------------------------------------------------- -->
-
-   <script src="<?php echo base_url();?>/public/js/jquery.js"></script>
+<script type="text/javascript">
+      var BASE_URL = "<?php echo base_url();?>";
+  </script>
   <script src="<?php echo base_url();?>/public/js/scri.js"></script>
-  <script src="<?php echo base_url();?>/public/js/bootstrap.min.js"></script>
-
   <script  src="<?php echo base_url()?>/public/myjs/slider.js"></script>
+
   <script  src="<?php echo base_url()?>/public/myjs/nosotros.js"></script>
+
 
     <link rel="stylesheet" href="<?php echo base_url()?>/public/alertifyJS/css/themes/semantic.min.css">
     <link rel="stylesheet" href="<?php echo base_url()?>/public/alertifyJS/css/alertify.min.css">
-    <script src="<?php echo base_url();?>/public/alertifyJS/alertify.min.js"></script>
-    <script  src="<?php echo base_url()?>/public/alertifyJS/alertify.min.js"></script>
+    <script src="<?php echo base_url();?>/public/alertifyJS/alertify.min.js"></script> 
     <script  src="<?php echo base_url()?>/public/myjs/validar.js"></script>
     <link rel="stylesheet" href="<?php echo base_url()?>/public/mycss/admin.css">
-
-    <script type="text/javascript">
-      var BASE_URL = "<?php echo base_url();?>";
-    </script>
 </head>
 <body class="hold-transition sidebar-mini">

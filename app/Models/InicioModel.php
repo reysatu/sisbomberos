@@ -10,7 +10,7 @@ class InicioModel extends Model{
                               SELECT    
                                   *
                               FROM  Noticias
-                              where  Estado=1 ORDER BY Fecha desc
+                              where  deleted_at is null ORDER BY Fecha desc
                               LIMIT 5
                               ') ;
 

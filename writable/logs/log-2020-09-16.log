@@ -1982,6 +1982,26 @@ CRITICAL - 2020-09-16 03:37:54 --> Undefined variable: fiel
 #4 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
 #5 {main}
 >>>>>>> 43d0e10880578748202c19e41124ca5d0588073c
+<<<<<<< HEAD
+CRITICAL - 2020-09-16 14:31:20 --> Undefined variable: img
+#0 D:\xampp\htdocs\sisbomberos\app\Views\noticia\for_noticias.php(51): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 51, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('noticia/for_not...', Array, true)
+#3 D:\xampp\htdocs\sisbomberos\app\Controllers\AdminNoticia.php(42): view('noticia/for_not...', Array)
+#4 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\AdminNoticia->viwagregar()
+#5 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminNoticia))
+#6 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-16 16:50:42 --> unlink(./public/img/noticia/2L7A6919 (1).jpg): No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(./public...', 'D:\\xampp\\htdocs...', 103, Array)
+#1 D:\xampp\htdocs\sisbomberos\app\Controllers\AdminNoticia.php(103): unlink('./public/img/no...')
+#2 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\AdminNoticia->delete()
+#3 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminNoticia))
+#4 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+=======
 CRITICAL - 2020-09-16 13:48:43 --> syntax error, unexpected '}', expecting ')'
 #0 C:\xampp\htdocs\sisbomberos\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('SliderA')
 #1 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('SliderA')
@@ -3065,3 +3085,34 @@ CRITICAL - 2020-09-16 22:49:35 --> Unknown column 'Estado' in 'where clause'
 #7 C:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #8 C:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
 #9 {main}
+>>>>>>> 050f188730868183b6a7ed1fa1bb7944ce56f823
+CRITICAL - 2020-09-16 23:13:30 --> Undefined property: stdClass::$Valores
+#0 D:\xampp\htdocs\sisbomberos\app\Views\main\nav\nosotros.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\xampp\\htdocs...', 40, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('main/nav/nosotr...', Array, true)
+#3 D:\xampp\htdocs\sisbomberos\app\Controllers\Nosotros.php(10): view('main/nav/nosotr...', Array)
+#4 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Nosotros->index()
+#5 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Nosotros))
+#6 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-16 23:14:29 --> Undefined property: stdClass::$Valores
+#0 D:\xampp\htdocs\sisbomberos\app\Views\main\nav\nosotros.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\xampp\\htdocs...', 40, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('main/nav/nosotr...', Array, true)
+#3 D:\xampp\htdocs\sisbomberos\app\Controllers\Nosotros.php(10): view('main/nav/nosotr...', Array)
+#4 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Nosotros->index()
+#5 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Nosotros))
+#6 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-16 23:14:32 --> Undefined property: stdClass::$Valores
+#0 D:\xampp\htdocs\sisbomberos\app\Views\main\nav\nosotros.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\xampp\\htdocs...', 40, Array)
+#1 D:\xampp\htdocs\sisbomberos\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\sisbomberos\system\Common.php(1119): CodeIgniter\View\View->render('main/nav/nosotr...', Array, true)
+#3 D:\xampp\htdocs\sisbomberos\app\Controllers\Nosotros.php(10): view('main/nav/nosotr...', Array)
+#4 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(918): App\Controllers\Nosotros->index()
+#5 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Nosotros))
+#6 D:\xampp\htdocs\sisbomberos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\sisbomberos\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}

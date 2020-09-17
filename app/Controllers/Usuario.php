@@ -6,6 +6,9 @@ class Usuario extends BaseController
 {
  
 	public function viwagregar(){
+			if(!isset($_SESSION['login'])){
+				return redirect()->to(("LoginAdmin"));
+			};
 			$usuario=new UsuarioModel;
 			$request=\Config\Services::request();
 			//$data=array(""=>)

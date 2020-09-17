@@ -3,6 +3,9 @@ use App\Models\NoticiasModel;
 class AdminNoticia extends BaseController
 { 
 	public function index(){
+			if(!isset($_SESSION['login'])){
+				return redirect()->to(("LoginAdmin"));
+			};
 			$NoticiasModel=new NoticiasModel;
 			$data = array('noticia'=>$NoticiasModel->GetNoticias());
        		echo view('admin/header.php');
@@ -13,6 +16,9 @@ class AdminNoticia extends BaseController
 		
 	}
 	public function viwagregar(){
+			if(!isset($_SESSION['login'])){
+				return redirect()->to(("LoginAdmin"));
+			};
 			$NoticiasModel=new NoticiasModel;
 			$request=\Config\Services::request();
 			// //$data=array(""=>)
@@ -62,6 +68,7 @@ class AdminNoticia extends BaseController
 			$data['Nombre_Foto'] = $name;
 			$data['N_Principal'] = 1;
 			$imagefile->move('./public/img/noticia',$name);
+
 			$NoticiasModel->updateInsert();
 			// $NoticiasModel->where('N_Principal','1')->orderBy('Id','ASC')->limit(1)->set(['N_Principal' => 0])->update();
 			$NoticiasModel->insert($data);
@@ -99,8 +106,14 @@ class AdminNoticia extends BaseController
 		$request= \Config\Services::request();
 		$id=$request->getPostGet("id");
 		$descripcion=$request->getPostGet("descripcion");
+		$valida=$NoticiasModel->getNoticiaId($id);
+		$tipo=$valida->N_Principal;
+		if($tipo==1){
+			$cambio=$NoticiasModel->updateSiguiente();
+		}
+		$NoticiasModel->delete($id);
 		$filename = './public/img/noticia/'.$descripcion; 
 		unlink($filename); 
-		$NoticiasModel->delete($id);
+		
 	}
 }

@@ -42,7 +42,7 @@
                     <td><?php echo $linea->apellido; ?></td>
                     <td ><?php echo $linea->dni ?></td>
                     <td><?php echo $linea->email; ?></td>
-                    <td><a href="<?php echo base_url();?>/Usuario/viwagregar?id=<?php echo $linea->idusuario?>" class="btn btn btn-primary btn-sm active" role="button" aria-pressed="true"> editar</a>
+                    <td id="botones_tabla"><a href="<?php echo base_url();?>/Usuario/viwagregar?id=<?php echo $linea->idusuario?>" class="btn btn btn-primary btn-sm active" role="button" aria-pressed="true"> editar</a>
                         <button type="button" class="btn btn btn-danger btn-sm active" role="button" aria-pressed="true" onclick="eliminar('<?php echo $linea->idusuario ?>')" >Eliminar</button>
                     </td>
                     
