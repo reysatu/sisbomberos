@@ -57,21 +57,39 @@ function verGrupSubi(inde){
                                   }
                           })
 }
- function eliminarGroup(identificador){
-    alertify.confirm('Eliminar','Seguro que quiere eliminar este registro', 
-        function(){ 
-        $.ajax({
-                  type:'POST',
-                  data:'identificador='+identificador,
-                  url:BASE_URL+"/IntranetA/deleteGroup",
-                  success:function(res){
-                    alertify.success('Ok');
-                   window.location.href=BASE_URL+"/IntranetA";
-                                  }
-                          })
-           }
-                , function(){ alertify.error('Cancelado')});
+
+
+
+function eliminarGroup(identificador) {
+
+    swal({
+            title: "Confirmar",
+            text: "¿ Desea Eliminar este registro ?",
+            icon: "warning",
+            buttons: true,
+            dangerMode: true,
+        })
+        .then((willDelete) => {
+            if (willDelete) {
+               $.ajax({ 
+            type:'POST',
+             data:'identificador='+identificador,
+              url:BASE_URL+"/IntranetA/deleteGroup",
+            success: function(e){
+  
+                swal("Registro  eliminado con excito!", {
+                                  icon: "success",
+                                  buttons: false,
+                                  timer: 1500,
+                                });
+                        window.setInterval('reFresh()',1200);
+            }
+        });
+
+            }
+        });
 }
+
 
 
 function EnviarArchivosAd(){

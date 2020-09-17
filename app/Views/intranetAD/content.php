@@ -6,12 +6,12 @@
       </div><!-- /.container-fluid -->
     </section>
     <!-- Main content -->
-     <section class="content">
+     <section class="content"> 
       <div class="row">
         <div class="col-12">
           <div class="card">
             <div class="card-header">
-              <a class="btn btn-success" href="<?php echo base_url();?>/IntranetA/viwagregar" role="button">Enviar +</a>
+              <a class="btn btn-info" href="<?php echo base_url();?>/IntranetA/viwagregar" role="button">Enviar +</a>
             </div>
             <!-- /.card-header -->
              <?php if(!empty($_SESSION['alert'])){
@@ -33,8 +33,8 @@
                   <tr>
                      <td ><?php echo $linea->identificador ?></td>
                     <td ><?php echo $linea->created_at ?></td>
-                    <td> <button type="button" class="btn btn btn-primary btn-sm active" role="button" aria-pressed="true"  data-toggle="modal" onclick="verGrupSubi('<?php echo $linea->identificador ?>')"> ver</button>
-                        <button type="button" class="btn btn btn-danger btn-sm active" role="button" aria-pressed="true" onclick="eliminarGroup('<?php echo $linea->identificador ?>')" >Eliminar</button>
+                    <td id="botones_tabla"> <button type="button" class="btn btn btn-success  active" role="button" aria-pressed="true"  data-toggle="modal" onclick="verGrupSubi('<?php echo $linea->identificador ?>')"> ver</button>
+                        <button type="button" class="btn btn btn-danger  active" role="button" aria-pressed="true" onclick="eliminarGroup('<?php echo $linea->identificador ?>')" >Eliminar</button>
                     </td>
                 <?php endforeach; ?>
                     

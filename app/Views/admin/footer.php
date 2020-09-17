@@ -13,7 +13,6 @@
   <!-- /.control-sidebar -->
 </div>
 <!-- ./wrapper -->
-
 <!-- jQuery -->
 <script src="<?php echo base_url();?>/public/admin/plugins/jquery/jquery.min.js"></script>
 <!-- Bootstrap 4 -->
@@ -30,6 +29,8 @@
   <script src="<?php echo base_url();?>/public/dropzone/dist/dropzone.js"></script>
 <script src="<?php echo base_url(); ?>/public/myjs/intranetAD.js"></script>
 
+<script src="<?php echo base_url();?>/public/alerta/notify.js"></script>
+<script src="<?php echo base_url();?>/public/alerta/alerta.js"></script>
 <script>
   var table= $('#example1').DataTable({
 

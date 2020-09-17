@@ -33,8 +33,8 @@
                       <td  ><?php echo $linea->email; ?></td>
                        <td  ><?php echo $linea->descripcion; ?></td>
                       <td ><?php echo $linea->created_at; ?></td>
-                    <td  >
-                      <a href="<?php echo base_url();?>/public/archivos/<?php echo $linea->archivo ?>" type="application/pdf"  target="_blank" class="btn btn btn-success" role="button">ver </a>    
+                    <td id="botones_tabla" >
+                      <a type="button" href="<?php echo base_url();?>/public/archivos/<?php echo $linea->archivo ?>" type="application/pdf"  target="_blank" class="btn btn btn-success" role="button">ver </a>    
                      <button type="button" class="btn btn btn-danger btn-sm active" role="button" aria-pressed="true" onclick="eliminarReci('<?php echo $linea->idarchivo; ?>', '<?php echo $linea->archivo; ?>')" >Eliminar</button>
                         
                     </td>

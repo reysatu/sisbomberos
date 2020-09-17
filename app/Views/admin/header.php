@@ -19,17 +19,19 @@
   <link rel="stylesheet" href="<?php echo base_url();?>/public/admin/plugins/select2/css/select2.min.css">
   <link rel="stylesheet" href="<?php echo base_url();?>/public/admin/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
 <link rel="stylesheet" href="<?php echo base_url();?>/public/dropzone/dist/dropzone.css">
+
+
+
   <!-- ----------------------------------------------------alertas---------------------------------------------------- -->
-  <script type="text/javascript">
-    var BASE_URL = "<?php echo base_url();?>";
-</script>
+<script type="text/javascript">
+      var BASE_URL = "<?php echo base_url();?>";
+  </script>
+  <script src="<?php echo base_url();?>/public/js/scri.js"></script>
+  <script  src="<?php echo base_url()?>/public/myjs/slider.js"></script>
     <link rel="stylesheet" href="<?php echo base_url()?>/public/alertifyJS/css/themes/semantic.min.css">
     <link rel="stylesheet" href="<?php echo base_url()?>/public/alertifyJS/css/alertify.min.css">
-    <script  src="<?php echo base_url()?>/public/alertifyJS/alertify.min.js"></script>
-
+    <script src="<?php echo base_url();?>/public/alertifyJS/alertify.min.js"></script> 
     <script  src="<?php echo base_url()?>/public/myjs/validar.js"></script>
-    
-     <link rel="stylesheet" href="<?php echo base_url()?>/public/mycss/admin.css">
-     
+    <link rel="stylesheet" href="<?php echo base_url()?>/public/mycss/admin.css">
 </head>
 <body class="hold-transition sidebar-mini">

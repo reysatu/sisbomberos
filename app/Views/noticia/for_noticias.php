@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="<?php echo base_url();?>/public/mycss/noticias.css">
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
@@ -36,12 +37,17 @@
                     </div>
                   </div> 
                    
+                  
                   <div class="form-group row">
                     <label for="inputEmail3" class="col-sm-2 col-form-label">Imagen</label>
-                    <div class="col-sm-10">
-                      <input type="file" class="form-control"  name="imagen" id="iamgen" placeholder="Imagen" accept="image/*" <?php echo $tipe?>>
-                    </div>
-                  </div> 
+                    <label class="subir_d_plan_trabajo"><i class="icon-file_upload"></i> Subir Imagen
+                        <input class="upload_d" id="imagen" name="imagen" type="file"  accept="image/*"  <?php echo $tipe?>>
+                    </label>
+                          <div class="preview">
+                               <img id="imgSalidaNoticia" src="<?php echo base_url();?>/public/img/noticia/<?php echo $Nombre_Foto?>" />
+                            </div>  
+                    
+                  </div>
                   <div class="form-group row">
                     <label for="inputEmail3" class="col-sm-2 col-form-label">Fecha</label>
                     <div class="col-sm-10">

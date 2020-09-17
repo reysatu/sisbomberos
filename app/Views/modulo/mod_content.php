@@ -35,7 +35,7 @@
                      <td ><?php echo $linea->idmodulo ?></td>
                     <td ><?php echo $linea->descripcion ?></td>
                     <td><?php echo $linea->submodulos; ?></td>
-                    <td><a href="<?php echo base_url();?>/Modulo/viwagregar?id=<?php echo $linea->idmodulo?>" class="btn btn btn-primary btn-sm active" role="button" aria-pressed="true"> editar</a>
+                    <td id="botones_tabla"><a href="<?php echo base_url();?>/Modulo/viwagregar?id=<?php echo $linea->idmodulo?>" class="btn btn btn-primary btn-sm active" role="button" aria-pressed="true"> editar</a>
                         <button type="button" class="btn btn btn-danger btn-sm active" role="button" aria-pressed="true" onclick="eliminar('<?php echo $linea->idmodulo ?>')" >Eliminar</button>
                     </td>
                 <?php endforeach; ?>              

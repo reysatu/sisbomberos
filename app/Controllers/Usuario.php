@@ -4,8 +4,11 @@ use App\Models\UsuarioModel;
 
 class Usuario extends BaseController
 {
-
+ 
 	public function viwagregar(){
+			if(!isset($_SESSION['login'])){
+				return redirect()->to(("LoginAdmin"));
+			};
 			$usuario=new UsuarioModel;
 			$request=\Config\Services::request();
 			//$data=array(""=>)
@@ -16,7 +19,7 @@ class Usuario extends BaseController
 			
 			$results=$usuario->Busuario($id);
 			if (empty($results)){
-					$idusuario="";
+					$idusuario=""; 
 					$nombre="";
 					$apellido="";
 					$dni="";

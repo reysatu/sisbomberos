@@ -3,19 +3,35 @@ function Cancelar(){
    window.location.href=BASE_URL+"/Usuario";
 }
 
-function eliminar(id){
 
-alertify.confirm('Eliminar','Seguro que quiere eliminar este registro', 
-				function(){ 
-				$.ajax({
-                  type:'POST',
-                  data:'id='+id,
-                  url:BASE_URL+"/Perfil/delete",
-                  success:function(res){
-                  	alertify.success('Ok');
-                  	window.location.href=BASE_URL+"/Perfil";
-                                  }
-                          })
-					 }
-                , function(){ alertify.error('Cancelado')});
+
+
+function eliminar(id) {
+
+    swal({
+            title: "Confirmar",
+            text: "¿ Desea Eliminar este registro ?",
+            icon: "warning",
+            buttons: true,
+            dangerMode: true,
+        })
+        .then((willDelete) => {
+            if (willDelete) {
+               $.ajax({ 
+            type:'POST',
+            url:BASE_URL+"/Perfil/delete",
+             data:'id='+id,
+            success: function(e){
+  
+                swal("Registro  eliminado con excito!", {
+                                  icon: "success",
+                                  buttons: false,
+                                  timer: 1500,
+                                });
+                        window.setInterval('reFresh()',1200);
+            }
+        });
+
+            }
+        });
 }

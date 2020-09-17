@@ -30,7 +30,7 @@ class NoticiasModel extends Model
                               FROM  Noticias
 
                              
-                              where  deleted_at is null and N_Principal=0 ORDER BY Fecha desc
+                              where  deleted_at is null and N_Principal=0 ORDER BY Id DESC
 
                               LIMIT '.$iniciar.','.$n_x_pagina.'
                               ') ;
@@ -45,7 +45,7 @@ class NoticiasModel extends Model
                               SELECT    
                                   *
                               FROM  Noticias
-                              where  deleted_at is null and N_Principal=1 ORDER BY Fecha desc
+                              where  deleted_at is null and N_Principal=1 ORDER BY Id DESC
                               ') ;
 
         if(count($mostrar->getResult()) >0){ return $mostrar->getResult();}
@@ -84,7 +84,7 @@ class NoticiasModel extends Model
                                   *
                               FROM  Noticias
 
-                              where  deleted_at is null and N_Principal=0 ORDER BY Fecha desc
+                              where  deleted_at is null and N_Principal=0  ORDER BY Id DESC
 
                               LIMIT 3
                               ') ;
@@ -106,8 +106,15 @@ class NoticiasModel extends Model
     }
     public function updateInsert(){
       $db=db_connect();
-      $query= $db->query('UPDATE noticias SET N_Principal = 0 WHERE N_Principal = 1 Order by Id limit 1');
+      $query= $db->query('UPDATE noticias SET N_Principal = 0 WHERE N_Principal = 1 and deleted_at is null Order by Id limit 1');
        $results =$query->getResult();
        return $results;
     }
+    public function updateSiguiente(){
+       $db=db_connect();
+      $query= $db->query('UPDATE noticias SET N_Principal = 1 WHERE deleted_at is null and N_Principal=0 Order by Id DESC limit 1');
+       $results =$query->getResult();
+       return $results;
+    }
+
 }

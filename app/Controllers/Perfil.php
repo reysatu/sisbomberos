@@ -18,6 +18,9 @@ class Perfil extends BaseController
             
 	}
 	public function viwagregar(){
+		if(!isset($_SESSION['login'])){
+				return redirect()->to(("LoginAdmin"));
+			};
 			$PerfilModel=new PerfilModel;
 			$request=\Config\Services::request();
 			$id=$request->getPostGet("id");
