@@ -36,8 +36,8 @@
 		<p><?php echo $fila->Vision;?></p>
 	</div>
 	<div>
-		<h1>Autorización</h1>
-		<p> <?php echo $fila->Autori;?></p>
+		<h1>Valores</h1>
+		<p> <?php echo $fila->Valores;?></p>
 	</div>
 </div>
 <?php endforeach?>

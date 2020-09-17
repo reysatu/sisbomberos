@@ -29,6 +29,7 @@
   <script src="<?php echo base_url();?>/public/js/bootstrap.min.js"></script>
 
   <script  src="<?php echo base_url()?>/public/myjs/slider.js"></script>
+  <script  src="<?php echo base_url()?>/public/myjs/nosotros.js"></script>
 
     <link rel="stylesheet" href="<?php echo base_url()?>/public/alertifyJS/css/themes/semantic.min.css">
     <link rel="stylesheet" href="<?php echo base_url()?>/public/alertifyJS/css/alertify.min.css">

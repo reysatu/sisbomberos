@@ -10,6 +10,7 @@
 }
 #botones_tabla{
 	display: flex;
+    border: none;
 }
 #botones_tabla a{
 	margin: 0px 5px;
@@ -18,7 +19,13 @@
 	text-align: center;
 }
 
-
+.tabla_texta{
+    height: 100em;
+    position: relative;
+}
+#tabla_texta textarea {
+    height: 18em;
+}
 
 /*--------------------------------------------------------------------SLIDER---------------------------------------------------*/
 /*-----------------------------------------imagne--------------------------------------------------*/

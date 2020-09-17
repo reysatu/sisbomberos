@@ -56,23 +56,22 @@ class InicioModel extends Model{
         else{ return false;} 
       
   }
+    public function editar($id,$data){
+      $db=db_connect();
+      $db->query('UPDATE  slider SET 
+
+                Titulo="'.$data["Titulo"].'", 
+                Descripcion="'.$data["Descripcion"].'"
+                WHERE Id='.$id.'');
+        return 2;
+    } 
   public function registrar($id,$data){
       $db=db_connect();
       if ($id!="") {
-        $this->db->query('UPDATE  usuario SET 
-
-                Nombre="'.$data["Nombre"].'", 
-                Apellidos="'.$data["Apellidos"].'", 
-                DNI="'.$data["DNI"].'", 
-                Celular="'.$data["Celular"].'", 
-                Correo="'.$data["Correo"].'", 
-                Direccion="'.$data["Direccion"].'", 
-                Sexo="'.$data["Sexo"].'", 
-                Estado_Civil="'.$data["Estado_Civil"].'", 
-                Fecha_Nacimiento="'.$data["Fecha_Nacimiento"].'", 
-                Fecha_Ingreso="'.$data["Fecha_Ingreso"].'", 
-                Login="'.$data["Login"].'", 
-                Clave="'.$data["Clave"].'"
+        $db->query('UPDATE  slider SET 
+                Nombre_Foto="'.$data["Nombre_Foto"].'",
+                Titulo="'.$data["Titulo"].'", 
+                Descripcion="'.$data["Descripcion"].'"
                 WHERE Id='.$id.'');
         return 2;
       }

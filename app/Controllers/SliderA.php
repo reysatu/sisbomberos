@@ -47,25 +47,41 @@ class SliderA extends BaseController
 		$builder = $db->table('slider');
 
 		$file = $this->request->getFile('files_documento');
-		$name = $file->getRandomName();
 		$id=$request->getPostGet("id");
-		$data= array(
-						'Id'=> $id,
-						'Nombre_Foto'=> $name,
-						'Titulo'=> $request->getPostGet("titulo"),
-						'Descripcion'=> $request->getPostGet("descripcion"),
-						'Boton'=> "Registrar",
-						'Ling'=> '#',
-						'Fecha_Registro'=>date("Y-m-d"),
-						'Estado'=>"1"
-		);
-		$registrar=$inicio->registrar($id,$data);
 
-		if ($registrar==1) {
-			$builder->insert($data);
-			$file->move('./public\inicio\img\slider',$name);
+		if (strlen($file)==0 and $id==' ') {
+			echo json_encode(4);
+		}
+		else{
+			if (strlen($file)==0) {
+				$data= array(
+							'Titulo'=> $request->getPostGet("titulo"),
+							'Descripcion'=> $request->getPostGet("descripcion")	
+				);
+				$registrar=$inicio->editar($id,$data);
+			}
+			else{
+				$name = $file->getRandomName();
+				$file->move('./public\inicio\img\slider',$name);
+				$data= array(
+							'Id'=> $id,
+							'Nombre_Foto'=> $name,
+							'Titulo'=> $request->getPostGet("titulo"),
+							'Descripcion'=> $request->getPostGet("descripcion"),
+							'Boton'=> "Registrar",
+							'Ling'=> '#',
+							'Fecha_Registro'=>date("Y-m-d"),
+							'Estado'=>"1"
+				);
+				$registrar=$inicio->registrar($id,$data);
+				if ($registrar==1) {
+					$builder->insert($data);
+					$registrar=1;
+				}
+			}
 		}
 		echo json_encode($registrar);
+		
 	}
 
 	public function activar_eliminar(){
