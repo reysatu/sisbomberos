@@ -75,11 +75,11 @@ class Convocatoria extends BaseController
 		$password=$request->getPostGet("password");
 		$hash=md5(rand(0,1000));
 		$valor=$hash;
-
+		
 		$data = array('nombre' =>$username ,
 					'apellido'=>$apellidos,
 					'email'=>$correo,
-					'idperfil'=>3,
+					'idperfil'=>2,
 					'user'=>$correo,
 					'telefono'=>$telefono,
 					'pass'=>$password,

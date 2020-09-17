@@ -21,13 +21,16 @@ function eliminarNoticia(id,descripcion) {
             url:BASE_URL+"/AdminNoticia/delete",
             data:{id:id,descripcion:descripcion},
             success: function(e){
-  
+              if(e!="1"){
                 swal("Registro  eliminado con excito!", {
                                   icon: "success",
                                   buttons: false,
                                   timer: 1500,
                                 });
-                        window.setInterval('reFresh()',1200);
+                        window.location.href=BASE_URL+"/AdminNoticia";;
+              }else{
+                alertify.error('No se puede eliminar Más Archivos');
+              }
             }
         });
 
