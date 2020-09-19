@@ -45,7 +45,7 @@ class NoticiasModel extends Model
                               SELECT    
                                   *
                               FROM  Noticias
-                              where  deleted_at is null and N_Principal=1 ORDER BY Id DESC
+                              where  deleted_at is null and N_Principal=1 ORDER BY created_at DESC
                               ') ;
 
         if(count($mostrar->getResult()) >0){ return $mostrar->getResult();}
@@ -106,7 +106,7 @@ class NoticiasModel extends Model
     }
     public function updateInsert(){
       $db=db_connect();
-      $query= $db->query('UPDATE noticias SET N_Principal = 0 WHERE N_Principal = 1 and deleted_at is null Order by Id limit 1');
+      $query= $db->query('UPDATE noticias SET N_Principal = 0 WHERE N_Principal = 1 and deleted_at is null Order by created_at asc limit 1');
        $results =$query->getResult();
        return $results;
     }
@@ -115,6 +115,11 @@ class NoticiasModel extends Model
       $query= $db->query('UPDATE noticias SET N_Principal = 1 WHERE deleted_at is null and N_Principal=0 Order by Id DESC limit 1');
        $results =$query->getResult();
        return $results;
+    }
+    public function countNoticia(){
+      $db=db_connect();
+      $query= $db->query('SELECT count(Id)  as cant FROM noticias where deleted_at is null');
+        return $row = $query->getRow();
     }
 
 }

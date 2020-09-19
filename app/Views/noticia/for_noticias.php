@@ -54,6 +54,14 @@
                       <input type="date" class="form-control" value="<?php echo $Fecha?>" name="fecha" id="fecha" required>
                     </div>
                   </div> 
+                  <div class="form-group row">
+                    <div class="offset-sm-2 col-sm-10">
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="Principal" name="Principal" value="1" <?php echo $check?>>
+                        <label class="form-check-label" for="exampleCheck2" >Principal </label>
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <!-- /.card-body -->
                 <div class="card-footer">
