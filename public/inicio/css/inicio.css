@@ -105,21 +105,21 @@ label{
 	width: 20%;
 }
 .padre_logo img{
-    width: 45%;
+    width: 55%;
     position: absolute;
     left: 0%;
-    top: 5%;
-    height: 80%;
+    top: 6%;
+    height: 83%;
 }
 .padre_menu{
   padding-top: 4%;
 	position: relative;
-	width: 60%;
+	width: 70%;
 }
 .padre_menu a{
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
     top: 0%;
-    left: 1.5%;
+    left: 0%;
     padding: 0px 12px;
     color: #202e31a1;
     position: relative;
@@ -685,9 +685,18 @@ label{
       display: block;
     }
     #pb_otros{
-      width: 100%;
+      width: 75%;
       position: relative;
       text-align: center;
+      padding-left: 15%;
+
+    }
+    #pb_redes_sociales_p{
+      font-size: 11px;
+    }
+    #padre_responsive{
+      left: 5%;
+      width: 90%;
     }
 /*---------------------------------------FOOTER-------------------------------------------------*/
     #padre_footer_tx_fc{
@@ -712,15 +721,19 @@ label{
       padding-top: 10%;
     }
     #iconos_ft_a{
-      margin: 0;
-      left: 5%;
+       margin: 0;
+      left: 4%;
       color: #fff;
-      padding: 0px 25px;
+      padding: 0px 4%;
     }
     #footer_fc{
-      left: 20%;
+       left: 0%;
       margin: 0;
-      padding: 5% 8%;
+      padding: 4% 5%;
+    }
+    #footer_fc iframe{
+      position: relative;
+      width: 100%;
     }
 /*---------------------------------------INICIO-------------------------------------------------*/
     #padre_slider{
@@ -743,11 +756,11 @@ label{
     display: inline-flex;
     }
     #div_acesos_r_a{
-      width: 40%;
-      left: 15%;
+      width: 45%;
+      left: 0%;
     }
     #div_acesos_r_span{
-      left: 23%;
+      left: 20%;
     }
 /**-----------------------------------NOSOTROS---------------------------------------------------*/
     #padre_historia_img{
@@ -808,4 +821,121 @@ label{
       padding-top: 10%;
       width: 95%;
     }
+}
+
+/*--------------------------------------------------LOAD-----------------------------------------------------------*/
+.loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('../git/Loading.gif') 50% 50% no-repeat rgb(249,249,249);
+    overflow-x:hidden;overflow-y:hidden;
+}
+
+/*-----------------------------------------------CONTACTO--------------------------------------------------------*/
+.padre_contacto_contenido{
+   position: relative;
+    top:20%;
+    height: auto;
+    width: 80%;
+    left: 0%;
+    padding-left: 10%;
+    display: flex;
+}
+.contenido_form_contacto{
+  left: 0%;
+  position: relative;
+  width: 80%;
+}
+.contenido_form_contacto div{
+    position: relative;
+    display: flex;
+    margin: 30px 0px;
+    top: -10px;
+}
+.contenido_form_contacto label{
+     font-family: "Open Sans",sans-serif;
+    position: relative;
+    left: 0%;
+    top: 5px;
+    color: #fdc236;
+    text-align: left;
+    font-weight: bold;
+    font-size: 15px;
+    width: 20%;
+}
+.contenido_form_contacto input,.contenido_form_contacto textarea{
+     position: relative;
+    padding-left: 2%;
+    left: 0%;
+    width: 70%;
+    height: 30px;
+    font-size: 14px;
+    color: #404040;
+    border: 1px solid #CCC;
+    border-radius: 1px;
+}
+.contenido_form_contacto input:focus,.contenido_form_contacto textarea:focus{
+  border:1px solid  rgb(32 46 49);
+  outline:0px;
+  transition: 1s border;
+}
+.contenido_form_contacto textarea{
+  height: 120px;
+}
+#label_mensaje_contacto{
+  top: -115px;
+}
+#enviar_contacto{
+  cursor: pointer;
+    width: 25%;
+    background:#202e31;
+    color: #fff;
+    left: 0%;
+    border: 1px solid #ccc0;
+}
+#enviar_contacto:hover{
+  background: #fff;
+  color: #202e31;
+  border-top: 1px solid  #202e31;
+  border-right: 1px solid  #202e31;
+  border-left: 1px solid  #202e31;
+  transition: all 0.5s;
+}
+.contenido_form_contacto::after{
+  content: '';
+    position: absolute;
+    background-color: #202e31;
+    width: 185%;
+    left: 0%;
+    height: 1px;
+    top: 99.7%;
+}
+.contenido_base_contacto{
+  position: relative;
+  left: 0%;
+  width:auto;
+}
+.contenido_base_contacto ::after{
+    content: '';
+    position: absolute;
+    background-color: #e3e5e0;
+    width: 108%;
+    left: 0%;
+    height: 1px;
+    top: 125%;   
+}
+.contenido_base_contacto p {
+     position: relative;
+    left: 10%;
+    width: 80%;
+    top: 25%;
+    color: #000000;
+    font-family: "Open Sans",sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
 }
