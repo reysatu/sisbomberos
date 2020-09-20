@@ -13,7 +13,7 @@
 				</div>
 				<div class="iconos_ft" id="iconos_ft">
 					<a href="#" class="iconos_ft_a_yo" id="iconos_ft_a"><span class="icon-youtube2"></span></a><br><br><br><br>
-					<a href="#" class="iconos_ft_a_tw" id="iconos_ft_a" ><span class="icon-twitter"></span></a><br><br><br><br>
+					<a href="#" class="iconos_ft_a_tw" id="iconos_ft_a" ><span class="icon-instagram"></span></a><br><br><br><br>
 					<a href="#" class="iconos_ft_a_fc" id="iconos_ft_a"><span class="icon-facebook"></span></a>
 				</div>
 			</div>

@@ -2,7 +2,7 @@ body{
 	margin: 0;
 	/*font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";*/
   font-family: Poppins,Arial,Helvetica,sans-serif;
-  background: #ffffff;
+  background: #ffffff; 
 }
 label{ 
     line-height:1.2em;
@@ -60,8 +60,8 @@ label{
   font-weight: bold;
   font-size: 12px;
   margin: 0;
-  left: 15px;
-  top: 10px;
+  left: 5px;
+  top: 9px;
   opacity: .8;
 }
 #pb_otros{
@@ -358,9 +358,8 @@ label{
 	 margin: 0;
 	 left: 2%;
 	 position: relative;
-    border-radius: 2px;
+    border-radius: 4px;
     padding: 17px 40px;
-        border-bottom-style: double;
     color: #fff;
     box-shadow: 1px 1px 1px 1px #fff;
     background: #c0392b;

@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="<?php echo base_url();?>/public/nosotros/css/nosotros.css">
   <link rel="stylesheet" href="<?php echo base_url();?>/public/mycss/noticias.css">
   <link rel="stylesheet" href="<?php echo base_url();?>/public/mycss/footer.css">
+  <link rel="stylesheet" href="<?php echo base_url();?>/public/mycss/galeria.css">
   <link rel="stylesheet"  href="<?php echo base_url();?>/public/font_awesome/css/all.min.css">
 
     <script src="<?php echo base_url();?>/public/js/AJAS/funciones.js"></script>
@@ -32,13 +33,13 @@
 <div class="padre_barra">
     <div class="p_b_redes_s_otros">
       <div class="pb_redes_sociales" id="pb_redes_sociales">
-        <a href="https://api.whatsapp.com/send?phone=34654087601&text= Hola!%20necesito%20sus%20servicios!" target="_blank" ><span class="icon-whatsapp"></span></a>
+        <a href="#" target="_blank" ><span class="icon-instagram"></span></a>
         <a href="#"><span class="icon-facebook"></span></a>
-        <p id="pb_redes_sociales_p">   <span class="icon-headset_mic"></span> (+51) (042) 52 5540 | bomberos@gmail.com</p>
+        <p id="pb_redes_sociales_p">¿Necesitas ayuda? Llámanos +51 042525540</p>
       </div>
       <div class="pb_otros" id="pb_otros">
           <a href="<?php echo base_url();?>/LoginAdmin"><p>Control Interno</p></a>
-          <a href="#"><p>Tienda</p></a>
+          <a href="#"><p>Convocatoria</p></a>
           <a href="<?php echo base_url();?>/Intranet"><p>Intranet</p></a>
       </div>
     </div>
@@ -51,7 +52,7 @@
     <div class="padre_menu" id="padre_menu">
       <a href="<?php echo base_url();?>/Inicio" id="inicio_in" >Inicio</a>
       <a href="<?php echo base_url();?>/Nosotros" id="nosotros_in" >Nosotros</a>
-      <a href="<?php echo base_url();?>/Nosotros" id="nosotros_in" >Galeria</a>
+      <a href="<?php echo base_url();?>/Galeria" id="galeria_in" >Galeria</a>
       <a href="<?php echo base_url();?>/Noticias" id="noticias_in">Noticias</a>
       <a href="<?php echo base_url();?>/Convocatoria">convocatorias</a>
       <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=LBZ25J44P7K8W">Donar</a>
