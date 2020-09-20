@@ -12,5 +12,25 @@ class Contacto extends BaseController
 	}
 
 	//--------------------------------------------------------------------
-
+	public function enviar_correo(){
+		
+		$email = \Config\Services::email();
+		$request=\Config\Services::request();
+		$nombre=$request->getPostGet("nombre");
+		$correo=$request->getPostGet("correo");
+		$mensaje=$request->getPostGet("mensaje");
+		$asunto=$request->getPostGet("asunto");
+		$ms=$mensaje;
+		$email->setFrom($correo, $nombre);
+		$email->setTo("bomberos71web@gmail.com");
+		$email->setSubject($asunto);
+		$email->setMessage($ms);
+		$email->send();
+		$alert="<div class='card-body'><div class='alert alert-success' role='alert'>
+        					Su Mensaje fue enviado , Pronto se comunicaran con Usted
+        				</div></div>";
+        $this->session->setFlashdata('alertCorreo', $alert);
+				
+		return redirect()->to(site_url("Contacto"));
+	}
 }
