@@ -52,7 +52,7 @@
 .padre_galeria section:hover img{
 	left: -2%;
 	top: -1%;
-	height: 104%;
+	height: 102%;
 	width: 104%;
 	transition: all 0.5s;
 }

@@ -49,13 +49,16 @@
 	height: 7.5em;
 }
 .logo_footer h2{
-	top: 7px;
+    top: 7px;
     position: relative;
-    left: 0%;
+    left: -10px;
     width: 65%;
     padding-left: 2.5%;
+    letter-spacing: -0.5px;
+    padding-top: 10px;
     text-align: left;
     border-bottom: 1px solid;
+    cursor: context-menu;
 }
 .iconos_ft{
 	position: relative;
