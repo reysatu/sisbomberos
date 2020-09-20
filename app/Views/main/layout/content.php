@@ -1,6 +1,6 @@
 <style type="text/css">
     #inicio_in{
-     color:#fdc236; 
+     color:#fdc236;  
     }   
 </style> 
 <div class="padre_slider" id="padre_slider">
@@ -16,13 +16,20 @@
             </div>
             
         </li>
-        <?php endforeach?>
+        <?php endforeach?> 
       </div>
       <span id="btn-prev" class="btn-prev"><</span>
       <span id="btn-next" class="btn-next">></span>
     
 </div>
 <br><br><br><br><br>
+<!-- VIDEO YOUTOBE
+    <div class="padre_video" id="padre_video">
+        <div class="cuadro_video" id="cuadro_video">
+            <iframe src="https://www.youtube-nocookie.com/embed/Pzggh3QdMlI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+-->
 <div class="padre_noticias_in" id="padre_noticias_in">
     <h2>NOTICIAS <span class="theme_color">ACTUALES</span></h2>
     <p>Mantente Siempre Informado - Bomberos voluntarios del Perú</p>
@@ -68,9 +75,5 @@
         </a>
     </div>
 </div>
-<br><br><br>
-<div class="padre_patronato_in">
-    <h2>Nuestros <span class="theme_color">Patrocinadores</span></h2>
-   
-</div>
-<br><br><br><br><br><br><br><br>
+
+<br><br><br><br><br><br>
