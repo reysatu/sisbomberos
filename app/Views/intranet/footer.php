@@ -30,10 +30,11 @@
 <!-- Bootstrap 4 -->
 <script src="<?php echo base_url();?>/public/admin/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- AdminLTE App -->
-<script src="<?php echo base_url();?>/public/admin/dist/js/adminlte.min.js"></script>
 <!-- DataTables -->
 <script src="<?php echo base_url();?>/public/admin/plugins/datatables/jquery.dataTables.js"></script>
 <script src="<?php echo base_url();?>/public/admin/plugins/datatables-bs4/js/dataTables.bootstrap4.js"></script>
+<script src="<?php echo base_url();?>/public/admin/dist/js/adminlte.min.js"></script>
+
  <script type="text/javascript">
     var BASE_URL = "<?php echo base_url();?>";
 </script>

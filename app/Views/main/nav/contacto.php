@@ -13,9 +13,13 @@
         <ul class="breadcrumb"><li><a href="#">Home</a></li><li>Contacto</li></ul>
 </div>
 <br><br>
+	<?php if(!empty($_SESSION['alertCorreo'])){
+                   echo($_SESSION['alertCorreo']);
+
+                  }?>
 	<div class="padre_contacto_contenido">
 		<div class="contenido_form_contacto">
-			<form action="<?php echo base_url();?>Contacto/enviar_correo" method="post">
+			<form action="<?php echo base_url();?>/Contacto/enviar_correo" method="post">
 				<div>
 					<label>Nombre</label>
 					<input type="text" name="nombre" required>
@@ -23,6 +27,10 @@
 				<div>
 					<label>Correo</label>
 					<input type="email" name="correo" required>
+				</div>
+				<div>
+					<label>Asunto</label>
+					<input type="text" name="asunto" required>
 				</div>
 				<div>
 					<label>Mensaje</label>

@@ -9,7 +9,7 @@ class LoginModel extends Model
       $query= $db->query("SELECT u.nombre as nombre,u.idusuario as idusuario, p.descripcion as perfil, p.idperfil as idperfil
                           FROM usuario as u INNER JOIN perfil as p ON u.idperfil=p.idperfil
                           where u.deleted_at is null and p.deleted_at is null and 
-                          u.user ='".$username."' and u.pass='".$userpass."'");
+                          u.user ='".$username."' and u.pass='".$userpass."' and p.idperfil=1");
       $row = $query->getRow();
       if (isset($row)){
          return $row = $query->getRow();}
