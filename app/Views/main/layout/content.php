@@ -2,7 +2,7 @@
     #inicio_in{
      color:#fdc236; 
     }   
-</style>
+</style> 
 <div class="padre_slider" id="padre_slider">
      <div id="slider" class="slider"> 
         <?php foreach ($slider as $fila):?>
@@ -63,8 +63,8 @@
             <label>Control Interno</label>
         </a>
         <a href="#" id="div_acesos_r_a">
-            <span id="div_acesos_r_span" class="icon-shopping_cart"></span>
-            <label>Tienda</label>
+            <span id="div_acesos_r_span" class="icon-control_point"></span>
+            <label>Donar</label>
         </a>
     </div>
 </div>
