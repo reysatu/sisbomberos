@@ -1,7 +1,7 @@
 <?php namespace App\Controllers;
 use App\Models\NoticiasModel;
 class Noticias extends BaseController
-{
+{ 
 	public function index(){
 		if (!$_GET) {
      		return redirect()->to('Noticias?pagina=1');

@@ -2,7 +2,7 @@
 <footer>
 <script src="<?php echo base_url();?>/public/inicio/js/inicio.js"></script>
 
-	<div class="footer" id="footer"> 
+	<div class="footer" id="footer">  
 		<div class="padre_footer_tx_fc" id="padre_footer_tx_fc">
 			<div class="footer_texto" id="footer_texto">  
 				<div class="texto_ft" id="texto_ft">
@@ -15,9 +15,9 @@
 				<div class="iconos_ft" id="iconos_ft">
 					<h3>Redes Sociales</h3>
 					<section>
-						<a href="#"  id="iconos_ft_a"><span class="icon-facebook"></span></a>
+						<a href="https://www.facebook.com/BomberosTarapoto71/"  id="iconos_ft_a" target="_blank"><span class="icon-facebook"></span></a>
 						<a href="#"  id="iconos_ft_a"><span class="icon-youtube2"></span></a>
-						<a href="#"  id="iconos_ft_a" ><span class="icon-instagram"></span></a>
+						<a href="https://www.instagram.com/bomberostarapoto71/?igshid=4esl86ypvzb9"  id="iconos_ft_a"  target="_blank"><span class="icon-instagram"></span></a>
 						
 					</section>
 				</div>

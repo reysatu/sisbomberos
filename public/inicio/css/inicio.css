@@ -11,7 +11,7 @@ label{
     width: 80%;
     text-align: center; 
     font-weight: bold;
-    text-transform: inherit; 
+    text-transform: inherit;  
     letter-spacing: 0px;
     word-spacing: 0px;
 }  
@@ -226,6 +226,44 @@ label{
     padding: 4%;
     position: relative;
 }
+.padre_logo_responsive{
+  position: relative;
+  left: 5%;
+  width: 90%;
+  padding: 10px 0px;
+  border-bottom: 1px solid #e0e0e0;
+  display: none;
+}
+.padre_logo_responsive div{
+  position: relative;
+  display: flex;
+}
+.padre_logo_responsive section{
+  position: relative;
+  height: 5em;
+  width: 30%;
+  left: 8%;
+}
+.padre_logo_responsive img{
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.padre_logo_responsive h2{
+    padding: 15px 0px;
+    left: 7%;
+    width: 95%;
+    position: relative;
+    text-transform: uppercase;
+    top: 5px;
+    color: #202e31;
+    letter-spacing: -1px;
+    word-spacing: 2px;
+    font-family: sans-serif;
+    margin: 0px;
+    font-weight: 800;
+    font-size: 15px;
+}
 .padre_responsive{
   position: relative;
   left: 10%;
@@ -244,9 +282,9 @@ label{
     top: 35%;
     padding: 18px 24px;
     position: relative;
-    color: #ffffff;
-    font-size: 25px;
-    background: #202e31e6;
+    color: #202e31e6;
+    font-size: 30px;
+    background: #fff;
     text-decoration: none;
     border-radius: 2px;
 }
@@ -662,7 +700,9 @@ label{
 }
 
 @media screen and (max-width:674px) {
-
+    #padre_logo_responsive{
+      display: block;
+    }
 /*---------------------------------------HEADER------------------------------------------------*/
 
     .padre_llamar_r{
@@ -673,10 +713,10 @@ label{
       display: block;
     }
     #pb_otros{
-      width: 75%;
+      width: 100%;
       position: relative;
       text-align: center;
-      padding-left: 15%;
+      padding-left: 0%;
 
     }
     #pb_redes_sociales_p{
@@ -745,6 +785,11 @@ label{
       width: 100%;
      border: none;
     }
+    #padre_contenido_n_i section{
+      left: -1px;
+      border: 1px solid #fff;
+      border-top: 7px solid #fdc236;
+    }
     #div_acesos_r{
       flex-wrap: wrap;
     display: inline-flex;
@@ -769,6 +814,7 @@ label{
     #padre_img_h:before{
        right: -70px;
        width: 30%;
+       display: none;
     }
     #padre_historia{
       width: 98%;
@@ -782,6 +828,16 @@ label{
       width: 95%;
       margin: 10px 0px;
     }
+/**-----------------------------------GALERIA---------------------------------------------------*/
+    #padre_galeria{
+      padding-left: 5%;
+      width: 90%;
+    }
+    #padre_galeria section{
+      left: 0%;
+      width: 100%;
+    }
+  
 /*-----------------------------------NOTICIAS---------------------------------------------------*/
     #arriba_noticias{
       display: block;
@@ -796,6 +852,11 @@ label{
     }
     #padre_contenido_not_div{
       width: 100%;
+    }
+    #padre_contenido_not_div section{
+      left: -1px;
+      border: 1px solid #fff;
+      border-top: 7px solid #fdc236;
     }
 /*-----------------------------------DETALLE NOTICIAS---------------------------------------------------*/
     #padre_detalle_noticias_h1{
@@ -815,6 +876,28 @@ label{
       padding-top: 10%;
       width: 95%;
     }
+  /*-----------------------------------CONTACTO---------------------------------------------------*/
+    #padre_contacto_contenido{
+      display: block;
+    }
+    #contenido_form_contacto{
+      left: 0%;
+      width: 100%;
+    }
+    #contenido_form_contacto input ,#contenido_form_contacto textarea{
+      width: 100%;
+    }
+    #contenido_form_contacto::after{
+      display: none;
+    }
+    #contenido_base_contacto{
+      left: 5%;
+      width: 95%;
+    }
+    #contenido_base_contacto_dirc_div{
+      left: 10%;
+    }
+
 }
 
 /*--------------------------------------------------LOAD-----------------------------------------------------------*/
@@ -930,6 +1013,9 @@ label{
   display: flex;
   padding-top: 10%;
   top: -4%;
+}
+.contenido_base_contacto_dirc_div{
+  left: 45%;
 }
 .contenido_base_contacto section{
   position: relative;

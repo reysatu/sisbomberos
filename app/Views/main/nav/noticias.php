@@ -20,7 +20,7 @@
 <div class="arriba_noticias" id="arriba_noticias">
     <?php 
     $primerR= 1;
-    $segundoR= 1;
+    $segundoR= 1; 
     $salir=0;
     foreach ($noticias_p as $fila):
     if($primerR==1){?>

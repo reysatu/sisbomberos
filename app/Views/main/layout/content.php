@@ -57,19 +57,19 @@
     <h2>Accesos <span class="theme_color">Rápidos</span></h2>
     <br><br><br>
     <div class="div_acesos_r" id="div_acesos_r">
-        <a href="#" id="div_acesos_r_a">
+        <a href="<?php echo base_url();?>/Intranet" id="div_acesos_r_a">
             <span id="div_acesos_r_span" class="icon-device_hub"></span>
             <label>Intranet</label>
         </a>
-        <a href="#" id="div_acesos_r_a">
+        <a href="<?php echo base_url();?>/Convocatoria" id="div_acesos_r_a">
             <span id="div_acesos_r_span" class="icon-group_add"></span>
             <label>Convocatoria</label>
         </a>
-        <a href="#" id="div_acesos_r_a">   
+        <a href="<?php echo base_url();?>/LoginAdmin" id="div_acesos_r_a">   
             <span id="div_acesos_r_span" class="icon-laptop"></span>
             <label>Control Interno</label>
         </a>
-        <a href="#" id="div_acesos_r_a">
+        <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=LBZ25J44P7K8W" id="div_acesos_r_a">
             <span id="div_acesos_r_span" class="icon-control_point"></span>
             <label>Donar</label>
         </a>

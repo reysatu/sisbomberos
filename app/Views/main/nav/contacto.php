@@ -1,13 +1,13 @@
 <style type="text/css">
     #contacto_in{
      color:#fdc236; 
-    } 
+    }  
 </style>
 <section class="padre_intro">
 	<h1>CONTÁCTENOS</h1>
 	<h3>Bomberos voluntarios del Perú <br> Tarapoto - Perú</h3>
 	<img  src="<?php echo base_url();?>/public/img/fondo.jpg">
-</section>
+</section> 
 <br><br><br>
 <div class="auto_container">
         <ul class="breadcrumb"><li><a href="#">Home</a></li><li>Contáctenos</li></ul>
@@ -17,8 +17,8 @@
                    echo($_SESSION['alertCorreo']);
 
                   }?>
-	<div class="padre_contacto_contenido">
-		<div class="contenido_form_contacto">
+	<div class="padre_contacto_contenido" id="padre_contacto_contenido">
+		<div class="contenido_form_contacto" id="contenido_form_contacto">
 			<form action="<?php echo base_url();?>/Contacto/enviar_correo" method="post">
 				<div>
 					<input type="text" name="nombre" required placeholder="Nombre Completo" >
@@ -35,23 +35,23 @@
 				<input type="submit" name="enviar_contacto" id="enviar_contacto">
 			</form>
 		</div>
-		<div class="contenido_base_contacto">
+		<div class="contenido_base_contacto" id="contenido_base_contacto">
 			<div>
 				<section class="contenido_base_contacto_icono">
 					<samp><span class="icon-call_end"></span></samp>
 				</section>
 				<section class="contenido_base_contacto_datos">
 					<h4>Teléfono</h4>
-					<p>+51949494</p>
+					<p>(042) 52 3333</p>
 				</section>
 			</div>
-			<div style="left: 45%;">
+			<div class="contenido_base_contacto_dirc_div" id="contenido_base_contacto_dirc_div" >
 				<section class="contenido_base_contacto_icono">
 					<samp><span class="icon-room"></span></samp>
 				</section>
 				<section class="contenido_base_contacto_datos">
 					<h4>Dirección</h4>
-					<p>+51949494</p>
+					<p>Av. Salverry S/N -Tarapoto</p>
 				</section>
 			</div>
 			<div>
@@ -60,7 +60,7 @@
 				</section>
 				<section class="contenido_base_contacto_datos">
 					<h4>Correo</h4>
-					<p>+51949494</p>
+					<p>imagenbomberos71@gmail.com</p>
 				</section>
 			</div>
 		</div>
